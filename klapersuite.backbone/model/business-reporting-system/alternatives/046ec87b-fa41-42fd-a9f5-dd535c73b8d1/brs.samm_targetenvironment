@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targetenvironment:TargetEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:targetenvironment="http://q-impress.eu/samm/deployment/targetenvironment" id="_fbe7EGkJEeCkc9u3PuyOhw" name="brsTargetEnvironment">
+  <nodes id="_hDpLsGkJEeCkc9u3PuyOhw" name="WebServerNode">
+    <containers id="_peU5AGkJEeCkc9u3PuyOhw" documentation="" name="WebServerContainer" schedulingPolicy="ProcessorSharing" description="">
+      <memoryResources id="_ufvkdGkJEeCkc9u3PuyOhw" name="WebServerMemInContainer" memory="_nuRQomkJEeCkc9u3PuyOhw"/>
+      <executionResources processor="_ifSqUWkJEeCkc9u3PuyOhw"/>
+    </containers>
+    <processors id="_ifSqUWkJEeCkc9u3PuyOhw" name="WebServerCpu">
+      <descriptor href="brs.samm_hardware#_RAqQQWkJEeCkc9u3PuyOhw"/>
+    </processors>
+    <memories id="_nuRQomkJEeCkc9u3PuyOhw" name="WebServerMem">
+      <descriptor href="brs.samm_hardware#_ZOqzg2kJEeCkc9u3PuyOhw"/>
+    </memories>
+  </nodes>
+  <nodes id="_xqPxlWkJEeCkc9u3PuyOhw" name="SchedulerServerNode">
+    <containers id="_5pgHJWkJEeCkc9u3PuyOhw" name="SchedulerServerContainer" schedulingPolicy="ProcessorSharing">
+      <memoryResources id="_AbbG5GkKEeCkc9u3PuyOhw" name="SchedulerServerMemInContainer" memory="_8ugJMmkJEeCkc9u3PuyOhw"/>
+      <executionResources processor="_3eVQEWkJEeCkc9u3PuyOhw"/>
+    </containers>
+    <processors id="_3eVQEWkJEeCkc9u3PuyOhw" name="SchedulerServerCpu">
+      <descriptor href="brs.samm_hardware#_RAqQQWkJEeCkc9u3PuyOhw"/>
+    </processors>
+    <memories id="_8ugJMmkJEeCkc9u3PuyOhw" name="SchedulerServerMem">
+      <descriptor href="brs.samm_hardware#_ZOqzg2kJEeCkc9u3PuyOhw"/>
+    </memories>
+  </nodes>
+  <nodes id="_DnRX1WkKEeCkc9u3PuyOhw" name="ApplicationServerNode">
+    <containers id="_JQ7H9WkKEeCkc9u3PuyOhw" name="AppServerContainer" schedulingPolicy="ProcessorSharing">
+      <memoryResources id="_Mced8WkKEeCkc9u3PuyOhw" name="AppServerMemInContainer" memory="_HJxOMmkKEeCkc9u3PuyOhw"/>
+      <executionResources processor="_FUMzuGkKEeCkc9u3PuyOhw"/>
+    </containers>
+    <processors id="_FUMzuGkKEeCkc9u3PuyOhw" name="AppServerCpu">
+      <descriptor href="brs.samm_hardware#_RAqQQWkJEeCkc9u3PuyOhw"/>
+    </processors>
+    <memories id="_HJxOMmkKEeCkc9u3PuyOhw" name="AppServerMem">
+      <descriptor href="brs.samm_hardware#_ZOqzg2kJEeCkc9u3PuyOhw"/>
+    </memories>
+  </nodes>
+  <nodes id="_O_M5ZWkKEeCkc9u3PuyOhw" name="DatabaseServerNode">
+    <containers id="_VxH5IGkKEeCkc9u3PuyOhw" documentation="" name="DbServerContainer" schedulingPolicy="ProcessorSharing" description="">
+      <memoryResources id="_Z6gwZ2kKEeCkc9u3PuyOhw" name="DbServerMemInContainer" memory="_TRrbMmkKEeCkc9u3PuyOhw"/>
+      <executionResources processor="_FUMzuGkKEeCkc9u3PuyOhw"/>
+    </containers>
+    <processors id="_QzuLAWkKEeCkc9u3PuyOhw" name="DbServerCpu">
+      <descriptor href="brs.samm_hardware#_RAqQQWkJEeCkc9u3PuyOhw"/>
+    </processors>
+    <memories id="_TRrbMmkKEeCkc9u3PuyOhw" documentation="" name="DbServerMem">
+      <descriptor href="brs.samm_hardware#_ZOqzg2kJEeCkc9u3PuyOhw"/>
+    </memories>
+  </nodes>
+  <networkElements id="__7a7tmkKEeCkc9u3PuyOhw" documentation="" name="brsLANNetElement" downlinks="__7a7tmkKEeCkc9u3PuyOhw">
+    <descriptor href="brs.samm_hardware#_EXvWAGkLEeCkc9u3PuyOhw"/>
+  </networkElements>
+</targetenvironment:TargetEnvironment>

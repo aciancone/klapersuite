@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/klapersuite.metamodel.klaper/src"
+    modelPluginID="klapersuite.metamodel.klaper" modelName="Klaper" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>file:/opt/projects/klapersuite/trunk/metamodels/klaper.ecore</foreignModel>
+  <genPackages prefix="Klaper" disposableProviderFactory="true" ecorePackage="klaper.ecore#/">
+    <nestedGenPackages prefix="Core" basePackage="klaper" disposableProviderFactory="true"
+        ecorePackage="klaper.ecore#//core">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="klaper.ecore#//core/WorkloadType">
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/WorkloadType/NULL"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/WorkloadType/OPEN"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/WorkloadType/CLOSED"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="klaper.ecore#//core/SchedulingPolicyKind">
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/NULL"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/EarliestDeadlineFirst"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/FIFO"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/FixedPriority"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/LeastLaxityFirst"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/RoundRobin"/>
+        <genEnumLiterals ecoreEnumLiteral="klaper.ecore#//core/SchedulingPolicyKind/TimeTableDriven"/>
+      </genEnums>
+      <genClasses ecoreClass="klaper.ecore#//core/KlaperModel">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/KlaperModel/resource"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/KlaperModel/workload"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Resource">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Resource/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Resource/type"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Resource/capacity"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Resource/schedulingPolicy"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Resource/description"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Resource/offeredService"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Service">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Service/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Service/speedAttr"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Service/failAttr"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Service/description"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Service/behavior"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Service/formalParams"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Workload">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Workload/type"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Workload/population"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Workload/behavior"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Workload/arrivalProcess"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Workload/name"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Behavior">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Behavior/step"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Behavior/transition"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Step">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Step/name"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Step/in"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Step/out"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Transition">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Transition/to"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Transition/from"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Transition/prob"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Control"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Start"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Wait"/>
+      <genClasses ecoreClass="klaper.ecore#//core/End"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Branch"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Fork"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Join">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Join/transitionsNeededToGo"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Activity">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Activity/nestedBehavior"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Activity/internalExecTime"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Activity/internalFailProb"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Activity/internalFailTime"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/Activity/repetitions"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Acquire">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Acquire/resourceUnit"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Acquire/resource"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Release">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Release/resourceUnit"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Release/resource"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/Reconfiguration">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Reconfiguration/sourceStep"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/Reconfiguration/targetService"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/CreateBinding"/>
+      <genClasses ecoreClass="klaper.ecore#//core/DeleteBinding"/>
+      <genClasses ecoreClass="klaper.ecore#//core/Binding">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Binding/call"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/Binding/signal"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/FormalParam">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/FormalParam/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/FormalParam/return"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/FormalParam/actual"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/ActualParam">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/ActualParam/name"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/ActualParam/formal"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/ActualParam/value"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/ServiceControl">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/ServiceControl/resourceType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/ServiceControl/serviceName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/ServiceControl/isSynch"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//core/ServiceControl/dependsOn"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/ServiceControl/binding"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//core/ServiceControl/actualParam"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//core/ParamVariable">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference klaper.ecore#//core/ParamVariable/param"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Probability" basePackage="klaper" disposableProviderFactory="true"
+        ecorePackage="klaper.ecore#//probability">
+      <genClasses ecoreClass="klaper.ecore#//probability/ProbabilityDistributionFunction"/>
+      <genClasses ecoreClass="klaper.ecore#//probability/Normal">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Normal/mean"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Normal/standDev"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Poisson">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Poisson/mean"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Uniform">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Uniform/min"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Uniform/max"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Exponential">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Exponential/mean"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Constant">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Constant/value"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Histogram">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Histogram/samples"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/HistogramSample">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//probability/HistogramSample/value"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//probability/HistogramSample/probability"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//probability/Geometric">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//probability/Geometric/mean"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Expr" basePackage="klaper" disposableProviderFactory="true"
+        ecorePackage="klaper.ecore#//expr">
+      <genClasses ecoreClass="klaper.ecore#//expr/Expression"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Atom"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Number"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Variable"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Integer">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//expr/Integer/value"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//expr/Double">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute klaper.ecore#//expr/Double/value"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//expr/Unary">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//expr/Unary/operator"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//expr/Unary/element"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//expr/Binary">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//expr/Binary/operator"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//expr/Binary/left"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference klaper.ecore#//expr/Binary/right"/>
+      </genClasses>
+      <genClasses ecoreClass="klaper.ecore#//expr/Operator"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Plus"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Minus"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Mult"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Div"/>
+      <genClasses ecoreClass="klaper.ecore#//expr/Exp"/>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

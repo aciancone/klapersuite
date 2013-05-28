@@ -1,0 +1,73 @@
+PRISM
+=====
+
+Version: 4.0.1
+Date: Tue Jan 31 16:34:45 CET 2012
+Hostname: pc135-2.dei.polimi.it
+Command line: prism -maxiters 200000 -e 1e-12 /Users/anfi/Desktop/workspace/sosym11/models/Goseva/model/Goseva/output.pm /Users/anfi/Desktop/workspace/sosym11/models/Goseva/model/Goseva/properties.pctl
+
+Parsing model file "/Users/anfi/Desktop/workspace/sosym11/models/Goseva/model/Goseva/output.pm"...
+
+Parsing properties file "/Users/anfi/Desktop/workspace/sosym11/models/Goseva/model/Goseva/properties.pctl"...
+
+1 property:
+(1) P=? [ true U s_Workload=success ]
+
+-------------------------------------------
+
+Building model...
+
+Warning: Update 7 of command 8 of module "M1" doesn't do anything ("(s_M1'=fail)", line 195, column 130)
+
+Warning: Update 7 of command 11 of module "M1" doesn't do anything ("(s_M1'=fail)", line 281, column 130)
+
+Warning: Update 8 of command 12 of module "M1" doesn't do anything ("(s_M1'=fail)", line 313, column 148)
+
+Warning: Update 9 of command 13 of module "M1" doesn't do anything ("(s_M1'=fail)", line 347, column 168)
+
+Warning: Update 10 of command 14 of module "M1" doesn't do anything ("(s_M1'=fail)", line 383, column 189)
+
+Computing reachable states...
+
+Reachability: 10 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.025 seconds.
+
+Type:        DTMC
+Modules:     M1 Workload 
+Variables:   s_M1 s_Workload 
+
+States:      23 (1 initial)
+Transitions: 118
+
+Transition matrix: 975 nodes (103 terminal), 118 minterms, vars: 8r/8c
+
+-------------------------------------------
+
+Model checking: P=? [ true U s_Workload=success ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000100, setup 0.00)
+
+Prob1: 6 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 4, no = 2, maybe = 17
+
+Computing remaining probabilities...
+
+Building hybrid MTBDD matrix... [levels=8, nodes=947] [44.4 KB]
+Adding explicit sparse matrices... [levels=8, num=1, compact] [1.2 KB]
+Creating vector for diagonals... [dist=2, compact] [0.1 KB]
+Creating vector for RHS... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [46.1 KB]
+
+Starting iterations...
+
+Jacobi: 28548 iterations in 0.01 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.9997626011656312
+
+Time for model checking: 0.018 seconds.
+
+Result: 0.9997626011656312 (value in the initial state)
+

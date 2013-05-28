@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/klaper/1.0/core"
+            class="klaper.core.CorePackage"
+            genModel="model/klaper.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/klaper/1.0/probability"
+            class="klaper.probability.ProbabilityPackage"
+            genModel="model/klaper.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/klaper/1.0/expression"
+            class="klaper.expr.ExprPackage"
+            genModel="model/klaper.genmodel"/>
+   </extension>
+
+</plugin>

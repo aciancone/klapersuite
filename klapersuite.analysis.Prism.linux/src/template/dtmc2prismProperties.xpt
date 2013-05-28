@@ -1,0 +1,11 @@
+«IMPORT dtmc»
+
+«DEFINE main FOR Dtmc»
+	«FILE "properties.pctl"»
+		// Checks the global reliability value
+		P=? [ true U «EXPAND moduleStateVar FOR modules.select(e|e.isAutonomous == true).first()» = success ]
+	«ENDFILE»
+«ENDDEFINE»
+
+«REM»Node Utilities«ENDREM»
+«DEFINE moduleStateVar FOR Module»«IF name == null»si_«name»«ELSE»s_«name»«ENDIF»«ENDDEFINE»

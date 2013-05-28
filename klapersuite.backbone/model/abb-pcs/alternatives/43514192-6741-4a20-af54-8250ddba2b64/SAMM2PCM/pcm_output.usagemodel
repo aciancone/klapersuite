@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UsageModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sdq.ipd.uka.de/PalladioComponentModel/UsageModel/4.0">
+  <usageScenario_UsageModel id="_AggfdAdbEeC-IN0-0NqnlQ" entityName="AlarmBurst">
+    <scenarioBehaviour_UsageScenario id="_AggfdQdbEeC-IN0-0NqnlQ">
+      <actions_ScenarioBehaviour xsi:type="Start" id="_AggfdgdbEeC-IN0-0NqnlQ" successor="_AggfdwdbEeC-IN0-0NqnlQ"/>
+      <actions_ScenarioBehaviour xsi:type="Branch" id="_AggfdwdbEeC-IN0-0NqnlQ" successor="_AggffAdbEeC-IN0-0NqnlQ" predecessor="_AggfdgdbEeC-IN0-0NqnlQ">
+        <branchTransitions_Branch branchProbability="1.0">
+          <branchedBehaviour_BranchTransition id="_AggfewdbEeC-IN0-0NqnlQ">
+            <actions_ScenarioBehaviour xsi:type="Start" id="_AggfeAdbEeC-IN0-0NqnlQ" successor="_AggfegdbEeC-IN0-0NqnlQ"/>
+            <actions_ScenarioBehaviour xsi:type="EntryLevelSystemCall" id="_AggfegdbEeC-IN0-0NqnlQ" successor="_AggfeQdbEeC-IN0-0NqnlQ" predecessor="_AggfeAdbEeC-IN0-0NqnlQ">
+              <providedRole_EntryLevelSystemCall href="pcm_output.system#_Ab5FJAdbEeC-IN0-0NqnlQ"/>
+              <operationSignature__EntryLevelSystemCall href="pcm_output.repository#_ASf4oQdbEeC-IN0-0NqnlQ"/>
+            </actions_ScenarioBehaviour>
+            <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfeQdbEeC-IN0-0NqnlQ" predecessor="_AggfegdbEeC-IN0-0NqnlQ"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="Stop" id="_AggffAdbEeC-IN0-0NqnlQ" predecessor="_AggfdwdbEeC-IN0-0NqnlQ"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="ClosedWorkload" population="1">
+      <thinkTime_ClosedWorkload specification="10000.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_AggfawdbEeC-IN0-0NqnlQ" entityName="AlarmRetrieve">
+    <scenarioBehaviour_UsageScenario id="_AggfbAdbEeC-IN0-0NqnlQ">
+      <actions_ScenarioBehaviour xsi:type="Start" id="_AggfbQdbEeC-IN0-0NqnlQ" successor="_AggfbgdbEeC-IN0-0NqnlQ"/>
+      <actions_ScenarioBehaviour xsi:type="Branch" id="_AggfbgdbEeC-IN0-0NqnlQ" successor="_AggfcwdbEeC-IN0-0NqnlQ" predecessor="_AggfbQdbEeC-IN0-0NqnlQ">
+        <branchTransitions_Branch branchProbability="1.0">
+          <branchedBehaviour_BranchTransition id="_AggfcgdbEeC-IN0-0NqnlQ">
+            <actions_ScenarioBehaviour xsi:type="Start" id="_AggfbwdbEeC-IN0-0NqnlQ" successor="_AggfcQdbEeC-IN0-0NqnlQ"/>
+            <actions_ScenarioBehaviour xsi:type="EntryLevelSystemCall" id="_AggfcQdbEeC-IN0-0NqnlQ" successor="_AggfcAdbEeC-IN0-0NqnlQ" predecessor="_AggfbwdbEeC-IN0-0NqnlQ">
+              <providedRole_EntryLevelSystemCall href="pcm_output.system#_Ab5FJAdbEeC-IN0-0NqnlQ"/>
+              <operationSignature__EntryLevelSystemCall href="pcm_output.repository#_ASf4oQdbEeC-IN0-0NqnlQ"/>
+            </actions_ScenarioBehaviour>
+            <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfcAdbEeC-IN0-0NqnlQ" predecessor="_AggfcQdbEeC-IN0-0NqnlQ"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfcwdbEeC-IN0-0NqnlQ" predecessor="_AggfbgdbEeC-IN0-0NqnlQ"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="1.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_AggffQdbEeC-IN0-0NqnlQ" entityName="DataRetrieve">
+    <scenarioBehaviour_UsageScenario id="_AggffgdbEeC-IN0-0NqnlQ">
+      <actions_ScenarioBehaviour xsi:type="Start" id="_AggffwdbEeC-IN0-0NqnlQ" successor="_AggfgAdbEeC-IN0-0NqnlQ"/>
+      <actions_ScenarioBehaviour xsi:type="Branch" id="_AggfgAdbEeC-IN0-0NqnlQ" successor="_AggfhQdbEeC-IN0-0NqnlQ" predecessor="_AggffwdbEeC-IN0-0NqnlQ">
+        <branchTransitions_Branch branchProbability="1.0">
+          <branchedBehaviour_BranchTransition id="_AggfhAdbEeC-IN0-0NqnlQ">
+            <actions_ScenarioBehaviour xsi:type="Start" id="_AggfgQdbEeC-IN0-0NqnlQ" successor="_AggfgwdbEeC-IN0-0NqnlQ"/>
+            <actions_ScenarioBehaviour xsi:type="EntryLevelSystemCall" id="_AggfgwdbEeC-IN0-0NqnlQ" successor="_AggfggdbEeC-IN0-0NqnlQ" predecessor="_AggfgQdbEeC-IN0-0NqnlQ">
+              <providedRole_EntryLevelSystemCall href="pcm_output.system#_Ab5FJQdbEeC-IN0-0NqnlQ"/>
+              <operationSignature__EntryLevelSystemCall href="pcm_output.repository#_ASf4lwdbEeC-IN0-0NqnlQ"/>
+            </actions_ScenarioBehaviour>
+            <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfggdbEeC-IN0-0NqnlQ" predecessor="_AggfgwdbEeC-IN0-0NqnlQ"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfhQdbEeC-IN0-0NqnlQ" predecessor="_AggfgAdbEeC-IN0-0NqnlQ"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="0.0067"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_AgXVcAdbEeC-IN0-0NqnlQ" entityName="HistoryRetrieve">
+    <scenarioBehaviour_UsageScenario id="_AgXVcQdbEeC-IN0-0NqnlQ">
+      <actions_ScenarioBehaviour xsi:type="Start" id="_AgXVcgdbEeC-IN0-0NqnlQ" successor="_AgXVcwdbEeC-IN0-0NqnlQ"/>
+      <actions_ScenarioBehaviour xsi:type="Branch" id="_AgXVcwdbEeC-IN0-0NqnlQ" successor="_AggfYQdbEeC-IN0-0NqnlQ" predecessor="_AgXVcgdbEeC-IN0-0NqnlQ">
+        <branchTransitions_Branch branchProbability="1.0">
+          <branchedBehaviour_BranchTransition id="_AggfYAdbEeC-IN0-0NqnlQ">
+            <actions_ScenarioBehaviour xsi:type="Start" id="_AgXVdAdbEeC-IN0-0NqnlQ" successor="_AgXVdgdbEeC-IN0-0NqnlQ"/>
+            <actions_ScenarioBehaviour xsi:type="EntryLevelSystemCall" id="_AgXVdgdbEeC-IN0-0NqnlQ" successor="_AgXVdQdbEeC-IN0-0NqnlQ" predecessor="_AgXVdAdbEeC-IN0-0NqnlQ">
+              <providedRole_EntryLevelSystemCall href="pcm_output.system#_Ab5FIwdbEeC-IN0-0NqnlQ"/>
+              <operationSignature__EntryLevelSystemCall href="pcm_output.repository#_ASpplwdbEeC-IN0-0NqnlQ"/>
+            </actions_ScenarioBehaviour>
+            <actions_ScenarioBehaviour xsi:type="Stop" id="_AgXVdQdbEeC-IN0-0NqnlQ" predecessor="_AgXVdgdbEeC-IN0-0NqnlQ"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfYQdbEeC-IN0-0NqnlQ" predecessor="_AgXVcwdbEeC-IN0-0NqnlQ"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="0.06667"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+  <usageScenario_UsageModel id="_AggfYgdbEeC-IN0-0NqnlQ" entityName="Wrapper">
+    <scenarioBehaviour_UsageScenario id="_AggfYwdbEeC-IN0-0NqnlQ">
+      <actions_ScenarioBehaviour xsi:type="Start" id="_AggfZAdbEeC-IN0-0NqnlQ" successor="_AggfZQdbEeC-IN0-0NqnlQ"/>
+      <actions_ScenarioBehaviour xsi:type="Branch" id="_AggfZQdbEeC-IN0-0NqnlQ" successor="_AggfagdbEeC-IN0-0NqnlQ" predecessor="_AggfZAdbEeC-IN0-0NqnlQ">
+        <branchTransitions_Branch branchProbability="1.0">
+          <branchedBehaviour_BranchTransition id="_AggfaQdbEeC-IN0-0NqnlQ">
+            <actions_ScenarioBehaviour xsi:type="Start" id="_AggfZgdbEeC-IN0-0NqnlQ" successor="_AggfaAdbEeC-IN0-0NqnlQ"/>
+            <actions_ScenarioBehaviour xsi:type="EntryLevelSystemCall" id="_AggfaAdbEeC-IN0-0NqnlQ" successor="_AggfZwdbEeC-IN0-0NqnlQ" predecessor="_AggfZgdbEeC-IN0-0NqnlQ">
+              <providedRole_EntryLevelSystemCall href="pcm_output.system#_Ab5FJwdbEeC-IN0-0NqnlQ"/>
+              <operationSignature__EntryLevelSystemCall href="pcm_output.repository#_ASppnAdbEeC-IN0-0NqnlQ"/>
+            </actions_ScenarioBehaviour>
+            <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfZwdbEeC-IN0-0NqnlQ" predecessor="_AggfaAdbEeC-IN0-0NqnlQ"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="Stop" id="_AggfagdbEeC-IN0-0NqnlQ" predecessor="_AggfZQdbEeC-IN0-0NqnlQ"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="1.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</UsageModel>

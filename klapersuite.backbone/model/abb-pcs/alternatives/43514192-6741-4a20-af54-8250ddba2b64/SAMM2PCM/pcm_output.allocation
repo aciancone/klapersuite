@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://sdq.ipd.uka.de/PalladioComponentModel/Allocation/4.0" id="_AgNkcAdbEeC-IN0-0NqnlQ" entityName="Service">
+  <targetResourceEnvironment_Allocation href="pcm_output.resourceenvironment#/"/>
+  <system_Allocation href="pcm_output.system#_Ab5FIgdbEeC-IN0-0NqnlQ"/>
+  <allocationContexts_Allocation id="_AgNkeQdbEeC-IN0-0NqnlQ" entityName="l489208261">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASM9oAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0tgdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkdQdbEeC-IN0-0NqnlQ" entityName="m34987999">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWuoAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0uQdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkegdbEeC-IN0-0NqnlQ" entityName="y1746058212">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWupAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0sQdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkewdbEeC-IN0-0NqnlQ" entityName="m1831664956">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASM9oAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0twdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkdwdbEeC-IN0-0NqnlQ" entityName="z424502607">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASM9oAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0ugdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkcQdbEeC-IN0-0NqnlQ" entityName="l59944105">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASM9oAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0sgdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkdgdbEeC-IN0-0NqnlQ" entityName="x1655466953">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWuogdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0tAdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkcgdbEeC-IN0-0NqnlQ" entityName="n1717327745">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWupAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0sAdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkcwdbEeC-IN0-0NqnlQ" entityName="e920165503">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASM9oAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0uAdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkdAdbEeC-IN0-0NqnlQ" entityName="n332689521">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWuoAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0tQdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_AgNkeAdbEeC-IN0-0NqnlQ" entityName="n1393318649">
+    <resourceContainer_AllocationContext href="pcm_output.resourceenvironment#_ASWupAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContext_AllocationContext href="pcm_output.system#_Aea0swdbEeC-IN0-0NqnlQ"/>
+  </allocationContexts_Allocation>
+</Allocation>

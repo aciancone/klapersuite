@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seff:SeffRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:seff="http://q-impress.eu/seff">
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_tbRTUJG7Ed-4y8fXV-XIVA" name="a1434429231" successor_AbstractAction="_fDsNsJJTEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_t1ysIJG7Ed-4y8fXV-XIVA" name="z1734801915" predecessor_AbstractAction="_fDsNsJJTEd-E6p6_qzRMnw" successor_AbstractAction="_vhYEMJG7Ed-4y8fXV-XIVA"/>
+    <steps xsi:type="seff:StopAction" id="_vhYEMJG7Ed-4y8fXV-XIVA" name="d1921864531" predecessor_AbstractAction="_t1ysIJG7Ed-4y8fXV-XIVA"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_fDsNsJJTEd-E6p6_qzRMnw" name="r1277413897" predecessor_AbstractAction="_tbRTUJG7Ed-4y8fXV-XIVA" successor_AbstractAction="_t1ysIJG7Ed-4y8fXV-XIVA">
+      <calledService href="system1.samm_repository#_a07uQJJTEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_dzqwQJJTEd-E6p6_qzRMnw"/>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_dI7tQJG7Ed-4y8fXV-XIVA"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_9m_EQJHMEd-4y8fXV-XIVA" name="n697755774" successor_AbstractAction="_JGgbkJHNEd-4y8fXV-XIVA"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_93OfsJHMEd-4y8fXV-XIVA" name="d634618424" predecessor_AbstractAction="_JGgbkJHNEd-4y8fXV-XIVA" successor_AbstractAction="_K7VPMJHNEd-4y8fXV-XIVA">
+      <calledService href="system1.samm_repository#_MvSlUJG7Ed-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_6lQ_sJHMEd-4y8fXV-XIVA"/>
+    </steps>
+    <steps xsi:type="seff:InternalAction" id="_JGgbkJHNEd-4y8fXV-XIVA" name="w1840196152" predecessor_AbstractAction="_9m_EQJHMEd-4y8fXV-XIVA" successor_AbstractAction="_93OfsJHMEd-4y8fXV-XIVA"/>
+    <steps xsi:type="seff:StopAction" id="_K7VPMJHNEd-4y8fXV-XIVA" name="q431892547" predecessor_AbstractAction="_93OfsJHMEd-4y8fXV-XIVA"/>
+    <seffBehaviourStub href="system1.samm_repository#_7ulYMJHMEd-4y8fXV-XIVA"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_FBSAQJJJEd-E6p6_qzRMnw" name="h97314377" successor_AbstractAction="_cgv0AJJMEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_FZkkcJJJEd-E6p6_qzRMnw" name="b1303308398" predecessor_AbstractAction="_cgv0AJJMEd-E6p6_qzRMnw" successor_AbstractAction="_EBJpIKVGEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:StopAction" id="_KKANkJJJEd-E6p6_qzRMnw" name="m2143360829" predecessor_AbstractAction="_EBJpIKVGEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_cgv0AJJMEd-E6p6_qzRMnw" documentation="" name="r931760727" predecessor_AbstractAction="_FBSAQJJJEd-E6p6_qzRMnw" successor_AbstractAction="_FZkkcJJJEd-E6p6_qzRMnw">
+      <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_6eG8cJJIEd-E6p6_qzRMnw"/>
+    </steps>
+    <steps xsi:type="seff:BranchAction" id="_EBJpIKVGEd-i1ezDjxCJpg" name="x1602725896" predecessor_AbstractAction="_FZkkcJJJEd-E6p6_qzRMnw" successor_AbstractAction="_KKANkJJJEd-E6p6_qzRMnw">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_GmjlIKVGEd-i1ezDjxCJpg" name="k1598036533">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_Jnrz0KVGEd-i1ezDjxCJpg" name="g2110025853" successor_AbstractAction="_J_OKEKVGEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_J_OKEKVGEd-i1ezDjxCJpg" name="f1021013962" predecessor_AbstractAction="_Jnrz0KVGEd-i1ezDjxCJpg" successor_AbstractAction="_LpeFYKVGEd-i1ezDjxCJpg">
+            <calledService href="system1.samm_repository#_r_QL0KVEEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_QDeA8KVFEd-i1ezDjxCJpg"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_LpeFYKVGEd-i1ezDjxCJpg" name="z1902879882" predecessor_AbstractAction="_J_OKEKVGEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_N6KVoKVGEd-i1ezDjxCJpg" name="r441210901">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_OijLUKVGEd-i1ezDjxCJpg" name="i846293044" successor_AbstractAction="_O86zIKVGEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:StopAction" id="_O86zIKVGEd-i1ezDjxCJpg" name="e1145401384" predecessor_AbstractAction="_OijLUKVGEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_zNA5IMDGEd-uuPjDOeDPqg" name="i373331884">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_2LvUEMDGEd-uuPjDOeDPqg" name="w30831446" successor_AbstractAction="_5K_9sMDKEd-uuPjDOeDPqg"/>
+          <steps xsi:type="seff:StopAction" id="__g00IMDGEd-uuPjDOeDPqg" name="i587373023" predecessor_AbstractAction="_5K_9sMDKEd-uuPjDOeDPqg"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_5K_9sMDKEd-uuPjDOeDPqg" name="v1663386064" predecessor_AbstractAction="_2LvUEMDGEd-uuPjDOeDPqg" successor_AbstractAction="__g00IMDGEd-uuPjDOeDPqg">
+            <calledService href="system1.samm_repository#__w_mEKVGEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_oD6g8MDKEd-uuPjDOeDPqg"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_DoK4QJJJEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_U_8cYJJJEd-E6p6_qzRMnw" name="x2086312790" successor_AbstractAction="_WTr8MJJJEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_WTr8MJJJEd-E6p6_qzRMnw" name="f951918565" predecessor_AbstractAction="_U_8cYJJJEd-E6p6_qzRMnw" successor_AbstractAction="_XucC8JJJEd-E6p6_qzRMnw">
+      <calledService href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_AtKfsJJJEd-E6p6_qzRMnw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_XucC8JJJEd-E6p6_qzRMnw" name="i983771700" predecessor_AbstractAction="_WTr8MJJJEd-E6p6_qzRMnw"/>
+    <seffBehaviourStub href="system1.samm_repository#_T8vS8JJJEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_iY7EIJJTEd-E6p6_qzRMnw" name="r833521908" successor_AbstractAction="_inrR0JJTEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_inrR0JJTEd-E6p6_qzRMnw" name="l845489249" predecessor_AbstractAction="_iY7EIJJTEd-E6p6_qzRMnw" successor_AbstractAction="_i3eBUJJTEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:StopAction" id="_i3eBUJJTEd-E6p6_qzRMnw" name="z753538014" predecessor_AbstractAction="_inrR0JJTEd-E6p6_qzRMnw"/>
+    <seffBehaviourStub href="system1.samm_repository#_hrCDYJJTEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_ydIJwJJiEd-E6p6_qzRMnw" name="j571299701" successor_AbstractAction="_ysVDYJJiEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_ysVDYJJiEd-E6p6_qzRMnw" name="t595024824" predecessor_AbstractAction="_ydIJwJJiEd-E6p6_qzRMnw" successor_AbstractAction="_dRTPwJJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:StopAction" id="_3cm7gJJiEd-E6p6_qzRMnw" name="w885045492" predecessor_AbstractAction="_vnMVIKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_dRTPwJJjEd-E6p6_qzRMnw" name="v306452860" predecessor_AbstractAction="_ysVDYJJiEd-E6p6_qzRMnw" successor_AbstractAction="_79rmIKBcEd-CsaCJ13sj1A">
+      <calledService href="system1.samm_repository#_5yz94JJiEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_jd_YUJJfEd-E6p6_qzRMnw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_79rmIKBcEd-CsaCJ13sj1A" name="e786950783" predecessor_AbstractAction="_dRTPwJJjEd-E6p6_qzRMnw" successor_AbstractAction="_vnMVIKBdEd-CsaCJ13sj1A">
+      <calledService href="system1.samm_repository#_5yz94JJiEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_z39a8JJgEd-E6p6_qzRMnw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_vnMVIKBdEd-CsaCJ13sj1A" name="a2137344310" predecessor_AbstractAction="_79rmIKBcEd-CsaCJ13sj1A" successor_AbstractAction="_3cm7gJJiEd-E6p6_qzRMnw">
+      <calledService href="system1.samm_repository#_HspusKBdEd-CsaCJ13sj1A"/>
+      <calledInterfacePort href="system1.samm_repository#_meEeIJJfEd-E6p6_qzRMnw"/>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_xFzxgJJiEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_B0c5EJJjEd-E6p6_qzRMnw" name="z224557000" successor_AbstractAction="_CCAz8JJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_CCAz8JJjEd-E6p6_qzRMnw" name="d501016798" predecessor_AbstractAction="_B0c5EJJjEd-E6p6_qzRMnw" successor_AbstractAction="_FUHd4JJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:StopAction" id="_FUHd4JJjEd-E6p6_qzRMnw" name="r1642886699" predecessor_AbstractAction="_CCAz8JJjEd-E6p6_qzRMnw"/>
+    <seffBehaviourStub href="system1.samm_repository#_AvT18JJjEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_ORXswJJjEd-E6p6_qzRMnw" name="m691133729" successor_AbstractAction="_OmiEcJJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:InternalAction" id="_OmiEcJJjEd-E6p6_qzRMnw" name="n1499454618" predecessor_AbstractAction="_ORXswJJjEd-E6p6_qzRMnw" successor_AbstractAction="_Vhr4sJJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:StopAction" id="_Rgf7MJJjEd-E6p6_qzRMnw" name="k785957840" predecessor_AbstractAction="_Vhr4sJJjEd-E6p6_qzRMnw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_Vhr4sJJjEd-E6p6_qzRMnw" name="b1564994217" predecessor_AbstractAction="_OmiEcJJjEd-E6p6_qzRMnw" successor_AbstractAction="_Rgf7MJJjEd-E6p6_qzRMnw">
+      <calledService href="system1.samm_repository#_9yEowJJiEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_yiZLoJJfEd-E6p6_qzRMnw"/>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_I0iQoJJjEd-E6p6_qzRMnw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_JfaFwKBdEd-CsaCJ13sj1A" name="d109053712" successor_AbstractAction="_KbUUYKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:InternalAction" id="_KbUUYKBdEd-CsaCJ13sj1A" name="g1836967130" predecessor_AbstractAction="_JfaFwKBdEd-CsaCJ13sj1A" successor_AbstractAction="_ccYGEKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:StopAction" id="_PmKooKBdEd-CsaCJ13sj1A" name="e453118915" predecessor_AbstractAction="_ccYGEKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_ccYGEKBdEd-CsaCJ13sj1A" name="b133489477" predecessor_AbstractAction="_KbUUYKBdEd-CsaCJ13sj1A" successor_AbstractAction="_PmKooKBdEd-CsaCJ13sj1A">
+      <calledService href="system1.samm_repository#_TAgBgKBdEd-CsaCJ13sj1A"/>
+      <calledInterfacePort href="system1.samm_repository#_nzv3oJJfEd-E6p6_qzRMnw"/>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_IwKaIKBdEd-CsaCJ13sj1A"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_Wy1DoKBdEd-CsaCJ13sj1A" name="x1098244499" successor_AbstractAction="_XEai4KBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:InternalAction" id="_XEai4KBdEd-CsaCJ13sj1A" name="l537402437" predecessor_AbstractAction="_Wy1DoKBdEd-CsaCJ13sj1A" successor_AbstractAction="_XSIOwKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:StopAction" id="_XSIOwKBdEd-CsaCJ13sj1A" name="x1243692616" predecessor_AbstractAction="_XEai4KBdEd-CsaCJ13sj1A"/>
+    <seffBehaviourStub href="system1.samm_repository#_UUZ5YKBdEd-CsaCJ13sj1A"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_iFeckKBdEd-CsaCJ13sj1A" name="k400356679" successor_AbstractAction="_i4JPoKBdEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:InternalAction" id="_i4JPoKBdEd-CsaCJ13sj1A" name="r1284756538" predecessor_AbstractAction="_iFeckKBdEd-CsaCJ13sj1A" successor_AbstractAction="__Z_DIKYpEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_jFQekKBdEd-CsaCJ13sj1A" name="w1377841649" predecessor_AbstractAction="__Z_DIKYpEd-F2fxisVCBKw" successor_AbstractAction="_bFGI0MDEEd-uuPjDOeDPqg">
+      <calledService href="system1.samm_repository#_9yEowJJiEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_gj-W4JJiEd-E6p6_qzRMnw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_k-kwoKBdEd-CsaCJ13sj1A" name="x1271735470" predecessor_AbstractAction="_bFGI0MDEEd-uuPjDOeDPqg"/>
+    <steps xsi:type="seff:ExternalCallAction" id="__Z_DIKYpEd-F2fxisVCBKw" name="w1478197563" predecessor_AbstractAction="_i4JPoKBdEd-CsaCJ13sj1A" successor_AbstractAction="_jFQekKBdEd-CsaCJ13sj1A">
+      <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_wc-4UKYpEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:BranchAction" id="_bFGI0MDEEd-uuPjDOeDPqg" name="m1502745039" predecessor_AbstractAction="_jFQekKBdEd-CsaCJ13sj1A" successor_AbstractAction="_k-kwoKBdEd-CsaCJ13sj1A">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_dg9uUMDEEd-uuPjDOeDPqg" name="z660362277">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_hvkcwMDEEd-uuPjDOeDPqg" name="f1621900868" successor_AbstractAction="_vIU9EKYqEd-F2fxisVCBKw"/>
+          <steps xsi:type="seff:StopAction" id="_ib-PwMDEEd-uuPjDOeDPqg" name="o1272437955" predecessor_AbstractAction="_vIU9EKYqEd-F2fxisVCBKw"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_vIU9EKYqEd-F2fxisVCBKw" name="f1941498494" predecessor_AbstractAction="_hvkcwMDEEd-uuPjDOeDPqg" successor_AbstractAction="_ib-PwMDEEd-uuPjDOeDPqg">
+            <calledService href="system1.samm_repository#__w_mEKVGEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_jwDdQKYqEd-F2fxisVCBKw"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_eNEmYMDEEd-uuPjDOeDPqg" name="j318208715">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_iElDcMDEEd-uuPjDOeDPqg" name="n106300103" successor_AbstractAction="_ixlTYMDEEd-uuPjDOeDPqg"/>
+          <steps xsi:type="seff:StopAction" id="_ixlTYMDEEd-uuPjDOeDPqg" name="h1404698253" predecessor_AbstractAction="_iElDcMDEEd-uuPjDOeDPqg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_hLW9sKBdEd-CsaCJ13sj1A"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_jgHOwKCCEd-CsaCJ13sj1A" name="o2000025750" successor_AbstractAction="_jvThUKCCEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:InternalAction" id="_jvThUKCCEd-CsaCJ13sj1A" name="f1704716987" predecessor_AbstractAction="_jgHOwKCCEd-CsaCJ13sj1A" successor_AbstractAction="_oBz4UKCCEd-CsaCJ13sj1A"/>
+    <steps xsi:type="seff:StopAction" id="_oBz4UKCCEd-CsaCJ13sj1A" name="f1333134772" predecessor_AbstractAction="_jvThUKCCEd-CsaCJ13sj1A"/>
+    <seffBehaviourStub href="system1.samm_repository#_iChPYKCCEd-CsaCJ13sj1A"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_oY9lIKVFEd-i1ezDjxCJpg" name="n815055042" successor_AbstractAction="_oqsOUKVFEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:InternalAction" id="_oqsOUKVFEd-i1ezDjxCJpg" name="u39469612" predecessor_AbstractAction="_oY9lIKVFEd-i1ezDjxCJpg" successor_AbstractAction="_M2TPcKVHEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:StopAction" id="_rKlYMKVFEd-i1ezDjxCJpg" name="t1994556900" predecessor_AbstractAction="_M2TPcKVHEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:BranchAction" id="_M2TPcKVHEd-i1ezDjxCJpg" name="o634835622" predecessor_AbstractAction="_oqsOUKVFEd-i1ezDjxCJpg" successor_AbstractAction="_rKlYMKVFEd-i1ezDjxCJpg">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_PMNW4KVHEd-i1ezDjxCJpg" name="s1926094148">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_Rs1gkKVHEd-i1ezDjxCJpg" name="v1031869013" successor_AbstractAction="_R5D-sKVHEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_R5D-sKVHEd-i1ezDjxCJpg" name="h350624282" predecessor_AbstractAction="_Rs1gkKVHEd-i1ezDjxCJpg" successor_AbstractAction="_S5b2kKVHEd-i1ezDjxCJpg">
+            <calledService href="system1.samm_repository#__w_mEKVGEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_MC41gKVHEd-i1ezDjxCJpg"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_S5b2kKVHEd-i1ezDjxCJpg" name="k1310848187" predecessor_AbstractAction="_R5D-sKVHEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_UMuqcKVHEd-i1ezDjxCJpg" name="b565864549">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_XMXEUKVHEd-i1ezDjxCJpg" name="c515100897" successor_AbstractAction="_XlZPYKVHEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:StopAction" id="_XlZPYKVHEd-i1ezDjxCJpg" name="w169644679" predecessor_AbstractAction="_XMXEUKVHEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <seffBehaviourStub href="system1.samm_repository#_wQia0KVEEd-i1ezDjxCJpg"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_E11Y8KVHEd-i1ezDjxCJpg" name="r1400284067" successor_AbstractAction="_FNiHQKVHEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:InternalAction" id="_FNiHQKVHEd-i1ezDjxCJpg" name="e865636155" predecessor_AbstractAction="_E11Y8KVHEd-i1ezDjxCJpg" successor_AbstractAction="_Fiit8KVHEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:StopAction" id="_Fiit8KVHEd-i1ezDjxCJpg" name="b1390636011" predecessor_AbstractAction="_FNiHQKVHEd-i1ezDjxCJpg"/>
+    <seffBehaviourStub href="system1.samm_repository#_Dz-TUKVHEd-i1ezDjxCJpg"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_9BYvwKVHEd-i1ezDjxCJpg" name="e1565335512" successor_AbstractAction="_9cD5kKVHEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:InternalAction" id="_9cD5kKVHEd-i1ezDjxCJpg" name="a1196583407" predecessor_AbstractAction="_9BYvwKVHEd-i1ezDjxCJpg" successor_AbstractAction="_BZ-goKVIEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:BranchAction" id="_BZ-goKVIEd-i1ezDjxCJpg" name="b1827879590" predecessor_AbstractAction="_9cD5kKVHEd-i1ezDjxCJpg" successor_AbstractAction="_HGxEUKVIEd-i1ezDjxCJpg">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_B4YT4KVIEd-i1ezDjxCJpg" name="i1169651429">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_EsrngKVIEd-i1ezDjxCJpg" name="w212892374" successor_AbstractAction="_E9Ez8KVIEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_E9Ez8KVIEd-i1ezDjxCJpg" name="k1593431053" predecessor_AbstractAction="_EsrngKVIEd-i1ezDjxCJpg" successor_AbstractAction="_Fq0qwKVIEd-i1ezDjxCJpg">
+            <calledService href="system1.samm_repository#_r_QL0KVEEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_6Fx6QKVHEd-i1ezDjxCJpg"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_Fq0qwKVIEd-i1ezDjxCJpg" name="l33670211" predecessor_AbstractAction="_E9Ez8KVIEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_IwaisKVIEd-i1ezDjxCJpg" name="b1321335496">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_LGebIKVIEd-i1ezDjxCJpg" name="k1611005343" successor_AbstractAction="_LfW1MKVIEd-i1ezDjxCJpg"/>
+          <steps xsi:type="seff:StopAction" id="_LfW1MKVIEd-i1ezDjxCJpg" name="c155827080" predecessor_AbstractAction="_LGebIKVIEd-i1ezDjxCJpg"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_HGxEUKVIEd-i1ezDjxCJpg" name="a1262711625" predecessor_AbstractAction="_BZ-goKVIEd-i1ezDjxCJpg"/>
+    <seffBehaviourStub href="system1.samm_repository#_7i6moKVHEd-i1ezDjxCJpg"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_SpXIUKVJEd-i1ezDjxCJpg" name="r1674247167" successor_AbstractAction="_SzCowKVJEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:InternalAction" id="_SzCowKVJEd-i1ezDjxCJpg" name="p588664533" predecessor_AbstractAction="_SpXIUKVJEd-i1ezDjxCJpg" successor_AbstractAction="_TTOksKVJEd-i1ezDjxCJpg"/>
+    <steps xsi:type="seff:StopAction" id="_TTOksKVJEd-i1ezDjxCJpg" name="w1117577164" predecessor_AbstractAction="_SzCowKVJEd-i1ezDjxCJpg"/>
+    <seffBehaviourStub href="system1.samm_repository#_Rw4oMKVJEd-i1ezDjxCJpg"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_fUNFcKVYEd-aQeVwzPgL-A" name="d1511147235" successor_AbstractAction="_fqs54KVYEd-aQeVwzPgL-A"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_fqs54KVYEd-aQeVwzPgL-A" name="u547571158" predecessor_AbstractAction="_fUNFcKVYEd-aQeVwzPgL-A" successor_AbstractAction="_iPEUEKVYEd-aQeVwzPgL-A">
+      <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_ZH-MsKVYEd-aQeVwzPgL-A"/>
+    </steps>
+    <steps xsi:type="seff:InternalAction" id="_iPEUEKVYEd-aQeVwzPgL-A" name="c2084230943" predecessor_AbstractAction="_fqs54KVYEd-aQeVwzPgL-A" successor_AbstractAction="_nnvB4KVYEd-aQeVwzPgL-A"/>
+    <steps xsi:type="seff:BranchAction" id="_nnvB4KVYEd-aQeVwzPgL-A" name="v832613315" predecessor_AbstractAction="_iPEUEKVYEd-aQeVwzPgL-A" successor_AbstractAction="_xTyQcKVYEd-aQeVwzPgL-A">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_qsuc4KVYEd-aQeVwzPgL-A" name="t821526296">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_uIhOUKVYEd-aQeVwzPgL-A" name="v985488344" successor_AbstractAction="_uZ-KsKVYEd-aQeVwzPgL-A"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_uZ-KsKVYEd-aQeVwzPgL-A" name="v1018084237" predecessor_AbstractAction="_uIhOUKVYEd-aQeVwzPgL-A" successor_AbstractAction="_u7XnkKVYEd-aQeVwzPgL-A">
+            <calledService href="system1.samm_repository#_r_QL0KVEEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_aAwO0KVYEd-aQeVwzPgL-A"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_u7XnkKVYEd-aQeVwzPgL-A" name="a1745491928" predecessor_AbstractAction="_uZ-KsKVYEd-aQeVwzPgL-A"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_vUuiwKVYEd-aQeVwzPgL-A" name="z1454831842">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_wt58MKVYEd-aQeVwzPgL-A" name="p787396779" successor_AbstractAction="_xH2tQKVYEd-aQeVwzPgL-A"/>
+          <steps xsi:type="seff:StopAction" id="_xH2tQKVYEd-aQeVwzPgL-A" name="j422432535" predecessor_AbstractAction="_wt58MKVYEd-aQeVwzPgL-A"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_xTyQcKVYEd-aQeVwzPgL-A" name="z302257829" predecessor_AbstractAction="_nnvB4KVYEd-aQeVwzPgL-A"/>
+    <seffBehaviourStub href="system1.samm_repository#_bw9BIKVYEd-aQeVwzPgL-A"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_CeRJ8KYeEd-F2fxisVCBKw" name="k694505534" successor_AbstractAction="_DMoioLUCEd-MKLhF4A9QCQ"/>
+    <steps xsi:type="seff:StopAction" id="_Cw5LAKYeEd-F2fxisVCBKw" name="t1653121704" predecessor_AbstractAction="_4TYJoKYlEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_LJxhgKYeEd-F2fxisVCBKw" name="j1677145551" predecessor_AbstractAction="_DMoioLUCEd-MKLhF4A9QCQ" successor_AbstractAction="_-LnzkKYeEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_QIa1kKVJEd-i1ezDjxCJpg"/>
+      <calledInterfacePort href="system1.samm_repository#_JeymYKYeEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_-LnzkKYeEd-F2fxisVCBKw" name="t2071621284" predecessor_AbstractAction="_LJxhgKYeEd-F2fxisVCBKw" successor_AbstractAction="_1NK1YKYfEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_1u0hEKVHEd-i1ezDjxCJpg"/>
+      <calledInterfacePort href="system1.samm_repository#_9hTrQKYeEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_1NK1YKYfEd-F2fxisVCBKw" name="e342303534" predecessor_AbstractAction="_-LnzkKYeEd-F2fxisVCBKw" successor_AbstractAction="_yjF_UKYgEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_p95gkKYfEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_zDoWAKYfEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_yjF_UKYgEd-F2fxisVCBKw" name="v1418483606" predecessor_AbstractAction="_1NK1YKYfEd-F2fxisVCBKw" successor_AbstractAction="_N2NyQKYhEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_d3hIIKYgEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_mfPy8KYgEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_N2NyQKYhEd-F2fxisVCBKw" name="r1001046721" predecessor_AbstractAction="_yjF_UKYgEd-F2fxisVCBKw" successor_AbstractAction="_wo1f0KYlEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_oqCPgKYgEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_wxOZEKYgEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_wo1f0KYlEd-F2fxisVCBKw" name="h222699410" predecessor_AbstractAction="_N2NyQKYhEd-F2fxisVCBKw" successor_AbstractAction="_zDEGkKYlEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_sRYewKYiEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_0ImSoKYiEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_zDEGkKYlEd-F2fxisVCBKw" name="v858683750" predecessor_AbstractAction="_wo1f0KYlEd-F2fxisVCBKw" successor_AbstractAction="_0rrDIKYlEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_jb7EgKYjEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_rVg28KYjEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_0rrDIKYlEd-F2fxisVCBKw" name="k317678731" predecessor_AbstractAction="_zDEGkKYlEd-F2fxisVCBKw" successor_AbstractAction="_2MO28KYlEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_wIxxoKYjEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_5UCAQKYjEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_2MO28KYlEd-F2fxisVCBKw" name="o191544501" predecessor_AbstractAction="_0rrDIKYlEd-F2fxisVCBKw" successor_AbstractAction="_4TYJoKYlEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_8IfE4KYjEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_GVTeMKYkEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:ExternalCallAction" id="_4TYJoKYlEd-F2fxisVCBKw" name="z884080281" predecessor_AbstractAction="_2MO28KYlEd-F2fxisVCBKw" successor_AbstractAction="_Cw5LAKYeEd-F2fxisVCBKw">
+      <calledService href="system1.samm_repository#_LlLcYKYkEd-F2fxisVCBKw"/>
+      <calledInterfacePort href="system1.samm_repository#_V2UVAKYkEd-F2fxisVCBKw"/>
+    </steps>
+    <steps xsi:type="seff:InternalAction" id="_DMoioLUCEd-MKLhF4A9QCQ" name="m1395073469" predecessor_AbstractAction="_CeRJ8KYeEd-F2fxisVCBKw" successor_AbstractAction="_LJxhgKYeEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_BpEnUKYeEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_vVXUgKYfEd-F2fxisVCBKw" name="b2125875952" successor_AbstractAction="_viB3gKYfEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_viB3gKYfEd-F2fxisVCBKw" name="e1791887471" predecessor_AbstractAction="_vVXUgKYfEd-F2fxisVCBKw" successor_AbstractAction="_wj49IKYfEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_wj49IKYfEd-F2fxisVCBKw" name="d889343990" predecessor_AbstractAction="_viB3gKYfEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_uTDi8KYfEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_iWMS4KYgEd-F2fxisVCBKw" name="u841319138" successor_AbstractAction="_ihXoIKYgEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_ihXoIKYgEd-F2fxisVCBKw" name="d340647052" predecessor_AbstractAction="_iWMS4KYgEd-F2fxisVCBKw" successor_AbstractAction="_kzeNoKYgEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_kzeNoKYgEd-F2fxisVCBKw" name="r1855539030" predecessor_AbstractAction="_ihXoIKYgEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_hhanAKYgEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_tLir0KYgEd-F2fxisVCBKw" name="w152676033" successor_AbstractAction="_tj13EKYgEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_tj13EKYgEd-F2fxisVCBKw" name="a497591438" predecessor_AbstractAction="_tLir0KYgEd-F2fxisVCBKw" successor_AbstractAction="_vJzIQKYgEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_vJzIQKYgEd-F2fxisVCBKw" name="x176316172" predecessor_AbstractAction="_tj13EKYgEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_seq-wKYgEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_w8wBsKYiEd-F2fxisVCBKw" name="j1885830044" successor_AbstractAction="_xH7W8KYiEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_xH7W8KYiEd-F2fxisVCBKw" name="t605947051" predecessor_AbstractAction="_w8wBsKYiEd-F2fxisVCBKw" successor_AbstractAction="_ybX70KYiEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_ybX70KYiEd-F2fxisVCBKw" name="l928165332" predecessor_AbstractAction="_xH7W8KYiEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_v51zMKYiEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_nAglkKYjEd-F2fxisVCBKw" name="t1277914230" successor_AbstractAction="_nLYY0KYjEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_nLYY0KYjEd-F2fxisVCBKw" name="a1611626735" predecessor_AbstractAction="_nAglkKYjEd-F2fxisVCBKw" successor_AbstractAction="_nbU5UKYjEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_nbU5UKYjEd-F2fxisVCBKw" name="o1581362814" predecessor_AbstractAction="_nLYY0KYjEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_mNP8oKYjEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_1Az3kKYjEd-F2fxisVCBKw" name="o1097655524" successor_AbstractAction="_1Lig4KYjEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_1Lig4KYjEd-F2fxisVCBKw" name="v1280950254" predecessor_AbstractAction="_1Az3kKYjEd-F2fxisVCBKw" successor_AbstractAction="_3JATIKYjEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_3JATIKYjEd-F2fxisVCBKw" name="d1139191154" predecessor_AbstractAction="_1Lig4KYjEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_0EdkEKYjEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_BE1qIKYkEd-F2fxisVCBKw" name="x293586080" successor_AbstractAction="_BQT6UKYkEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_BQT6UKYkEd-F2fxisVCBKw" name="k25959289" predecessor_AbstractAction="_BE1qIKYkEd-F2fxisVCBKw" successor_AbstractAction="_Dpf_QKYkEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_Dpf_QKYkEd-F2fxisVCBKw" name="m342834683" predecessor_AbstractAction="_BQT6UKYkEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_AJh4cKYkEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_Q-SPEKYkEd-F2fxisVCBKw" name="c244310207" successor_AbstractAction="_RIt9cKYkEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:InternalAction" id="_RIt9cKYkEd-F2fxisVCBKw" name="i427644526" predecessor_AbstractAction="_Q-SPEKYkEd-F2fxisVCBKw" successor_AbstractAction="_RbDDkKYkEd-F2fxisVCBKw"/>
+    <steps xsi:type="seff:StopAction" id="_RbDDkKYkEd-F2fxisVCBKw" name="t1428009802" predecessor_AbstractAction="_RIt9cKYkEd-F2fxisVCBKw"/>
+    <seffBehaviourStub href="system1.samm_repository#_QSoC8KYkEd-F2fxisVCBKw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_jnvNgKbUEd-7PvokbmP_og" name="s1261135730" successor_AbstractAction="_kM_2sKbUEd-7PvokbmP_og"/>
+    <steps xsi:type="seff:InternalAction" id="_jxlGAKbUEd-7PvokbmP_og" name="s418331787" predecessor_AbstractAction="_kM_2sKbUEd-7PvokbmP_og" successor_AbstractAction="_oha5QKbUEd-7PvokbmP_og"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_kM_2sKbUEd-7PvokbmP_og" name="f1659753285" predecessor_AbstractAction="_jnvNgKbUEd-7PvokbmP_og" successor_AbstractAction="_jxlGAKbUEd-7PvokbmP_og">
+      <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_ezIPAKbUEd-7PvokbmP_og"/>
+    </steps>
+    <steps xsi:type="seff:BranchAction" id="_oha5QKbUEd-7PvokbmP_og" name="a311321885" predecessor_AbstractAction="_jxlGAKbUEd-7PvokbmP_og" successor_AbstractAction="_17AwkKbUEd-7PvokbmP_og">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_pXN40KbUEd-7PvokbmP_og" name="z761040762">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_tZKrUKbUEd-7PvokbmP_og" name="a1968834002" successor_AbstractAction="_tnUcEKbUEd-7PvokbmP_og"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_tnUcEKbUEd-7PvokbmP_og" name="g807745480" predecessor_AbstractAction="_tZKrUKbUEd-7PvokbmP_og" successor_AbstractAction="_uT4AEKbUEd-7PvokbmP_og">
+            <calledService href="system1.samm_repository#_r_QL0KVEEd-i1ezDjxCJpg"/>
+            <calledInterfacePort href="system1.samm_repository#_gHUawKbUEd-7PvokbmP_og"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_uT4AEKbUEd-7PvokbmP_og" name="s2078519742" predecessor_AbstractAction="_tnUcEKbUEd-7PvokbmP_og"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_vFpbQKbUEd-7PvokbmP_og" name="y849286484">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_00hpoKbUEd-7PvokbmP_og" name="k592756864" successor_AbstractAction="_1KR3MKbUEd-7PvokbmP_og"/>
+          <steps xsi:type="seff:StopAction" id="_1KR3MKbUEd-7PvokbmP_og" name="n536974644" predecessor_AbstractAction="_00hpoKbUEd-7PvokbmP_og"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_17AwkKbUEd-7PvokbmP_og" name="r422819976" predecessor_AbstractAction="_oha5QKbUEd-7PvokbmP_og"/>
+    <seffBehaviourStub href="system1.samm_repository#_iSM98KbUEd-7PvokbmP_og"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="__0ndgKbVEd-7PvokbmP_og" name="c1117813779" successor_AbstractAction="___yywKbVEd-7PvokbmP_og"/>
+    <steps xsi:type="seff:ExternalCallAction" id="___yywKbVEd-7PvokbmP_og" name="w1166350615" predecessor_AbstractAction="__0ndgKbVEd-7PvokbmP_og" successor_AbstractAction="_A4kN0KbWEd-7PvokbmP_og">
+      <calledService href="system1.samm_repository#_a07uQJJTEd-E6p6_qzRMnw"/>
+      <calledInterfacePort href="system1.samm_repository#_8EjFMKbVEd-7PvokbmP_og"/>
+    </steps>
+    <steps xsi:type="seff:InternalAction" id="_A4kN0KbWEd-7PvokbmP_og" name="q1551002016" predecessor_AbstractAction="___yywKbVEd-7PvokbmP_og" successor_AbstractAction="_CtP3gKbWEd-7PvokbmP_og"/>
+    <steps xsi:type="seff:StopAction" id="_CtP3gKbWEd-7PvokbmP_og" name="j1785773720" predecessor_AbstractAction="_A4kN0KbWEd-7PvokbmP_og"/>
+    <seffBehaviourStub href="system1.samm_repository#_8yvn8KbVEd-7PvokbmP_og"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_Zl7PgLy7Ed-J84sgW-8Kuw" name="n347586051" successor_AbstractAction="_ZzfKYLy7Ed-J84sgW-8Kuw"/>
+    <steps xsi:type="seff:InternalAction" id="_ZzfKYLy7Ed-J84sgW-8Kuw" name="y480305306" predecessor_AbstractAction="_Zl7PgLy7Ed-J84sgW-8Kuw" successor_AbstractAction="_aExusLy7Ed-J84sgW-8Kuw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_aExusLy7Ed-J84sgW-8Kuw" name="u1145517536" predecessor_AbstractAction="_ZzfKYLy7Ed-J84sgW-8Kuw" successor_AbstractAction="_anCuQLy7Ed-J84sgW-8Kuw">
+      <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      <calledInterfacePort href="system1.samm_repository#_T9M-YLy5Ed-J84sgW-8Kuw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_anCuQLy7Ed-J84sgW-8Kuw" name="q71393405" predecessor_AbstractAction="_aExusLy7Ed-J84sgW-8Kuw"/>
+    <seffBehaviourStub href="system1.samm_repository#_YYcvwLy7Ed-J84sgW-8Kuw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_vrMtML_fEd-PHYEGGZFL2w" name="j1122463774" successor_AbstractAction="_v2q9YL_fEd-PHYEGGZFL2w"/>
+    <steps xsi:type="seff:InternalAction" id="_v2q9YL_fEd-PHYEGGZFL2w" name="d1802137999" predecessor_AbstractAction="_vrMtML_fEd-PHYEGGZFL2w" successor_AbstractAction="_xYTIML_fEd-PHYEGGZFL2w"/>
+    <steps xsi:type="seff:BranchAction" id="_xYTIML_fEd-PHYEGGZFL2w" name="s751701672" predecessor_AbstractAction="_v2q9YL_fEd-PHYEGGZFL2w" successor_AbstractAction="_4dQ_wL_fEd-PHYEGGZFL2w">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_ymZ6EL_fEd-PHYEGGZFL2w" name="s474696485">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_2JHL0L_fEd-PHYEGGZFL2w" name="f1009799555" successor_AbstractAction="_wSZQEL_fEd-PHYEGGZFL2w"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_wSZQEL_fEd-PHYEGGZFL2w" name="w1396677719" predecessor_AbstractAction="_2JHL0L_fEd-PHYEGGZFL2w" successor_AbstractAction="_2zJAQL_fEd-PHYEGGZFL2w">
+            <calledService href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+            <calledInterfacePort href="system1.samm_repository#_upnUYL_fEd-PHYEGGZFL2w"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_2zJAQL_fEd-PHYEGGZFL2w" name="k1043158221" predecessor_AbstractAction="_wSZQEL_fEd-PHYEGGZFL2w"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_zB-bwL_fEd-PHYEGGZFL2w" name="n1662850862">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_0AIGEL_fEd-PHYEGGZFL2w" name="r565581423" successor_AbstractAction="_0TgVEL_fEd-PHYEGGZFL2w"/>
+          <steps xsi:type="seff:StopAction" id="_0TgVEL_fEd-PHYEGGZFL2w" name="w1049596802" predecessor_AbstractAction="_0AIGEL_fEd-PHYEGGZFL2w"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_4dQ_wL_fEd-PHYEGGZFL2w" name="e1042247320" predecessor_AbstractAction="_xYTIML_fEd-PHYEGGZFL2w"/>
+    <seffBehaviourStub href="system1.samm_repository#_rNnuoL_fEd-PHYEGGZFL2w"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_AU8bkNqYEd-qLr8SJ1mApA" name="y25268763" successor_AbstractAction="_A_3A0NqYEd-qLr8SJ1mApA"/>
+    <steps xsi:type="seff:BranchAction" id="_A_3A0NqYEd-qLr8SJ1mApA" name="b2116400278" predecessor_AbstractAction="_AU8bkNqYEd-qLr8SJ1mApA" successor_AbstractAction="_HUu4MNqYEd-qLr8SJ1mApA">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_DeQ88NqYEd-qLr8SJ1mApA" name="r656168356">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_Gc21ANqYEd-qLr8SJ1mApA" name="c1443915868" successor_AbstractAction="_WpjtINqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_HbluINqYEd-qLr8SJ1mApA" name="z640331049" predecessor_AbstractAction="_WpjtINqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_WpjtINqYEd-qLr8SJ1mApA" name="b96262379" predecessor_AbstractAction="_Gc21ANqYEd-qLr8SJ1mApA" successor_AbstractAction="_HbluINqYEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_6s7DINqXEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_EHsUcNqYEd-qLr8SJ1mApA" name="w674554834">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_GihYINqYEd-qLr8SJ1mApA" name="g397617413" successor_AbstractAction="_X9mu8NqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_HhjMMNqYEd-qLr8SJ1mApA" name="w2094865774" predecessor_AbstractAction="_X9mu8NqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_X9mu8NqYEd-qLr8SJ1mApA" name="j457920458" predecessor_AbstractAction="_GihYINqYEd-qLr8SJ1mApA" successor_AbstractAction="_HhjMMNqYEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_8W4DgNqXEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_Eeyl0NqYEd-qLr8SJ1mApA" name="r1671621783">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_Goe2MNqYEd-qLr8SJ1mApA" name="c153529701" successor_AbstractAction="_YuojQNqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_HngqQNqYEd-qLr8SJ1mApA" name="u1907861202" predecessor_AbstractAction="_YuojQNqYEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_YuojQNqYEd-qLr8SJ1mApA" name="u1271235098" predecessor_AbstractAction="_Goe2MNqYEd-qLr8SJ1mApA" successor_AbstractAction="_HngqQNqYEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_SJW4YNqYEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_HUu4MNqYEd-qLr8SJ1mApA" name="r1792807224" predecessor_AbstractAction="_A_3A0NqYEd-qLr8SJ1mApA"/>
+    <seffBehaviourStub href="system1.samm_repository#__IpnkNqXEd-qLr8SJ1mApA"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_KKtKUNqZEd-qLr8SJ1mApA" name="y97515828" successor_AbstractAction="_Kz0_0NqZEd-qLr8SJ1mApA"/>
+    <steps xsi:type="seff:BranchAction" id="_Kz0_0NqZEd-qLr8SJ1mApA" name="p1453927951" predecessor_AbstractAction="_KKtKUNqZEd-qLr8SJ1mApA" successor_AbstractAction="_QlsQwNqZEd-qLr8SJ1mApA">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_LV9cgNqZEd-qLr8SJ1mApA" name="f1146660328">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_QJ00INqZEd-qLr8SJ1mApA" name="f165461983" successor_AbstractAction="_RQKKENqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_QpkEINqZEd-qLr8SJ1mApA" name="i1138509739" predecessor_AbstractAction="_RQKKENqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_RQKKENqZEd-qLr8SJ1mApA" name="m1595145778" predecessor_AbstractAction="_QJ00INqZEd-qLr8SJ1mApA" successor_AbstractAction="_QpkEINqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_MvSlUJG7Ed-4y8fXV-XIVA"/>
+            <calledInterfacePort href="system1.samm_repository#_FEDZkNqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_LoIxoNqZEd-qLr8SJ1mApA" name="w920225119">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_QNsngNqZEd-qLr8SJ1mApA" name="i582834887" successor_AbstractAction="_SD3e8NqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_Qs_yoNqZEd-qLr8SJ1mApA" name="y544089102" predecessor_AbstractAction="_SD3e8NqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_SD3e8NqZEd-qLr8SJ1mApA" name="f1511906026" predecessor_AbstractAction="_QNsngNqZEd-qLr8SJ1mApA" successor_AbstractAction="_Qs_yoNqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_MvSlUJG7Ed-4y8fXV-XIVA"/>
+            <calledInterfacePort href="system1.samm_repository#_GF7GQNqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_L4rIANqZEd-qLr8SJ1mApA" name="a2132639501">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_QTEPsNqZEd-qLr8SJ1mApA" name="g1397110801" successor_AbstractAction="_StmYcNqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_Qw3mANqZEd-qLr8SJ1mApA" name="c999235563" predecessor_AbstractAction="_StmYcNqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_StmYcNqZEd-qLr8SJ1mApA" name="t1207362898" predecessor_AbstractAction="_QTEPsNqZEd-qLr8SJ1mApA" successor_AbstractAction="_Qw3mANqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_MvSlUJG7Ed-4y8fXV-XIVA"/>
+            <calledInterfacePort href="system1.samm_repository#_G2WdoNqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_QlsQwNqZEd-qLr8SJ1mApA" name="m88082492" predecessor_AbstractAction="_Kz0_0NqZEd-qLr8SJ1mApA"/>
+    <seffBehaviourStub href="system1.samm_repository#_JL0gMNqZEd-qLr8SJ1mApA"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_3eSSANqZEd-qLr8SJ1mApA" name="b589716507" successor_AbstractAction="_4Llc4NqZEd-qLr8SJ1mApA"/>
+    <steps xsi:type="seff:BranchAction" id="_4Llc4NqZEd-qLr8SJ1mApA" name="a1896122807" predecessor_AbstractAction="_3eSSANqZEd-qLr8SJ1mApA" successor_AbstractAction="__GwfQNqZEd-qLr8SJ1mApA">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_4uv0UNqZEd-qLr8SJ1mApA" name="p248942872">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_-UPdMNqZEd-qLr8SJ1mApA" name="o1195170673" successor_AbstractAction="__0XMINqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_-3tWoNqZEd-qLr8SJ1mApA" name="k1590757733" predecessor_AbstractAction="__0XMINqZEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="__0XMINqZEd-qLr8SJ1mApA" name="s1249590647" predecessor_AbstractAction="_-UPdMNqZEd-qLr8SJ1mApA" successor_AbstractAction="_-3tWoNqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_zX3PMNqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_5ENG8NqZEd-qLr8SJ1mApA" name="s2095134311">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_-Yj8gNqZEd-qLr8SJ1mApA" name="m1373363433" successor_AbstractAction="_AdCVsNqaEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="_-7u7ANqZEd-qLr8SJ1mApA" name="p1660434757" predecessor_AbstractAction="_AdCVsNqaEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_AdCVsNqaEd-qLr8SJ1mApA" name="i1333519477" predecessor_AbstractAction="_-Yj8gNqZEd-qLr8SJ1mApA" successor_AbstractAction="_-7u7ANqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_0XpRMNqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_5V8XMNqZEd-qLr8SJ1mApA" name="r356089409">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_-e08kNqZEd-qLr8SJ1mApA" name="x1165261419" successor_AbstractAction="_BMbLQNqaEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:StopAction" id="__AWVQNqZEd-qLr8SJ1mApA" name="q145246454" predecessor_AbstractAction="_BMbLQNqaEd-qLr8SJ1mApA"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_BMbLQNqaEd-qLr8SJ1mApA" name="u2090212663" predecessor_AbstractAction="_-e08kNqZEd-qLr8SJ1mApA" successor_AbstractAction="__AWVQNqZEd-qLr8SJ1mApA">
+            <calledService href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+            <calledInterfacePort href="system1.samm_repository#_1zI-0NqZEd-qLr8SJ1mApA"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="__GwfQNqZEd-qLr8SJ1mApA" name="q778628160" predecessor_AbstractAction="_4Llc4NqZEd-qLr8SJ1mApA"/>
+    <seffBehaviourStub href="system1.samm_repository#_2rBCANqZEd-qLr8SJ1mApA"/>
+  </resourceDemandingSeff>
+</seff:SeffRepository>

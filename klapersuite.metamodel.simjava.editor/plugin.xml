@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="simulator.base.presentation.BaseModelWizardID"
+            name="%_UI_BaseModelWizard_label"
+            class="simulator.base.presentation.BaseModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BaseModelFile.gif">
+         <description>%_UI_BaseModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="simulator.base.presentation.BaseEditorID"
+            name="%_UI_BaseEditor_label"
+            icon="icons/full/obj16/BaseModelFile.gif"
+            extensions="base"
+            class="simulator.base.presentation.BaseEditor"
+            contributorClass="simulator.base.presentation.BaseActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="simulator.distribution.presentation.DistributionModelWizardID"
+            name="%_UI_DistributionModelWizard_label"
+            class="simulator.distribution.presentation.DistributionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DistributionModelFile.gif">
+         <description>%_UI_DistributionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="simulator.distribution.presentation.DistributionEditorID"
+            name="%_UI_DistributionEditor_label"
+            icon="icons/full/obj16/DistributionModelFile.gif"
+            extensions="distribution"
+            class="simulator.distribution.presentation.DistributionEditor"
+            contributorClass="simulator.distribution.presentation.DistributionActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

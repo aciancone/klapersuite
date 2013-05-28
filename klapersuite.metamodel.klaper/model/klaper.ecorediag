@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_tuESYEhREeGjBPdiO7Q7TQ" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_tuHVsEhREeGjBPdiO7Q7TQ" type="1002">
+    <children xmi:type="notation:Node" xmi:id="_tuH8wEhREeGjBPdiO7Q7TQ" type="4006"/>
+    <children xmi:type="notation:Node" xmi:id="_tuH8wUhREeGjBPdiO7Q7TQ" type="5003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_tuH8wkhREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_tuH8w0hREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_tuH8xEhREeGjBPdiO7Q7TQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_tuHVsUhREeGjBPdiO7Q7TQ" fontColor="4210752" fontName="Cantarell" fontHeight="10" fillColor="13150135" lineColor="4210752"/>
+    <styles xmi:type="notation:MultiDiagramLinkStyle" xmi:id="_tuHVskhREeGjBPdiO7Q7TQ"/>
+    <element xmi:type="ecore:EPackage" href="klaper.ecore#//core"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tuHVs0hREeGjBPdiO7Q7TQ"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_tuIj0EhREeGjBPdiO7Q7TQ" type="1002">
+    <children xmi:type="notation:Node" xmi:id="_tuIj1EhREeGjBPdiO7Q7TQ" type="4006"/>
+    <children xmi:type="notation:Node" xmi:id="_tuJK4EhREeGjBPdiO7Q7TQ" type="5003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_tuJK4UhREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_tuJK4khREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_tuJK40hREeGjBPdiO7Q7TQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_tuIj0UhREeGjBPdiO7Q7TQ" fontColor="4210752" fontName="Cantarell" fontHeight="10" fillColor="13150135" lineColor="4210752"/>
+    <styles xmi:type="notation:MultiDiagramLinkStyle" xmi:id="_tuIj0khREeGjBPdiO7Q7TQ"/>
+    <element xmi:type="ecore:EPackage" href="klaper.ecore#//probability"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tuIj00hREeGjBPdiO7Q7TQ" x="172"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_tuJx8EhREeGjBPdiO7Q7TQ" type="1002">
+    <children xmi:type="notation:Node" xmi:id="_tuKZAEhREeGjBPdiO7Q7TQ" type="4006"/>
+    <children xmi:type="notation:Node" xmi:id="_tuKZAUhREeGjBPdiO7Q7TQ" type="5003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_tuKZAkhREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_tuKZA0hREeGjBPdiO7Q7TQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_tuKZBEhREeGjBPdiO7Q7TQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_tuJx8UhREeGjBPdiO7Q7TQ" fontColor="4210752" fontName="Cantarell" fontHeight="10" fillColor="13150135" lineColor="4210752"/>
+    <styles xmi:type="notation:MultiDiagramLinkStyle" xmi:id="_tuJx8khREeGjBPdiO7Q7TQ"/>
+    <element xmi:type="ecore:EPackage" href="klaper.ecore#//expr"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tuJx80hREeGjBPdiO7Q7TQ" x="344"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_tuESYUhREeGjBPdiO7Q7TQ"/>
+  <element xmi:type="ecore:EPackage" href="klaper.ecore#/"/>
+</notation:Diagram>

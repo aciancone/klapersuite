@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Export-Package: klapersuite.backbone.dtmc,klapersuite.backbone.generat
+ or,klapersuite.backbone.model,klapersuite.backbone.utility
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ klapersuite.metamodel.dtmc,
+ org.eclipse.xpand,
+ org.eclipse.xtend.typesystem.emf,
+ org.eclipse.xtend,
+ org.apache.commons.logging,
+ org.junit;bundle-version="4.0.0",
+ klapersuite.metamodel.klaper;bundle-version="1.0.0",
+ klapersuite.metamodel.simjava;bundle-version="1.0.0",
+ org.apache.log4j;bundle-version="1.2.15"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 1.0.0.qualifier
+Bundle-Name: Util
+Bundle-Activator: klapersuite.backbone.dtmc.Activator
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.core.resources,org.eclipse.emf.ecore.xmi,o
+ rg.eclipse.m2m.internal.qvt.oml.emf.util,org.eclipse.xpand2
+Bundle-SymbolicName: klapersuite.backbone
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

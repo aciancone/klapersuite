@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/klapersuite.metamodel.simjava/src"
+    editDirectory="/klapersuite.metamodel.simjava.edit/src" editorDirectory="/klapersuite.metamodel.simjava.editor/src"
+    modelPluginID="klapersuite.metamodel.simjava" modelName="SimJava" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>Simulator.ecore</foreignModel>
+  <genPackages prefix="Simulator" disposableProviderFactory="true" ecorePackage="Simulator.ecore#/">
+    <nestedGenPackages prefix="Base" basePackage="simulator" disposableProviderFactory="true"
+        ecorePackage="Simulator.ecore#//base">
+      <genClasses ecoreClass="Simulator.ecore#//base/SimModel">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/SimModel/workload"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/SimModel/resource"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Workload">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Workload/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/Workload/step"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Service">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Service/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Service/description"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/Service/step"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/ResourceQueue">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/ResourceQueue/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/ResourceQueue/description"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/ResourceQueue/capacity"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/ResourceQueue/offeredService"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Step">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Step/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/Step/outTransition"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Transition">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference Simulator.ecore#//base/Transition/from"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference Simulator.ecore#//base/Transition/to"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Transition/prob"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Start"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/End"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/Activity">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Activity/repetitions"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/Activity/serviceTime"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/Activity/failMode"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/DiscreteFailMode">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/DiscreteFailMode/internalFailTime"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/ContinuousFailMode">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/ContinuousFailMode/internalFailProb"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/FailMode"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/ServiceCall">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference Simulator.ecore#//base/ServiceCall/service"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/SynchServiceCall"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/AsynchServiceCall"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/Branch"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/Join">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/Join/nTransition"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference Simulator.ecore#//base/Join/inTransition"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/Fork"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/Wait"/>
+      <genClasses ecoreClass="Simulator.ecore#//base/OpenWorkload">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/OpenWorkload/arrivalProcess"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/ClosedWorkload">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//base/ClosedWorkload/population"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/ExternalService">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/ExternalService/serviceCall"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Simulator.ecore#//base/ExternalService/failProb"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/ServiceWake">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference Simulator.ecore#//base/ServiceWake/signal"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//base/EClass0"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Distribution" basePackage="simulator" disposableProviderFactory="true"
+        ecorePackage="Simulator.ecore#//distribution">
+      <genClasses ecoreClass="Simulator.ecore#//distribution/ProbabilityDistributionFunction"/>
+      <genClasses ecoreClass="Simulator.ecore#//distribution/Normal">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Normal/mean"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Normal/variance"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//distribution/Poisson">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Poisson/mean"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//distribution/Uniform">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Uniform/min"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Uniform/max"/>
+      </genClasses>
+      <genClasses ecoreClass="Simulator.ecore#//distribution/Exponential">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Simulator.ecore#//distribution/Exponential/mean"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

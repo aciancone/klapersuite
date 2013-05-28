@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resultmodel:ResultRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:resultmodel="http://q-impress.eu/resultmodel">
+  <analysisRuns id="_DnsKoAbKEeC2EpXikMg2yQ" name="test1" runDate="2011-05-08T12:50:42.203+0200" alternativeId="43514192-6741-4a20-af54-8250ddba2b64">
+    <serviceArchitectureModel href="../43514192-6741-4a20-af54-8250ddba2b64/system1_Base.samm_servicearchitecturemodel#_L1onMJHAEd-4y8fXV-XIVA"/>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9997999364447163" _90PercentQuantile="0.9997999364447163" arithmeticMean="0.9997999364447163" median="0.9997999364447163"/>
+        <systemCall href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_q8M7tKX6Ed-n99B-3_d8zQ"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:PerformancePredictionResult">
+      <responseTimes>
+        <resultDistribution _10PercentQuantile="0.0023753985283399004" _90PercentQuantile="0.004894872270774453" arithmeticMean="0.0036405585513418497" median="0.0034374997044857025"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_Q5-jcpHDEd-4y8fXV-XIVA"/>
+      </responseTimes>
+      <responseTimes>
+        <resultDistribution _10PercentQuantile="0.03705705474120702" _90PercentQuantile="0.042612274048758" arithmeticMean="0.03991602994403755" median="0.03980300644392898"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#__6aAgJJdEd-E6p6_qzRMnw"/>
+      </responseTimes>
+      <responseTimes>
+        <resultDistribution _10PercentQuantile="0.012994551950338717" _90PercentQuantile="0.012994551950338717" arithmeticMean="0.018276676638650857" median="0.018976003971601152"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_NYF0AJJmEd-E6p6_qzRMnw"/>
+      </responseTimes>
+      <responseTimes>
+        <resultDistribution _10PercentQuantile="0.010539999999998884" _90PercentQuantile="0.010539999999998884" arithmeticMean="0.010539999999999836" median="0.010539999999999994"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_FMSpxqVKEd-i1ezDjxCJpg"/>
+      </responseTimes>
+      <resourceUtilizations>
+        <resultDistribution _10PercentQuantile="55.5118021447509" _90PercentQuantile="55.5118021447509" arithmeticMean="55.5118021447509" median="55.5118021447509"/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.0/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution _10PercentQuantile="6.502541903920729" _90PercentQuantile="6.502541903920729" arithmeticMean="6.502541903920729" median="6.502541903920729"/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.1/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.2/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.3/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.4/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution _10PercentQuantile="1.0557142857142878" _90PercentQuantile="1.0557142857142878" arithmeticMean="1.0557142857142878" median="1.0557142857142878"/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.5/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <resourceUtilizations>
+        <resultDistribution/>
+        <executionResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#//@nodes.6/@containers.0/@executionResources.0"/>
+      </resourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_7OvGYJG_Ed-4y8fXV-XIVA"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution _10PercentQuantile="44.999999999999915" _90PercentQuantile="44.999999999999915" arithmeticMean="44.999999999999915" median="44.999999999999915"/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_Mx3ekKVLEd-i1ezDjxCJpg"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_Y0YRQKbXEd-7PvokbmP_og"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_viwtsKbXEd-7PvokbmP_og"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_D__mcNqXEd-qLr8SJ1mApA"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_ho5W0KVWEd-i1ezDjxCJpg"/>
+      </hddResourceUtilizations>
+      <hddResourceUtilizations>
+        <resultDistribution/>
+        <storageResource href="../43514192-6741-4a20-af54-8250ddba2b64/system1.samm_targetenvironment#_dyBE89qVEd-qLr8SJ1mApA"/>
+      </hddResourceUtilizations>
+      <throughputs>
+        <resultDistribution _10PercentQuantile="149.34379396349163" _90PercentQuantile="149.34379396349163" arithmeticMean="149.34379396349163" median="149.34379396349163"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_Q5-jcpHDEd-4y8fXV-XIVA"/>
+      </throughputs>
+      <throughputs>
+        <resultDistribution _10PercentQuantile="15.054741320146237" _90PercentQuantile="15.054741320146237" arithmeticMean="15.054741320146237" median="15.054741320146237"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#__6aAgJJdEd-E6p6_qzRMnw"/>
+      </throughputs>
+      <throughputs>
+        <resultDistribution _10PercentQuantile="1.1628009005909508" _90PercentQuantile="1.1628009005909508" arithmeticMean="1.1628009005909508" median="1.1628009005909508"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_NYF0AJJmEd-E6p6_qzRMnw"/>
+      </throughputs>
+      <throughputs>
+        <resultDistribution _10PercentQuantile="1.1646208160997185" _90PercentQuantile="1.1646208160997185" arithmeticMean="1.1646208160997185" median="1.1646208160997185"/>
+        <usageScenario href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_FMSpxqVKEd-i1ezDjxCJpg"/>
+      </throughputs>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9998002334138285" _90PercentQuantile="0.9998002334138285" arithmeticMean="0.9998002334138285" median="0.9998002334138285"/>
+        <systemCall href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_q8M7tKX6Ed-n99B-3_d8zQ"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9998002334138285" _90PercentQuantile="0.9998002334138285" arithmeticMean="0.9998002334138285" median="0.9998002334138285"/>
+        <systemCall href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_q8M7tKX6Ed-n99B-3_d8zQ"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9998002334138285" _90PercentQuantile="0.9998002334138285" arithmeticMean="0.9998002334138285" median="0.9998002334138285"/>
+        <systemCall href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_q8M7tKX6Ed-n99B-3_d8zQ"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9998002334138284" _90PercentQuantile="0.9998002334138284" arithmeticMean="0.9998002334138284" median="0.9998002334138284"/>
+        <systemCall href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_q8M7tKX6Ed-n99B-3_d8zQ"/>
+      </reliabilities>
+    </analysisResults>
+    <usageModel href="../43514192-6741-4a20-af54-8250ddba2b64/usage_model.samm_usagemodel#_niM6AKX6Ed-n99B-3_d8zQ"/>
+  </analysisRuns>
+</resultmodel:ResultRepository>

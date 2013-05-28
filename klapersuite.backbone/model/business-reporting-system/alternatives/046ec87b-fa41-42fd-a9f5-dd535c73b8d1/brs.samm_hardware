@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hardware:HardwareDescriptorRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hardware="http://q-impress.eu/samm/deployment/hardware" id="_OaEBcGkJEeCkc9u3PuyOhw" name="brsDescriptorRepository">
+  <descriptors xsi:type="hardware:ProcessorDescriptor" id="_RAqQQWkJEeCkc9u3PuyOhw" name="brsCPU">
+    <cores id="_Su7I5mkJEeCkc9u3PuyOhw" name="brsCpuCore"/>
+  </descriptors>
+  <descriptors xsi:type="hardware:StorageDeviceDescriptor" id="_VE_BUmkJEeCkc9u3PuyOhw" name="brsHd"/>
+  <descriptors xsi:type="hardware:NetworkInterfaceDescriptor" id="_W58-5GkJEeCkc9u3PuyOhw" name="brsLAN"/>
+  <descriptors xsi:type="hardware:NetworkElementDescriptor" id="_EXvWAGkLEeCkc9u3PuyOhw" name="brsNetworkElement"/>
+  <descriptors xsi:type="hardware:MemoryDescriptor" id="_ZOqzg2kJEeCkc9u3PuyOhw" name="brsMem"/>
+</hardware:HardwareDescriptorRepository>

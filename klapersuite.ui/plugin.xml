@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="klapersuite.ui.contribution1"
+            nameFilter="*.klaper"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               label="KlaperSuite"
+               path="additions"
+               id="klapersuite.ui.menu1">
+            <separator
+                  name="group1">   </separator>
+         </menu>
+         <action
+               class="klapersuite.ui.actions.Prism"
+               id="klapersuite.ui.action1"
+               label="Analyze with Prism"
+               menubarPath="klapersuite.ui.menu1/group1">
+         </action>
+         <action
+               class="klapersuite.ui.actions.RMCNewton"
+               id="klapersuite.ui.newAction"
+               label="Analyze with RMC (Newton&apos;s Method)"
+               menubarPath="klapersuite.ui.menu1/group1">
+         </action>
+         <action
+               class="klapersuite.ui.actions.RMCBase"
+               id="klapersuite.ui.newAction"
+               label="Analyze with RMC"
+               menubarPath="klapersuite.ui.menu1/group1">
+         </action>
+         <action
+               class="klapersuite.ui.actions.Lqn"
+               id="klapersuite.ui.action2"
+               label="Analyze with LQN"
+               menubarPath="klapersuite.ui.menu1/group1">
+         </action>
+         <action
+               class="klapersuite.ui.Action4"
+               id="klapersuite.ui.action4"
+               label="Analyze with SimJava"
+               menubarPath="klapersuite.ui.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         id="bulkAnalysis"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="klapersuite.ui.ApplicationBulkAnalysis">
+         </run>
+      </application>
+   </extension>
+</plugin>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: klapersuite.metamodel.dtmc.editor;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: dtmc.presentation.DtmcEditorPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: dtmc.presentation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;vi
+ sibility:=reexport,klapersuite.metamodel.dtmc.edit;visibility:=reexpo
+ rt,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.edi
+ t.ui;visibility:=reexport,org.eclipse.ui.ide;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+

@@ -1,0 +1,67 @@
+PRISM
+=====
+
+Version: 3.3.1
+Date: Thu Jul 12 11:43:38 CEST 2012
+Hostname: lVlostro
+Command line: prism -cuddmaxmem 1394828 -maxiters 200000 -e 1e-12 /opt/projects/klapersuite/trunk/klapersuite.backbone/model/example1/output.pm /opt/projects/klapersuite/trunk/klapersuite.backbone/model/example1/properties.pctl
+
+Parsing model file "/opt/projects/klapersuite/trunk/klapersuite.backbone/model/example1/output.pm"...
+
+Parsing properties file "/opt/projects/klapersuite/trunk/klapersuite.backbone/model/example1/properties.pctl"...
+
+1 property:
+(1) P=? [ true U s_Workload=success ]
+
+-------------------------------------------
+
+Building model...
+
+Warning: Update 2 of command 25 of module "M21" doesn't do anything
+
+Warning: Update 2 of command 8 of module "M9" doesn't do anything
+
+Warning: Update 2 of command 9 of module "M9" doesn't do anything
+
+Computing reachable states...
+
+Reachability: 159 iterations in 0.15 seconds (average 0.000956, setup 0.00)
+
+Time for model construction: 2.671 seconds.
+
+Type:        DTMC
+Modules:     M34 M30 M26 M43 M39 M52 M48 M61 M57 M70 M66 M21 M17 M13 M9 M5 M1 M77 Workload 
+Variables:   s_M34 s_M30 s_M26 s_M43 s_M39 s_M52 s_M48 s_M61 s_M57 s_M70 s_M66 s_M21 s_M17 s_M13 s_M9 s_M5 s_M1 s_M77 s_Workload 
+
+States:      540 (1 initial)
+Transitions: 1117
+
+Transition matrix: 5152 nodes (27 terminal), 1117 minterms, vars: 68r/68c
+
+-------------------------------------------
+
+Model checking: P=? [ true U s_Workload=success ]
+
+Prob0: 159 iterations in 0.10 seconds (average 0.000604, setup 0.00)
+
+Prob1: 26 iterations in 0.22 seconds (average 0.008462, setup 0.00)
+
+yes = 58, no = 123, maybe = 359
+
+Computing remaining probabilities...
+
+Building hybrid MTBDD matrix... [levels=68, nodes=3201] [75.0 KB]
+Adding explicit sparse matrices... [levels=68, num=1, compact] [2.2 KB]
+Creating vector for diagonals... [dist=12, compact] [1.1 KB]
+Creating vector for RHS... [dist=2, compact] [1.1 KB]
+Allocating iteration vectors... [2 x 4.2 KB]
+TOTAL: [87.9 KB]
+
+Starting iterations...
+
+Jacobi: 152 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model checking: 0.329 seconds.
+
+Result (probability): 0.9922374721293382
+

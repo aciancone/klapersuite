@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/simulator/1.0/base"
+            class="simulator.base.BasePackage"
+            genModel="model/klaper.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/simulator/1.0/distribution"
+            class="simulator.distribution.DistributionPackage"
+            genModel="model/klaper.genmodel"/>
+   </extension>
+</plugin>

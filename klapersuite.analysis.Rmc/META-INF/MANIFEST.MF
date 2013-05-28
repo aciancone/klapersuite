@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RmcAnalysis Plug-in
+Bundle-SymbolicName: klapersuite.analysis.Rmc;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: klapersuite.RmcAnalysis.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.common,org.eclipse.emf.ecore,org.eclipse.emf.databinding;bundle-version="1.0.0",org.eclipse.m2m.q
+ vt.oml.common;bundle-version="1.0.1",org.eclipse.m2m.qvt.oml.runtime;
+ bundle-version="1.0.1",org.eclipse.emf.validation;bundle-version="1.2
+ .0",org.junit4;bundle-version="4.3.1",klapersuite.metamodel.klaper,kl
+ apersuite.metamodel.dtmc,klapersuite.backbone;bundle-version="1.0.0",
+ org.apache.log4j;bundle-version="1.2.15"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.emf.ecore.xmi,org.eclipse.m2m.internal.qvt
+ .oml.emf.util,org.eclipse.m2m.internal.qvt.oml.evaluator,org.eclipse.
+ m2m.qvt.oml,org.eclipse.m2m.qvt.oml.util
+Bundle-ClassPath: .,lib/djep-full-latest.jar,lib/commons-math-2.2/comm
+ ons-math-2.2.jar
+Export-Package: QVTOTransformation,klapersuite.RmcAnalysis
+

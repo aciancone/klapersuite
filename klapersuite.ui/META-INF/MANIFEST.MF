@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Export-Package: klapersuite.ui
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ klapersuite.backbone,
+ org.eclipse.emf.ecore,
+ klapersuite.analysis.Rmc;bundle-version="1.0.0",
+ klapersuite.analysis.Prism.linux;bundle-version="1.0.0",
+ klapersuite.metamodel.klaper,
+ klapersuite.metamodel.dtmc,
+ org.eclipse.ui.console,
+ org.apache.log4j;bundle-version="1.2.15",
+ klapersuite.analysis.Lqn;bundle-version="1.0.0",
+ klapersuite.metamodel.lqn
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 1.0.0.qualifier
+Bundle-Name: ui
+Bundle-Activator: klapersuite.ui.Activator
+Bundle-ManifestVersion: 2
+Import-Package: org.junit
+Bundle-SymbolicName: klapersuite.ui; singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

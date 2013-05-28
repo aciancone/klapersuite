@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticstructure:ServiceArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:staticstructure="http://q-impress.eu/samm/staticstructure" id="_UWstEGkLEeCkc9u3PuyOhw" name="brsServiceArchitecture">
+  <provided id="_9IfEkGkLEeCkc9u3PuyOhw" name="IHTTPSystemProvided">
+    <interfaceType href="brs.samm_repository#_EODAwGkGEeCkc9u3PuyOhw"/>
+  </provided>
+  <subcomponents id="_Y8Gx8GkLEeCkc9u3PuyOhw" name="WebServer">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="brs.samm_repository#_MqEK0GkGEeCkc9u3PuyOhw"/>
+  </subcomponents>
+  <subcomponents id="_dl-gEGkLEeCkc9u3PuyOhw" name="Scheduler">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="brs.samm_repository#_TQqEUGkGEeCkc9u3PuyOhw"/>
+  </subcomponents>
+  <subcomponents id="_gCSxgGkLEeCkc9u3PuyOhw" name="Reporting Engine">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="brs.samm_repository#_WN54kGkGEeCkc9u3PuyOhw"/>
+  </subcomponents>
+  <subcomponents id="_i1QBUGkLEeCkc9u3PuyOhw" name="CacheInfo">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="brs.samm_repository#_hE5QQGkGEeCkc9u3PuyOhw"/>
+  </subcomponents>
+  <subcomponents id="_lChKIGkLEeCkc9u3PuyOhw" name="DB">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="brs.samm_repository#_mytusGkGEeCkc9u3PuyOhw"/>
+  </subcomponents>
+  <connector id="_uGK78GkLEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_usxB4GkLEeCkc9u3PuyOhw" subcomponent="_Y8Gx8GkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_orIPkGkLEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_u6CB0GkLEeCkc9u3PuyOhw" subcomponent="_dl-gEGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_U2bvUGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+  </connector>
+  <connector id="_w95-EGkLEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_xdWTIGkLEeCkc9u3PuyOhw" subcomponent="_dl-gEGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_Vs0kwGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_x3kxAGkLEeCkc9u3PuyOhw" subcomponent="_gCSxgGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_XozJQGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+  </connector>
+  <connector id="_0LiXsGkLEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_0ySOoGkLEeCkc9u3PuyOhw" subcomponent="_gCSxgGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_kvlZUGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_09dj4GkLEeCkc9u3PuyOhw" subcomponent="_i1QBUGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_iiBVkGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+  </connector>
+  <connector id="_1rDpsGkLEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_3FgOcGkLEeCkc9u3PuyOhw" subcomponent="_i1QBUGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_i4hxEGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_3i240GkLEeCkc9u3PuyOhw" subcomponent="_lChKIGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_oB10QGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+  </connector>
+  <connector id="_4BjnAGkLEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_4acoIGkLEeCkc9u3PuyOhw" subcomponent="_lChKIGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_oB10QGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_5ufC4GkLEeCkc9u3PuyOhw" subcomponent="_gCSxgGkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_l4KK8GkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+  </connector>
+  <connector id="_BDIVMGkMEeCkc9u3PuyOhw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_Bl2AsGkMEeCkc9u3PuyOhw" subcomponent="_Y8Gx8GkLEeCkc9u3PuyOhw">
+      <port xsi:type="staticstructure:InterfacePort" href="brs.samm_repository#_NlOLgGkGEeCkc9u3PuyOhw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_HCPX8WkMEeCkc9u3PuyOhw" documentation="" port="_9IfEkGkLEeCkc9u3PuyOhw"/>
+  </connector>
+  <service id="_LaOr5mkMEeCkc9u3PuyOhw" documentation="" name="WebServerService" subcomponentInstance="_Y8Gx8GkLEeCkc9u3PuyOhw">
+    <container href="brs.samm_targetenvironment#_peU5AGkJEeCkc9u3PuyOhw"/>
+  </service>
+  <service id="_eT6HpmkMEeCkc9u3PuyOhw" name="SchedulerService" subcomponentInstance="_dl-gEGkLEeCkc9u3PuyOhw">
+    <container href="brs.samm_targetenvironment#_5pgHJWkJEeCkc9u3PuyOhw"/>
+  </service>
+  <service id="_hzt2ZmkMEeCkc9u3PuyOhw" name="ReportingEngineService" subcomponentInstance="_gCSxgGkLEeCkc9u3PuyOhw">
+    <container href="brs.samm_targetenvironment#_JQ7H9WkKEeCkc9u3PuyOhw"/>
+  </service>
+  <service id="_lNICNmkMEeCkc9u3PuyOhw" name="CacheInfoService" subcomponentInstance="_i1QBUGkLEeCkc9u3PuyOhw">
+    <container href="brs.samm_targetenvironment#_JQ7H9WkKEeCkc9u3PuyOhw"/>
+  </service>
+  <service id="_piSrpmkMEeCkc9u3PuyOhw" name="DatabaseService" subcomponentInstance="_lChKIGkLEeCkc9u3PuyOhw">
+    <container href="brs.samm_targetenvironment#_VxH5IGkKEeCkc9u3PuyOhw"/>
+  </service>
+</staticstructure:ServiceArchitectureModel>

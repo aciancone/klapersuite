@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="M2M-TF"
+            id="M2M_TF.commands.category">
+      </category>
+      <command
+            name="Run Tester"
+            categoryId="org.eclipse.m2m.qvt.oml.category"
+            id="M2M_TF.commands.Tester">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="M2M_TF.commands.Tester"
+            class="klapersuite.RmcAnalysis.GuiHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="M2M_TF.commands.Tester"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="M2M-TF"
+               mnemonic="M"
+               id="M2M_TF.menus.sampleMenu">
+            <command
+                  commandId="M2M_TF.commands.Tester"
+                  mnemonic="S"
+                  id="M2M_TF.menus.Tester">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="M2M_TF.toolbars.sampleToolbar">
+            <command
+                  commandId="M2M_TF.commands.Tester"
+                  icon="icons/sample.gif"
+                  tooltip="Run M2M-TF Tester">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

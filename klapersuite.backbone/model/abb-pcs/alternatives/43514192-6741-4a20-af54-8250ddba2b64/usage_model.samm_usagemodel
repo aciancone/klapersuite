@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usagemodel:UsageRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usagemodel="http://q-impress.eu/samm/usagemodel" id="_e5HG4JG6Ed-4y8fXV-XIVA" name="system1 Usage Repository">
+  <usageModels id="_OJ1-IJHDEd-4y8fXV-XIVA" name="system1_Base">
+    <usageScenarios id="_Q5-jcpHDEd-4y8fXV-XIVA" name="DataRetrieve">
+      <systemCalls id="_VhKxBJHDEd-4y8fXV-XIVA" documentation="" name="DataRetrieveCall" callProbability="1.0">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_iYGf15HGEd-4y8fXV-XIVA"/>
+        <operation href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:OpenWorkload" id="_pwE6UpHDEd-4y8fXV-XIVA" documentation="" name="DataRetrieveWorkload" arrivalRate="0.0067"/>
+    </usageScenarios>
+    <usageScenarios id="__6aAgJJdEd-E6p6_qzRMnw" name="HistoryRetrieve">
+      <systemCalls id="_BdWZ8JJeEd-E6p6_qzRMnw" documentation="" name="HistoryRetrieveCall" callProbability="1.0">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_BMEXUJJLEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:OpenWorkload" id="_GXUZkpJeEd-E6p6_qzRMnw" name="HistoryRetrieveWorkload" arrivalRate="0.06667"/>
+    </usageScenarios>
+    <usageScenarios id="_NYF0AJJmEd-E6p6_qzRMnw" name="AlarmRetrieve">
+      <systemCalls id="_PAswkJJmEd-E6p6_qzRMnw" name="AlarmRetrieveCall" callProbability="1.0">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_6l81kJJjEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:OpenWorkload" id="_SB-JMpJmEd-E6p6_qzRMnw" name="AlarmRetrieveWorkload" arrivalRate="1.0"/>
+    </usageScenarios>
+    <usageScenarios id="_FMSpxqVKEd-i1ezDjxCJpg" name="Wrapper">
+      <systemCalls id="_HzfVgKVKEd-i1ezDjxCJpg" name="WrapperCall" callProbability="1.0">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_ZpNmkKYeEd-F2fxisVCBKw"/>
+        <operation href="system1.samm_repository#_61Nt4KYdEd-F2fxisVCBKw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:OpenWorkload" id="_LuRwEqVKEd-i1ezDjxCJpg" name="WrapperWorkload" arrivalRate="1.0"/>
+    </usageScenarios>
+    <usageScenarios id="_j-xy89wmEd-TEInwfeSq6w" name="AlarmBurst">
+      <systemCalls id="_levw4NwmEd-TEInwfeSq6w" name="AlarmRetrieveCall" callProbability="1.0">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_6l81kJJjEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:ClosedWorkload" id="_qxwiodwmEd-TEInwfeSq6w" name="BurstWorkload" thinkTime="10000.0" numberOfUsers="1"/>
+    </usageScenarios>
+  </usageModels>
+  <usageModels id="_niM6AKX6Ed-n99B-3_d8zQ" name="system1_Reliability1">
+    <usageScenarios id="_pDNZwKX6Ed-n99B-3_d8zQ" name="MainScenario">
+      <systemCalls id="_q8M7tKX6Ed-n99B-3_d8zQ" name="DataRetrieve" callProbability="0.9036">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_iYGf15HGEd-4y8fXV-XIVA"/>
+        <operation href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      </systemCalls>
+      <systemCalls id="_A7F-0LT3Ed-MKLhF4A9QCQ" name="HistoryRetrieve" callProbability="0.0904">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_BMEXUJJLEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <systemCalls id="_LDEhALaPEd-2LuqyIpmU-g" name="AlarmRetrieve" callProbability="0.0030">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_6l81kJJjEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <systemCalls id="_RU9V0LaPEd-2LuqyIpmU-g" name="IWrapper_Query" callProbability="0.0030">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_ZpNmkKYeEd-F2fxisVCBKw"/>
+        <operation href="system1.samm_repository#_61Nt4KYdEd-F2fxisVCBKw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:ClosedWorkload" id="_uOQ9AbTaEd-8z-m3EabJTA" name="Reliability Closed Workload" thinkTime="1.0" numberOfUsers="1"/>
+    </usageScenarios>
+  </usageModels>
+  <usageModels id="_quRA0bwIEd-L49cq0G3w2g" name="system1_Reliability2">
+    <usageScenarios id="_sbCrsLwIEd-L49cq0G3w2g" name="TestScenario">
+      <systemCalls id="_tgyLwLwIEd-L49cq0G3w2g" name="DataRetrieve" callProbability="0.2835">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_iYGf15HGEd-4y8fXV-XIVA"/>
+        <operation href="system1.samm_repository#_4CPpUJHMEd-4y8fXV-XIVA"/>
+      </systemCalls>
+      <systemCalls id="_w_ooEL8EEd-ATbXCpHMCEA" name="HistoryRetrieve" callProbability="0.296">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_BMEXUJJLEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_JB_5IJJIEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <systemCalls id="_OxS6AL8FEd-ATbXCpHMCEA" name="AlarmRetrieve" callProbability="0.3005">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_6l81kJJjEd-E6p6_qzRMnw"/>
+        <operation href="system1.samm_repository#_v4BIsJJiEd-E6p6_qzRMnw"/>
+      </systemCalls>
+      <systemCalls id="_rR_TUL8FEd-ATbXCpHMCEA" name="IWrapper_Query" callProbability="0.0347">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_ZpNmkKYeEd-F2fxisVCBKw"/>
+        <operation href="system1.samm_repository#_61Nt4KYdEd-F2fxisVCBKw"/>
+      </systemCalls>
+      <systemCalls id="_AC10kL_hEd-PHYEGGZFL2w" name="IVhn_QueryWorkplaceApp" callProbability="0.0853">
+        <calledInterfacePort href="system1_Base.samm_servicearchitecturemodel#_r7aMQL_gEd-PHYEGGZFL2w"/>
+        <operation href="system1.samm_repository#_j4G5oL_fEd-PHYEGGZFL2w"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:OpenWorkload" id="_sSe8cr8EEd-ATbXCpHMCEA" name="test2" arrivalRate="1.0"/>
+    </usageScenarios>
+  </usageModels>
+</usagemodel:UsageRepository>

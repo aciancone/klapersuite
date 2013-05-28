@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usagemodel="http://q-impress.eu/samm/usagemodel" id="_5M_C4GkMEeCkc9u3PuyOhw" name="brsUsageRepository">
+  <usageModels id="_6nlYoGkMEeCkc9u3PuyOhw" name="brsUsageModel">
+    <usageScenarios id="_7subwGkMEeCkc9u3PuyOhw" name="brsScenario1">
+      <systemCalls id="_89C0JGkMEeCkc9u3PuyOhw" name="IHTTPSystemProvided" callProbability="1.0">
+        <calledInterfacePort href="brs.samm_servicearchitecturemodel#_9IfEkGkLEeCkc9u3PuyOhw"/>
+        <operation href="brs.samm_repository#_F5Ls4GkGEeCkc9u3PuyOhw"/>
+      </systemCalls>
+      <workload xsi:type="usagemodel:ClosedWorkload" id="_DOCRFGkNEeCkc9u3PuyOhw" name="brsScenario1Workload" numberOfUsers="1"/>
+    </usageScenarios>
+  </usageModels>
+</usagemodel:UsageRepository>

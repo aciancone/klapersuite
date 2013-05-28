@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="lqn.presentation.LqnModelWizardID"
+            name="%_UI_LqnModelWizard_label"
+            class="lqn.presentation.LqnModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LqnModelFile.gif">
+         <description>%_UI_LqnModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="lqn.presentation.LqnEditorID"
+            name="%_UI_LqnEditor_label"
+            icon="icons/full/obj16/LqnModelFile.gif"
+            extensions="lqn"
+            class="lqn.presentation.LqnEditor"
+            contributorClass="lqn.presentation.LqnActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

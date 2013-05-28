@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticstructure:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviour="http://q-impress.eu/samm/behaviour" xmlns:staticstructure="http://q-impress.eu/samm/staticstructure" id="_4vkLQGkFEeCkc9u3PuyOhw" name="brs-repository">
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_MqEK0GkGEeCkc9u3PuyOhw" name="WebServer">
+    <provided id="_NlOLgGkGEeCkc9u3PuyOhw" name="WebServer_Provided_IHTTP" interfaceType="_EODAwGkGEeCkc9u3PuyOhw"/>
+    <required id="_orIPkGkLEeCkc9u3PuyOhw" name="WebServer_Required_IReporting" interfaceType="_PkxocGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_vjvfcGkGEeCkc9u3PuyOhw" operation="_F5Ls4GkGEeCkc9u3PuyOhw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_TQqEUGkGEeCkc9u3PuyOhw" name="Scheduler">
+    <provided id="_U2bvUGkGEeCkc9u3PuyOhw" name="Scheduler_Provided_IReporting" interfaceType="_PkxocGkGEeCkc9u3PuyOhw"/>
+    <required id="_Vs0kwGkGEeCkc9u3PuyOhw" name="Scheduler_Required_IReporting" interfaceType="_PkxocGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_pjeJoGkHEeCkc9u3PuyOhw" operation="_Qfe9MGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_qRqsYGkHEeCkc9u3PuyOhw" operation="_SKBzcGkGEeCkc9u3PuyOhw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_WN54kGkGEeCkc9u3PuyOhw" name="ReportingEngine">
+    <provided id="_XozJQGkGEeCkc9u3PuyOhw" name="ReportingEngine_Provided_IReporting" interfaceType="_PkxocGkGEeCkc9u3PuyOhw"/>
+    <required id="_kvlZUGkGEeCkc9u3PuyOhw" name="ReportingEngine_Required_ICache" interfaceType="_YpntEGkGEeCkc9u3PuyOhw"/>
+    <required id="_l4KK8GkGEeCkc9u3PuyOhw" name="ReportingEngine_Required_IDB" interfaceType="_cBirIGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_7S8cEGkHEeCkc9u3PuyOhw" operation="_SKBzcGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_EfGCkGkIEeCkc9u3PuyOhw" operation="_Qfe9MGkGEeCkc9u3PuyOhw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_hE5QQGkGEeCkc9u3PuyOhw" name="CacheInfo">
+    <provided id="_iiBVkGkGEeCkc9u3PuyOhw" name="CacheInfo_Provided_ICache" interfaceType="_YpntEGkGEeCkc9u3PuyOhw"/>
+    <required id="_i4hxEGkGEeCkc9u3PuyOhw" name="CacheInfo_Required_IDB" interfaceType="_cBirIGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_ub-7QGkIEeCkc9u3PuyOhw" operation="_ZafwYGkGEeCkc9u3PuyOhw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_mytusGkGEeCkc9u3PuyOhw" name="DB">
+    <provided id="_oB10QGkGEeCkc9u3PuyOhw" name="DB_Provided_IDB" interfaceType="_cBirIGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_3KCQgGkIEeCkc9u3PuyOhw" operation="_cuPZEGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_4HbF0GkIEeCkc9u3PuyOhw" operation="_eGAdQGkGEeCkc9u3PuyOhw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_4ud3sGkIEeCkc9u3PuyOhw" operation="_fSKHUGkGEeCkc9u3PuyOhw"/>
+  </componenttype>
+  <interface id="_EODAwGkGEeCkc9u3PuyOhw" name="IHTTP">
+    <signatures id="_F5Ls4GkGEeCkc9u3PuyOhw" name="processRequest"/>
+  </interface>
+  <interface id="_PkxocGkGEeCkc9u3PuyOhw" name="IReporting">
+    <signatures id="_Qfe9MGkGEeCkc9u3PuyOhw" name="report"/>
+    <signatures id="_SKBzcGkGEeCkc9u3PuyOhw" name="view"/>
+  </interface>
+  <interface id="_YpntEGkGEeCkc9u3PuyOhw" name="ICache">
+    <signatures id="_ZafwYGkGEeCkc9u3PuyOhw" name="doCacheAccess"/>
+  </interface>
+  <interface id="_cBirIGkGEeCkc9u3PuyOhw" name="IDB">
+    <signatures id="_cuPZEGkGEeCkc9u3PuyOhw" name="getSmallReport"/>
+    <signatures id="_eGAdQGkGEeCkc9u3PuyOhw" name="getBigReport"/>
+    <signatures id="_fSKHUGkGEeCkc9u3PuyOhw" name="getCachedData"/>
+  </interface>
+</staticstructure:Repository>

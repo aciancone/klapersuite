@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:seff="http://q-impress.eu/seff" xmi:id="_5g1IwGkIEeCkc9u3PuyOhw" type="Seff" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_5weuUWkIEeCkc9u3PuyOhw" type="2001">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_5weuUmkIEeCkc9u3PuyOhw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5weuU2kIEeCkc9u3PuyOhw"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_5weuVGkIEeCkc9u3PuyOhw"/>
+    <element xmi:type="seff:StartAction" href="../brs.samm_seff#_5weuUGkIEeCkc9u3PuyOhw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5weuVWkIEeCkc9u3PuyOhw" x="199" y="34"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_6FyP8WkIEeCkc9u3PuyOhw" type="2003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6FyP82kIEeCkc9u3PuyOhw" type="5003"/>
+    <element xmi:type="seff:InternalAction" href="../brs.samm_seff#_6FyP8GkIEeCkc9u3PuyOhw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6FyP8mkIEeCkc9u3PuyOhw" x="170" y="130"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_76KXoGkIEeCkc9u3PuyOhw" type="2007">
+    <element xmi:type="seff:StopAction" href="../brs.samm_seff#_76BNsGkIEeCkc9u3PuyOhw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_76KXoWkIEeCkc9u3PuyOhw" x="210" y="216"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_5g1IwWkIEeCkc9u3PuyOhw"/>
+  <element xmi:type="seff:ResourceDemandingSEFF" href="../brs.samm_seff#//@resourceDemandingSeff.6"/>
+  <edges xmi:type="notation:Connector" xmi:id="_8Lc78GkIEeCkc9u3PuyOhw" type="4001" source="_5weuUWkIEeCkc9u3PuyOhw" target="_6FyP8WkIEeCkc9u3PuyOhw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_8Lc78WkIEeCkc9u3PuyOhw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8Lc78mkIEeCkc9u3PuyOhw" points="[1, 10, -18, -96]$[-39, 106, -58, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_8RQpAGkIEeCkc9u3PuyOhw" type="4001" source="_6FyP8WkIEeCkc9u3PuyOhw" target="_76KXoGkIEeCkc9u3PuyOhw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_8RQpAWkIEeCkc9u3PuyOhw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8RQpAmkIEeCkc9u3PuyOhw" points="[-4, 20, 11, -66]$[-18, 87, -3, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8RQpA2kIEeCkc9u3PuyOhw" id="(0.1,0.6666666666666666)"/>
+  </edges>
+</notation:Diagram>

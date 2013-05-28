@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resultmodel:ResultRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:resultmodel="http://q-impress.eu/resultmodel">
+  <analysisRuns id="_Qk8yYGkOEeCkc9u3PuyOhw" name="reliability1" runDate="2011-04-17T18:47:04.328+0200" alternativeId="046ec87b-fa41-42fd-a9f5-dd535c73b8d1">
+    <serviceArchitectureModel href="../046ec87b-fa41-42fd-a9f5-dd535c73b8d1/brs.samm_servicearchitecturemodel#_UWstEGkLEeCkc9u3PuyOhw"/>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.19000000000000003" _90PercentQuantile="0.19000000000000003" arithmeticMean="0.19000000000000003" median="0.19000000000000003"/>
+        <systemCall href="../046ec87b-fa41-42fd-a9f5-dd535c73b8d1/brs.samm_usagemodel#_89C0JGkMEeCkc9u3PuyOhw"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9986512518492635" _90PercentQuantile="0.9986512518492635" arithmeticMean="0.9986512518492635" median="0.9986512518492635"/>
+        <systemCall href="../046ec87b-fa41-42fd-a9f5-dd535c73b8d1/brs.samm_usagemodel#_89C0JGkMEeCkc9u3PuyOhw"/>
+      </reliabilities>
+    </analysisResults>
+    <analysisResults xsi:type="resultmodel:ReliabilityPredictionResult">
+      <reliabilities>
+        <resultDistribution _10PercentQuantile="0.9986512518492635" _90PercentQuantile="0.9986512518492635" arithmeticMean="0.9986512518492635" median="0.9986512518492635"/>
+        <systemCall href="../046ec87b-fa41-42fd-a9f5-dd535c73b8d1/brs.samm_usagemodel#_89C0JGkMEeCkc9u3PuyOhw"/>
+      </reliabilities>
+    </analysisResults>
+    <usageModel href="../046ec87b-fa41-42fd-a9f5-dd535c73b8d1/brs.samm_usagemodel#_6nlYoGkMEeCkc9u3PuyOhw"/>
+  </analysisRuns>
+</resultmodel:ResultRepository>

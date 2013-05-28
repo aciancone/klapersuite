@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dtmc:Dtmc xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dtmc="http://eu.q-impress/dtmc" name="Reliability_analysis_model">
+  <modules name="whoisOperation_Database__databasePC_Provided_DatabaseInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="internal" outTransitions="//@modules.0/@transitions.1" inTransitions="//@modules.0/@transitions.0"/>
+    <nodes name="end" inTransitions="//@modules.0/@transitions.1" isEnd="true"/>
+    <nodes name="start" outTransitions="//@modules.0/@transitions.0" isStart="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.0/@nodes.3" _to="//@modules.0/@nodes.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.0/@nodes.1" _to="//@modules.0/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.1/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_Database__ServiceComposite_Required_DatabaseInterface__join__databasePC_Provided_DatabaseInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.1/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.1/@transitions.0" inTransitions="//@modules.1/@transitions.1"/>
+    <nodes inTransitions="//@modules.1/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.1/@nodes.2" _to="//@modules.1/@nodes.3" invokedTransition="//@modules.0/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.1/@nodes.1" _to="//@modules.1/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.2/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_Database__DatabaseManagerPC_Required_DatabaseInterface__join__ServiceComposite_Required_DatabaseInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.2/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.2/@transitions.0" inTransitions="//@modules.2/@transitions.1"/>
+    <nodes inTransitions="//@modules.2/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.2/@nodes.2" _to="//@modules.2/@nodes.3" invokedTransition="//@modules.1/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.2/@nodes.1" _to="//@modules.2/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.3/@transitions.1"/>
+  </modules>
+  <modules name="whoisOperation_DatabaseManager__DatabaseManagerPC_Provided_DatabaseManagerInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="serviceCall" outTransitions="//@modules.3/@transitions.1" inTransitions="//@modules.3/@transitions.0"/>
+    <nodes name="end" inTransitions="//@modules.3/@transitions.1" isEnd="true"/>
+    <nodes name="start" outTransitions="//@modules.3/@transitions.0" isStart="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.3/@nodes.3" _to="//@modules.3/@nodes.1"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.3/@nodes.1" _to="//@modules.3/@nodes.2" invokedTransition="//@modules.2/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.4/@transitions.1"/>
+  </modules>
+  <modules name="whoisOperation_DatabaseManager__dataServicePC_Required_DatabaseManagerInterface__join__DatabaseManagerPC_Provided_DatabaseManagerInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.4/@transitions.0" isStart="true"/>
+    <nodes outTransitions="//@modules.4/@transitions.1" inTransitions="//@modules.4/@transitions.0"/>
+    <nodes inTransitions="//@modules.4/@transitions.1" isEnd="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.4/@nodes.1" _to="//@modules.4/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.4/@nodes.2" _to="//@modules.4/@nodes.3" invokedTransition="//@modules.3/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.5/@transitions.2"/>
+  </modules>
+  <modules name="nested12637b4">
+    <nodes name="failure" inTransitions="//@modules.5/@transitions.4" isFail="true"/>
+    <nodes name="serviceCall" outTransitions="//@modules.5/@transitions.2" inTransitions="//@modules.5/@transitions.0"/>
+    <nodes name="end" inTransitions="//@modules.5/@transitions.2" isEnd="true"/>
+    <nodes name="internal" outTransitions="//@modules.5/@transitions.0 //@modules.5/@transitions.4" inTransitions="//@modules.5/@transitions.1"/>
+    <nodes name="start" outTransitions="//@modules.5/@transitions.1" isStart="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" probability="0.9" _from="//@modules.5/@nodes.3" _to="//@modules.5/@nodes.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.5/@nodes.4" _to="//@modules.5/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.5/@nodes.1" _to="//@modules.5/@nodes.2" invokedTransition="//@modules.4/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="invoked" callTransition="//@modules.7/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="toFail" probability="0.09999999999999998" _from="//@modules.5/@nodes.3" _to="//@modules.5/@nodes.0"/>
+  </modules>
+  <modules name="nesteda7eb3f">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="end" inTransitions="//@modules.6/@transitions.0" isEnd="true"/>
+    <nodes name="internal" outTransitions="//@modules.6/@transitions.0" inTransitions="//@modules.6/@transitions.1"/>
+    <nodes name="start" outTransitions="//@modules.6/@transitions.1" isStart="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.6/@nodes.2" _to="//@modules.6/@nodes.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.6/@nodes.3" _to="//@modules.6/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="invoked" callTransition="//@modules.7/@transitions.3"/>
+  </modules>
+  <modules name="whoisOperation_DataService__dataServicePC_Provided_DataServiceInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="end" inTransitions="//@modules.7/@transitions.1" isEnd="true"/>
+    <nodes name="branch" outTransitions="//@modules.7/@transitions.2 //@modules.7/@transitions.5" inTransitions="//@modules.7/@transitions.4"/>
+    <nodes name="start" outTransitions="//@modules.7/@transitions.4" isStart="true"/>
+    <nodes name="join" outTransitions="//@modules.7/@transitions.1" inTransitions="//@modules.7/@transitions.0 //@modules.7/@transitions.3"/>
+    <nodes name="fromProbTrans" outTransitions="//@modules.7/@transitions.0" inTransitions="//@modules.7/@transitions.2"/>
+    <nodes name="fromProbTrans" outTransitions="//@modules.7/@transitions.3" inTransitions="//@modules.7/@transitions.5"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.7/@nodes.5" _to="//@modules.7/@nodes.4" invokedTransition="//@modules.5/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.7/@nodes.4" _to="//@modules.7/@nodes.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" probability="0.4" _from="//@modules.7/@nodes.2" _to="//@modules.7/@nodes.5"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.7/@nodes.6" _to="//@modules.7/@nodes.4" invokedTransition="//@modules.6/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.7/@nodes.3" _to="//@modules.7/@nodes.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" probability="0.6" _from="//@modules.7/@nodes.2" _to="//@modules.7/@nodes.6"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.8/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_DataService__ServerComposite_Provided_DataServiceInterface__join__dataServicePC_Provided_DataServiceInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.8/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.8/@transitions.0" inTransitions="//@modules.8/@transitions.1"/>
+    <nodes inTransitions="//@modules.8/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.8/@nodes.2" _to="//@modules.8/@nodes.3" invokedTransition="//@modules.7/@transitions.6"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.8/@nodes.1" _to="//@modules.8/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.9/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_DataService__clientComposite_Required_DataServiceInterface__join__ServerComposite_Provided_DataServiceInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.9/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.9/@transitions.0" inTransitions="//@modules.9/@transitions.1"/>
+    <nodes inTransitions="//@modules.9/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.9/@nodes.2" _to="//@modules.9/@nodes.3" invokedTransition="//@modules.8/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.9/@nodes.1" _to="//@modules.9/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.10/@transitions.1"/>
+  </modules>
+  <modules name="whoisOperation_DataService__dataRetrieverPC_Required_DataServiceInterface__join__clientComposite_Required_DataServiceInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.10/@transitions.0" isStart="true"/>
+    <nodes outTransitions="//@modules.10/@transitions.1" inTransitions="//@modules.10/@transitions.0"/>
+    <nodes inTransitions="//@modules.10/@transitions.1" isEnd="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.10/@nodes.1" _to="//@modules.10/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.10/@nodes.2" _to="//@modules.10/@nodes.3" invokedTransition="//@modules.9/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.11/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_DataRetriever__dataRetrieverPC_Provided_DataRetrieverInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="end" inTransitions="//@modules.11/@transitions.0" isEnd="true"/>
+    <nodes name="serviceCall" outTransitions="//@modules.11/@transitions.0" inTransitions="//@modules.11/@transitions.1"/>
+    <nodes name="start" outTransitions="//@modules.11/@transitions.1" isStart="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.11/@nodes.2" _to="//@modules.11/@nodes.1" invokedTransition="//@modules.10/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.11/@nodes.3" _to="//@modules.11/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.12/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_DataRetriever__guiComponentPC_Required_DataRetrieverInterface__join__dataRetrieverPC_Provided_DataRetrieverInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.12/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.12/@transitions.0" inTransitions="//@modules.12/@transitions.1"/>
+    <nodes inTransitions="//@modules.12/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.12/@nodes.2" _to="//@modules.12/@nodes.3" invokedTransition="//@modules.11/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.12/@nodes.1" _to="//@modules.12/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.13/@transitions.1"/>
+  </modules>
+  <modules name="whoisOperation_GuiInterface__guiComponentPC_Provided_GuiInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes name="start" outTransitions="//@modules.13/@transitions.0" isStart="true"/>
+    <nodes name="serviceCall" outTransitions="//@modules.13/@transitions.1" inTransitions="//@modules.13/@transitions.0"/>
+    <nodes name="end" inTransitions="//@modules.13/@transitions.1" isEnd="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.13/@nodes.1" _to="//@modules.13/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.13/@nodes.2" _to="//@modules.13/@nodes.3" invokedTransition="//@modules.12/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.15/@transitions.1"/>
+  </modules>
+  <modules name="whoisOperation_GuiInterface__ServiceArchitectureModel_Provided_GuiInterface__join__org.eclipse.emf.ecore.impl.DynamicEObjectImpl@1c07801_(eClass__org.eclipse.emf.ecore.impl.EClassImpl@106b188_(name__Invalid_Class)_(instanceClassName__null)_(abstract__false,_interface__false))">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.14/@transitions.0" isStart="true"/>
+    <nodes outTransitions="//@modules.14/@transitions.1" inTransitions="//@modules.14/@transitions.0"/>
+    <nodes inTransitions="//@modules.14/@transitions.1" isEnd="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.14/@nodes.1" _to="//@modules.14/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.14/@nodes.2" _to="//@modules.14/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" callTransition="//@modules.16/@transitions.0"/>
+  </modules>
+  <modules name="whoisOperation_GuiInterface__clientComposite_Provided_GuiInterface__join__guiComponentPC_Provided_GuiInterface">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.15/@transitions.0" isStart="true"/>
+    <nodes outTransitions="//@modules.15/@transitions.1" inTransitions="//@modules.15/@transitions.0"/>
+    <nodes inTransitions="//@modules.15/@transitions.1" isEnd="true"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.15/@nodes.1" _to="//@modules.15/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.15/@nodes.2" _to="//@modules.15/@nodes.3" invokedTransition="//@modules.13/@transitions.2"/>
+  </modules>
+  <modules name="usageModel" isAutonomous="true">
+    <nodes name="failure" isFail="true"/>
+    <nodes outTransitions="//@modules.16/@transitions.1" isStart="true"/>
+    <nodes outTransitions="//@modules.16/@transitions.0" inTransitions="//@modules.16/@transitions.1"/>
+    <nodes inTransitions="//@modules.16/@transitions.0" isEnd="true"/>
+    <transitions xsi:type="dtmc:CallTransition" name="trans" _from="//@modules.16/@nodes.2" _to="//@modules.16/@nodes.3" invokedTransition="//@modules.14/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="trans" _from="//@modules.16/@nodes.1" _to="//@modules.16/@nodes.2"/>
+  </modules>
+</dtmc:Dtmc>

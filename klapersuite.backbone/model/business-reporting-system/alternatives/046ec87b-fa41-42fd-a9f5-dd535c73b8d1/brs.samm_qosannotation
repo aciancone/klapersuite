@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qosannotation:QosAnnotations xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qosannotation="http://q-impress.eu/samm/qosannotation" xmlns:seffdecorator="http://q-impress.eu/qualityannotationdecorator/seffdecorator" id="_LUASoGkNEeCkc9u3PuyOhw" name="brsQosAnnotations">
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_NF2Dt2kNEeCkc9u3PuyOhw" name="acceptViewFailProb">
+    <constantNumber value="1.2E-4"/>
+    <internalAction href="brs.samm_seff#_A83HYGkHEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_o1xHZ2kNEeCkc9u3PuyOhw" name="acceptReportFailProb">
+    <constantNumber value="1.7E-4"/>
+    <internalAction href="brs.samm_seff#_5A4IQGkGEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_svTdZ2kQEeCkc9u3PuyOhw" name="prepareReportingFailProb">
+    <constantNumber value="1.1E-4"/>
+    <internalAction href="brs.samm_seff#_GydzYGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_6MvS52kQEeCkc9u3PuyOhw" name="prepareViewingFailProb">
+    <constantNumber value="2.3E-4"/>
+    <internalAction href="brs.samm_seff#_9SpqAGkHEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_-EZg92kQEeCkc9u3PuyOhw" name="cacheAccessFailProb">
+    <constantNumber value="4.9E-4"/>
+    <internalAction href="brs.samm_seff#_vf7rkGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_FC_Dt2kREeCkc9u3PuyOhw" name="dbGetSmallReportFailProb">
+    <constantNumber value="3.3E-4"/>
+    <internalAction href="brs.samm_seff#_6FyP8GkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_KNMex2kREeCkc9u3PuyOhw" name="dbGetBigReportFailProb">
+    <constantNumber value="7.1E-4"/>
+    <internalAction href="brs.samm_seff#_-LAY4GkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_NATfl2kREeCkc9u3PuyOhw" name="prepareBigReportFailProb">
+    <constantNumber value="6.6E-4"/>
+    <internalAction href="brs.samm_seff#_N8E6YGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_UKhDh2kREeCkc9u3PuyOhw" name="dbGetCachedDataFailProb">
+    <constantNumber value="4.2E-4"/>
+    <internalAction href="brs.samm_seff#_BbBYIGkJEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_Y1SJh2kREeCkc9u3PuyOhw" name="genBigReportFailProb">
+    <constantNumber value="8.8E-4"/>
+    <internalAction href="brs.samm_seff#_fDnDEGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_cpqaF2kREeCkc9u3PuyOhw" name="prepareSmallReportFailProb">
+    <constantNumber value="6.9E-4"/>
+    <internalAction href="brs.samm_seff#_j0yTEGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_2untkGkNEeCkc9u3PuyOhw" name="branchWebServerReportProb">
+    <constantNumber value="0.1"/>
+    <probabilisticBranchTransition href="brs.samm_seff#_2MR5sGkGEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_-AR9UGkNEeCkc9u3PuyOhw" name="branchWebServerViewProb">
+    <constantNumber value="0.9"/>
+    <probabilisticBranchTransition href="brs.samm_seff#__tcG4GkGEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_A3HnkGkOEeCkc9u3PuyOhw" name="branchReportingBigProb">
+    <constantNumber value="0.3"/>
+    <probabilisticBranchTransition href="brs.samm_seff#_IfPeQGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_Fi72cGkOEeCkc9u3PuyOhw" name="branchReportingSmallProb">
+    <constantNumber value="0.7"/>
+    <probabilisticBranchTransition href="brs.samm_seff#_JKwgcGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:LoopCount" id="_IyDd0WkOEeCkc9u3PuyOhw" name="bigReportLoopCount">
+    <constantNumber value="2.0"/>
+    <loopAction href="brs.samm_seff#_RoHHQGkIEeCkc9u3PuyOhw"/>
+  </annotation>
+</qosannotation:QosAnnotations>

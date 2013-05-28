@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ASCII"?>
+<klaper.core:KlaperModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:klaper.core="http://www.ing.uniroma2.it/klaper/core/1.0" xmlns:klaper.probability="http://www.ing.uniroma2.it/klaper/probability/1.0">
+  <resource name="dataServiceSI">
+    <offeredService name="whoisOperation_DataService: dataServicePC Provided DataServiceInterface">
+      <behavior>
+        <step xsi:type="klaper.core:End" name="end" in="//@resource.0/@offeredService.0/@behavior/@transition.5"/>
+        <step xsi:type="klaper.core:Branch" name="branch" in="//@resource.0/@offeredService.0/@behavior/@transition.4" out="//@resource.0/@offeredService.0/@behavior/@transition.2 //@resource.0/@offeredService.0/@behavior/@transition.1"/>
+        <step xsi:type="klaper.core:Start" name="start" out="//@resource.0/@offeredService.0/@behavior/@transition.4"/>
+        <step xsi:type="klaper.core:Join" name="branch" in="//@resource.0/@offeredService.0/@behavior/@transition.0 //@resource.0/@offeredService.0/@behavior/@transition.3" out="//@resource.0/@offeredService.0/@behavior/@transition.5" transitionsNeededToGo="1"/>
+        <step xsi:type="klaper.core:Activity" name="fromProbTrans" in="//@resource.0/@offeredService.0/@behavior/@transition.2" out="//@resource.0/@offeredService.0/@behavior/@transition.0">
+          <nestedBehavior>
+            <step xsi:type="klaper.core:ServiceControl" name="serviceCall" in="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.0" out="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.1">
+              <internalExecTime xsi:type="klaper.probability:Constant"/>
+              <internalFailProb xsi:type="klaper.probability:Constant"/>
+              <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+              <binding call="//@resource.4/@offeredService.1"/>
+            </step>
+            <step xsi:type="klaper.core:End" name="end" in="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.1"/>
+            <step xsi:type="klaper.core:Activity" name="internal" in="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.2" out="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.0">
+              <internalExecTime xsi:type="klaper.probability:Constant"/>
+              <internalFailProb xsi:type="klaper.probability:Constant" value="0.1"/>
+              <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+            </step>
+            <step xsi:type="klaper.core:Start" name="start" out="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@transition.2"/>
+            <transition to="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.0" from="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.2"/>
+            <transition to="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.1" from="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.0"/>
+            <transition to="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.2" from="//@resource.0/@offeredService.0/@behavior/@step.4/@nestedBehavior/@step.3"/>
+          </nestedBehavior>
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:Activity" name="fromProbTrans" in="//@resource.0/@offeredService.0/@behavior/@transition.1" out="//@resource.0/@offeredService.0/@behavior/@transition.3">
+          <nestedBehavior>
+            <step xsi:type="klaper.core:End" name="end" in="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@transition.1"/>
+            <step xsi:type="klaper.core:Activity" name="internal" in="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@transition.0" out="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@transition.1">
+              <internalExecTime xsi:type="klaper.probability:Constant"/>
+              <internalFailProb xsi:type="klaper.probability:Constant"/>
+              <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+            </step>
+            <step xsi:type="klaper.core:Start" name="start" out="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@transition.0"/>
+            <transition to="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@step.1" from="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@step.2"/>
+            <transition to="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@step.0" from="//@resource.0/@offeredService.0/@behavior/@step.5/@nestedBehavior/@step.1"/>
+          </nestedBehavior>
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.3" from="//@resource.0/@offeredService.0/@behavior/@step.4"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.5" from="//@resource.0/@offeredService.0/@behavior/@step.1" prob="0.6"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.4" from="//@resource.0/@offeredService.0/@behavior/@step.1" prob="0.4"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.3" from="//@resource.0/@offeredService.0/@behavior/@step.5"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.1" from="//@resource.0/@offeredService.0/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.0" from="//@resource.0/@offeredService.0/@behavior/@step.3"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="databaseManagerSI">
+    <offeredService name="whoisOperation_DatabaseManager: DatabaseManagerPC Provided DatabaseManagerInterface">
+      <behavior>
+        <step xsi:type="klaper.core:ServiceControl" name="serviceCall" in="//@resource.1/@offeredService.0/@behavior/@transition.1" out="//@resource.1/@offeredService.0/@behavior/@transition.0">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+          <binding call="//@resource.4/@offeredService.2"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="end" in="//@resource.1/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Start" name="start" out="//@resource.1/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.1/@offeredService.0/@behavior/@step.1" from="//@resource.1/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.1/@offeredService.0/@behavior/@step.0" from="//@resource.1/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="guiComponentInstance">
+    <offeredService name="whoisOperation_GuiInterface: guiComponentPC Provided GuiInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="start" out="//@resource.2/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="serviceCall" in="//@resource.2/@offeredService.0/@behavior/@transition.0" out="//@resource.2/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+          <binding call="//@resource.5/@offeredService.1"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="end" in="//@resource.2/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.2/@offeredService.0/@behavior/@step.1" from="//@resource.2/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.2/@offeredService.0/@behavior/@step.2" from="//@resource.2/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="dataRetrieverSI">
+    <offeredService name="whoisOperation_DataRetriever: dataRetrieverPC Provided DataRetrieverInterface">
+      <behavior>
+        <step xsi:type="klaper.core:End" name="end" in="//@resource.3/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="serviceCall" in="//@resource.3/@offeredService.0/@behavior/@transition.1" out="//@resource.3/@offeredService.0/@behavior/@transition.0">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+          <binding call="//@resource.5/@offeredService.2"/>
+        </step>
+        <step xsi:type="klaper.core:Start" name="start" out="//@resource.3/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.3/@offeredService.0/@behavior/@step.0" from="//@resource.3/@offeredService.0/@behavior/@step.1"/>
+        <transition to="//@resource.3/@offeredService.0/@behavior/@step.1" from="//@resource.3/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="serverCompositeInstance">
+    <offeredService name="whoisOperation_DataService: ServerComposite Provided DataServiceInterface -join-> dataServicePC Provided DataServiceInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.4/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.4/@offeredService.0/@behavior/@transition.0" out="//@resource.4/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.4/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.4/@offeredService.0/@behavior/@step.1" from="//@resource.4/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.4/@offeredService.0/@behavior/@step.2" from="//@resource.4/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_DatabaseManager: dataServicePC Required DatabaseManagerInterface -join-> DatabaseManagerPC Provided DatabaseManagerInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.4/@offeredService.1/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.4/@offeredService.1/@behavior/@transition.0" out="//@resource.4/@offeredService.1/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.1/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.4/@offeredService.1/@behavior/@transition.1"/>
+        <transition to="//@resource.4/@offeredService.1/@behavior/@step.1" from="//@resource.4/@offeredService.1/@behavior/@step.0"/>
+        <transition to="//@resource.4/@offeredService.1/@behavior/@step.2" from="//@resource.4/@offeredService.1/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_Database: DatabaseManagerPC Required DatabaseInterface -join-> ServiceComposite Required DatabaseInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.4/@offeredService.2/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.4/@offeredService.2/@behavior/@transition.0" out="//@resource.4/@offeredService.2/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.7/@offeredService.2"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.4/@offeredService.2/@behavior/@transition.1"/>
+        <transition to="//@resource.4/@offeredService.2/@behavior/@step.1" from="//@resource.4/@offeredService.2/@behavior/@step.0"/>
+        <transition to="//@resource.4/@offeredService.2/@behavior/@step.2" from="//@resource.4/@offeredService.2/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="clientCompositeInstance">
+    <offeredService name="whoisOperation_GuiInterface: clientComposite Provided GuiInterface -join-> guiComponentPC Provided GuiInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.5/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.5/@offeredService.0/@behavior/@transition.0" out="//@resource.5/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.2/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.5/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.5/@offeredService.0/@behavior/@step.1" from="//@resource.5/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.5/@offeredService.0/@behavior/@step.2" from="//@resource.5/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_DataRetriever: guiComponentPC Required DataRetrieverInterface -join-> dataRetrieverPC Provided DataRetrieverInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.5/@offeredService.1/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.5/@offeredService.1/@behavior/@transition.0" out="//@resource.5/@offeredService.1/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.3/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.5/@offeredService.1/@behavior/@transition.1"/>
+        <transition to="//@resource.5/@offeredService.1/@behavior/@step.1" from="//@resource.5/@offeredService.1/@behavior/@step.0"/>
+        <transition to="//@resource.5/@offeredService.1/@behavior/@step.2" from="//@resource.5/@offeredService.1/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_DataService: dataRetrieverPC Required DataServiceInterface -join-> clientComposite Required DataServiceInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.5/@offeredService.2/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.5/@offeredService.2/@behavior/@transition.0" out="//@resource.5/@offeredService.2/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.7/@offeredService.1"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.5/@offeredService.2/@behavior/@transition.1"/>
+        <transition to="//@resource.5/@offeredService.2/@behavior/@step.1" from="//@resource.5/@offeredService.2/@behavior/@step.0"/>
+        <transition to="//@resource.5/@offeredService.2/@behavior/@step.2" from="//@resource.5/@offeredService.2/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="databaseInstance">
+    <offeredService name="whoisOperation_Database: databasePC_Provided_DatabaseInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" name="internal" in="//@resource.6/@offeredService.0/@behavior/@transition.1" out="//@resource.6/@offeredService.0/@behavior/@transition.0">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="end" in="//@resource.6/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Start" name="start" out="//@resource.6/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.6/@offeredService.0/@behavior/@step.1" from="//@resource.6/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.6/@offeredService.0/@behavior/@step.0" from="//@resource.6/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="ServiceArchitectureModel">
+    <offeredService name="whoisOperation_GuiInterface: ServiceArchitectureModel Provided GuiInterface -join-> org.eclipse.emf.ecore.impl.DynamicEObjectImpl@1c07801 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@106b188 (name: Invalid_Class) (instanceClassName: null) (abstract: false, interface: false))">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.7/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.7/@offeredService.0/@behavior/@transition.0" out="//@resource.7/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.7/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.7/@offeredService.0/@behavior/@step.1" from="//@resource.7/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.7/@offeredService.0/@behavior/@step.2" from="//@resource.7/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_DataService: clientComposite Required DataServiceInterface -join-> ServerComposite Provided DataServiceInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.7/@offeredService.1/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.7/@offeredService.1/@behavior/@transition.0" out="//@resource.7/@offeredService.1/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.4/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.7/@offeredService.1/@behavior/@transition.1"/>
+        <transition to="//@resource.7/@offeredService.1/@behavior/@step.1" from="//@resource.7/@offeredService.1/@behavior/@step.0"/>
+        <transition to="//@resource.7/@offeredService.1/@behavior/@step.2" from="//@resource.7/@offeredService.1/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="whoisOperation_Database: ServiceComposite Required DatabaseInterface -join-> databasePC_Provided_DatabaseInterface">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.7/@offeredService.2/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.7/@offeredService.2/@behavior/@transition.0" out="//@resource.7/@offeredService.2/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.6/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.7/@offeredService.2/@behavior/@transition.1"/>
+        <transition to="//@resource.7/@offeredService.2/@behavior/@step.1" from="//@resource.7/@offeredService.2/@behavior/@step.0"/>
+        <transition to="//@resource.7/@offeredService.2/@behavior/@step.2" from="//@resource.7/@offeredService.2/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="usageModel">
+    <offeredService name="usageModel">
+      <behavior>
+        <step xsi:type="klaper.core:Start" out="//@resource.8/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.8/@offeredService.0/@behavior/@transition.0" out="//@resource.8/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <binding call="//@resource.7/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" in="//@resource.8/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.8/@offeredService.0/@behavior/@step.1" from="//@resource.8/@offeredService.0/@behavior/@step.0"/>
+        <transition to="//@resource.8/@offeredService.0/@behavior/@step.2" from="//@resource.8/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+      <formalParams name="tobetested"/>
+    </offeredService>
+  </resource>
+</klaper.core:KlaperModel>

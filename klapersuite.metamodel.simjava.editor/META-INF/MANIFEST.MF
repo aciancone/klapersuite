@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: klapersuite.metamodel.simjava.editor;singleton:=t
+ rue
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: simulator.base.presentation.SimJavaEditorPlugin$Impl
+ ementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: simulator.base.presentation,simulator.distribution.pre
+ sentation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;vi
+ sibility:=reexport,klapersuite.metamodel.simjava.edit;visibility:=ree
+ xport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.
+ edit.ui;visibility:=reexport,org.eclipse.ui.ide;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+

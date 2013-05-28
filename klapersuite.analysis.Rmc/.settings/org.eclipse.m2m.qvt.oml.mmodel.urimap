@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uriMap:MappingContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uriMap="http:///www.eclipse.org/m2m/qvt/oml/MModelUriMap/1.0.0">
+  <mapping sourceURI="http://klaper.sourceforge.net/metamodels/dtmc/1.0" targetURI="platform:/resource/klapersuite.metamodel.dtmc/model/dtmc.ecore"/>
+  <mapping sourceURI="http://klaper.sourceforge.net/metamodels/klaper/1.0" targetURI="platform:/resource/klapersuite.metamodel.klaper/model/klaper.ecore"/>
+</uriMap:MappingContainer>

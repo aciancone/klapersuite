@@ -1,0 +1,9 @@
+import klaper::core;
+
+/*
+	Sums probabilities of Transitions exiting from a Klaper Step
+*/
+Real sumOutgoingProbs(Step s, Real sum, List[Transition] visited):
+	let tr=s.out.selectFirst(e|e!=null&&!visited.contains(e)):
+	visited.add(tr)->
+	tr==null?sum:sumOutgoingProbs(s,sum+tr.prob,visited);

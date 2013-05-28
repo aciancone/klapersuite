@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: klapersuite.metamodel.klaper;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: klaper.core,klaper.core.impl,klaper.core.util,klaper.e
+ xpr,klaper.expr.impl,klaper.expr.util,klaper.probability,klaper.proba
+ bility.impl,klaper.probability.util
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport
+Bundle-ActivationPolicy: lazy
+

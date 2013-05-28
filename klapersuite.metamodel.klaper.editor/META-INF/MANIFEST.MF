@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: klapersuite.metamodel.klaper.editor;singleton:=tr
+ ue
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: klaper.core.presentation.KlaperEditorPlugin$Implemen
+ tation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: klaper.core.presentation,klaper.expr.presentation,klap
+ er.probability.presentation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;vi
+ sibility:=reexport,klapersuite.metamodel.klaper.edit;visibility:=reex
+ port,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.e
+ dit.ui;visibility:=reexport,org.eclipse.ui.ide;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+

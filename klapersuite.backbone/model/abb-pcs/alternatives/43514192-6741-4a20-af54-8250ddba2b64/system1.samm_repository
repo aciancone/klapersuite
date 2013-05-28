@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticstructure:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviour="http://q-impress.eu/samm/behaviour" xmlns:staticstructure="http://q-impress.eu/samm/staticstructure" id="_ski8IJG6Ed-4y8fXV-XIVA" name="i1182748678">
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_4SX1MJG6Ed-4y8fXV-XIVA" name="f1893487746">
+    <provided id="_PI7WMJG7Ed-4y8fXV-XIVA" name="p779601574" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <required id="_dzqwQJJTEd-E6p6_qzRMnw" name="p195110338" interfaceType="_ZIwgUJJTEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_dI7tQJG7Ed-4y8fXV-XIVA" operation="_MvSlUJG7Ed-4y8fXV-XIVA"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_xrJkYJHMEd-4y8fXV-XIVA" name="u1659182858">
+    <provided id="_5ymzsJHMEd-4y8fXV-XIVA" name="d1409076496" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_6lQ_sJHMEd-4y8fXV-XIVA" name="i699746795" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_7ulYMJHMEd-4y8fXV-XIVA" operation="_4CPpUJHMEd-4y8fXV-XIVA"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:CompositeComponent" id="_B4-oAJJIEd-E6p6_qzRMnw" name="z1538712968">
+    <provided id="_O2hcgJJIEd-E6p6_qzRMnw" name="e685002853" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_Q4UVIJJIEd-E6p6_qzRMnw" name="l2023840030" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_R4clkKVFEd-i1ezDjxCJpg" name="s1948003855" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <required id="_rD_mwMDKEd-uuPjDOeDPqg" name="u2125857969" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <subcomponents id="_fhB1gJJJEd-E6p6_qzRMnw" name="s561586144" realizedBy="_-NRV0JJIEd-E6p6_qzRMnw"/>
+    <subcomponents id="_hoLvQJJJEd-E6p6_qzRMnw" name="b1728219518" realizedBy="_UVJoYJJIEd-E6p6_qzRMnw"/>
+    <connector id="_quhosJJJEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_s07UgJJJEd-E6p6_qzRMnw" port="_O2hcgJJIEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_uOo5cJJJEd-E6p6_qzRMnw" port="_AJsmQJJJEd-E6p6_qzRMnw" subcomponent="_fhB1gJJJEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_wZXroJJJEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_zQ88wJJJEd-E6p6_qzRMnw" port="_5-g2YJJIEd-E6p6_qzRMnw" subcomponent="_hoLvQJJJEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_H18ZUKVaEd-aQeVwzPgL-A" port="_AtKfsJJJEd-E6p6_qzRMnw" subcomponent="_fhB1gJJJEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_zu5dAJJJEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_0WF_4JJJEd-E6p6_qzRMnw" port="_6eG8cJJIEd-E6p6_qzRMnw" subcomponent="_hoLvQJJJEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_1reecJJJEd-E6p6_qzRMnw" port="_Q4UVIJJIEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_YbBhwKVFEd-i1ezDjxCJpg">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_aWGuYKVFEd-i1ezDjxCJpg" port="_QDeA8KVFEd-i1ezDjxCJpg" subcomponent="_hoLvQJJJEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_a-yfAKVFEd-i1ezDjxCJpg" port="_R4clkKVFEd-i1ezDjxCJpg"/>
+    </connector>
+    <connector id="_ugFTIMDKEd-uuPjDOeDPqg">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_u81gkMDKEd-uuPjDOeDPqg" port="_oD6g8MDKEd-uuPjDOeDPqg" subcomponent="_hoLvQJJJEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_vRaCYMDKEd-uuPjDOeDPqg" port="_rD_mwMDKEd-uuPjDOeDPqg"/>
+    </connector>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_UVJoYJJIEd-E6p6_qzRMnw" name="x1949192412">
+    <provided id="_5-g2YJJIEd-E6p6_qzRMnw" name="s87186840" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_6eG8cJJIEd-E6p6_qzRMnw" name="k1286129236" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_QDeA8KVFEd-i1ezDjxCJpg" name="v2039705692" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <required id="_oD6g8MDKEd-uuPjDOeDPqg" name="r1944711663" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_DoK4QJJJEd-E6p6_qzRMnw" operation="_JB_5IJJIEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_-NRV0JJIEd-E6p6_qzRMnw" name="s307715417">
+    <provided id="_AJsmQJJJEd-E6p6_qzRMnw" name="w2047533909" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_AtKfsJJJEd-E6p6_qzRMnw" name="s988537529" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_T8vS8JJJEd-E6p6_qzRMnw" operation="_JB_5IJJIEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_YSg00JJTEd-E6p6_qzRMnw" name="w1514441660">
+    <provided id="_cN5FQJJTEd-E6p6_qzRMnw" name="h1086497165" interfaceType="_ZIwgUJJTEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_hrCDYJJTEd-E6p6_qzRMnw" operation="_a07uQJJTEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_UfE-cZJeEd-E6p6_qzRMnw" name="s1768389653">
+    <provided id="_-y6XgJJeEd-E6p6_qzRMnw" name="y845217919" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <required id="_jd_YUJJfEd-E6p6_qzRMnw" name="i1243987711" interfaceType="_TaHFAJJfEd-E6p6_qzRMnw"/>
+    <required id="_meEeIJJfEd-E6p6_qzRMnw" name="a1915996862" interfaceType="_Q3PfoJJfEd-E6p6_qzRMnw"/>
+    <required id="_z39a8JJgEd-E6p6_qzRMnw" name="o287954643" interfaceType="_TaHFAJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_xFzxgJJiEd-E6p6_qzRMnw" operation="_v4BIsJJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_Xb3fxpJeEd-E6p6_qzRMnw" name="e1318475698">
+    <provided id="_QTxmMJJfEd-E6p6_qzRMnw" name="x1468551312" interfaceType="_O6XjQJJfEd-E6p6_qzRMnw"/>
+    <required id="_lG5P0JJfEd-E6p6_qzRMnw" name="p1156320673" interfaceType="_TaHFAJJfEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_ZPziiJJeEd-E6p6_qzRMnw" name="m1541782504">
+    <provided id="_Zrs-4JJfEd-E6p6_qzRMnw" name="e418339463" interfaceType="_Q3PfoJJfEd-E6p6_qzRMnw"/>
+    <required id="_nzv3oJJfEd-E6p6_qzRMnw" name="t346108581" interfaceType="_UxbdQJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_IwKaIKBdEd-CsaCJ13sj1A" operation="_HspusKBdEd-CsaCJ13sj1A"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_eB3jZpJeEd-E6p6_qzRMnw" name="b138302396">
+    <provided id="_Z3UZAJJfEd-E6p6_qzRMnw" name="l677359437" interfaceType="_TaHFAJJfEd-E6p6_qzRMnw"/>
+    <required id="_yiZLoJJfEd-E6p6_qzRMnw" name="x1645954577" interfaceType="_u3_9gJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_I0iQoJJjEd-E6p6_qzRMnw" operation="_5yz94JJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_rSo12JJeEd-E6p6_qzRMnw" name="y2139285955">
+    <provided id="_aaCrkJJfEd-E6p6_qzRMnw" name="a1753425839" interfaceType="_UxbdQJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_UUZ5YKBdEd-CsaCJ13sj1A" operation="_TAgBgKBdEd-CsaCJ13sj1A"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_x9aEuJJeEd-E6p6_qzRMnw" name="z324943616">
+    <provided id="_xDBqoJJfEd-E6p6_qzRMnw" name="k725396457" interfaceType="_u3_9gJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_AvT18JJjEd-E6p6_qzRMnw" operation="_9yEowJJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_zngPCJJeEd-E6p6_qzRMnw" name="k1437649938">
+    <provided id="_xpU1oJJfEd-E6p6_qzRMnw" name="d597752824" interfaceType="_u3_9gJJfEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_iChPYKCCEd-CsaCJ13sj1A" operation="_9yEowJJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:CompositeComponent" id="_1KoZMJJfEd-E6p6_qzRMnw" name="k516382164">
+    <provided id="_LruAgJJgEd-E6p6_qzRMnw" name="k1161115098" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <required id="_NS_gUJJgEd-E6p6_qzRMnw" name="a2034057860" interfaceType="_u3_9gJJfEd-E6p6_qzRMnw"/>
+    <required id="_y2DBcKYpEd-F2fxisVCBKw" name="w1935582245" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_nWSkIKYqEd-F2fxisVCBKw" name="z604722654" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <subcomponents id="_2unUcJJfEd-E6p6_qzRMnw" name="p593147574" realizedBy="_UfE-cZJeEd-E6p6_qzRMnw"/>
+    <subcomponents id="_91G2AJJfEd-E6p6_qzRMnw" name="y1190107841" realizedBy="_ZPziiJJeEd-E6p6_qzRMnw"/>
+    <subcomponents id="__wVzoJJfEd-E6p6_qzRMnw" name="p735650097" realizedBy="_eB3jZpJeEd-E6p6_qzRMnw"/>
+    <subcomponents id="_lw9EAJJgEd-E6p6_qzRMnw" name="i412502101" realizedBy="_rSo12JJeEd-E6p6_qzRMnw"/>
+    <subcomponents id="_iUxmIJJiEd-E6p6_qzRMnw" name="b2096235597" realizedBy="_dgUYoJJiEd-E6p6_qzRMnw"/>
+    <subcomponents id="_ZfofgJJkEd-E6p6_qzRMnw" name="o1109485878" realizedBy="_zngPCJJeEd-E6p6_qzRMnw"/>
+    <connector id="_Yer8sJJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_Y8MYEJJgEd-E6p6_qzRMnw" port="_meEeIJJfEd-E6p6_qzRMnw" subcomponent="_2unUcJJfEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_ZIRFMJJgEd-E6p6_qzRMnw" port="_Zrs-4JJfEd-E6p6_qzRMnw" subcomponent="_91G2AJJfEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_Z_sccJJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_aVmbAJJgEd-E6p6_qzRMnw" port="_Z3UZAJJfEd-E6p6_qzRMnw" subcomponent="__wVzoJJfEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_ahrIIJJgEd-E6p6_qzRMnw" port="_jd_YUJJfEd-E6p6_qzRMnw" subcomponent="_2unUcJJfEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_bDMg0JJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_cIpF8JJgEd-E6p6_qzRMnw" port="_yiZLoJJfEd-E6p6_qzRMnw" subcomponent="__wVzoJJfEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_cjUPwJJgEd-E6p6_qzRMnw" port="_NS_gUJJgEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_dGLsQJJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_dbMS8JJgEd-E6p6_qzRMnw" port="_-y6XgJJeEd-E6p6_qzRMnw" subcomponent="_2unUcJJfEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_dxZMcJJgEd-E6p6_qzRMnw" port="_LruAgJJgEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_s2F6sJJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_tR0NYJJgEd-E6p6_qzRMnw" port="_aaCrkJJfEd-E6p6_qzRMnw" subcomponent="_lw9EAJJgEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_tgtlAJJgEd-E6p6_qzRMnw" port="_nzv3oJJfEd-E6p6_qzRMnw" subcomponent="_91G2AJJfEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="___HaAJJgEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_A7KykJJhEd-E6p6_qzRMnw" port="_z39a8JJgEd-E6p6_qzRMnw" subcomponent="_2unUcJJfEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_mylOMJJiEd-E6p6_qzRMnw" port="_fuCNYJJiEd-E6p6_qzRMnw" subcomponent="_iUxmIJJiEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_CJGlUJJhEd-E6p6_qzRMnw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_nQrfcJJiEd-E6p6_qzRMnw" port="_gj-W4JJiEd-E6p6_qzRMnw" subcomponent="_iUxmIJJiEd-E6p6_qzRMnw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_dNAwMJJkEd-E6p6_qzRMnw" port="_xpU1oJJfEd-E6p6_qzRMnw" subcomponent="_ZfofgJJkEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_0iswgKYpEd-F2fxisVCBKw">
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_0-R5QKYpEd-F2fxisVCBKw" port="_y2DBcKYpEd-F2fxisVCBKw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_6_P9MKYpEd-F2fxisVCBKw" port="_wc-4UKYpEd-F2fxisVCBKw" subcomponent="_iUxmIJJiEd-E6p6_qzRMnw"/>
+    </connector>
+    <connector id="_rDFmAKYqEd-F2fxisVCBKw">
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_raCGYKYqEd-F2fxisVCBKw" port="_nWSkIKYqEd-F2fxisVCBKw"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_r1deIKYqEd-F2fxisVCBKw" port="_jwDdQKYqEd-F2fxisVCBKw" subcomponent="_iUxmIJJiEd-E6p6_qzRMnw"/>
+    </connector>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_dgUYoJJiEd-E6p6_qzRMnw" name="s1292793047">
+    <provided id="_fuCNYJJiEd-E6p6_qzRMnw" name="v253474530" interfaceType="_TaHFAJJfEd-E6p6_qzRMnw"/>
+    <required id="_gj-W4JJiEd-E6p6_qzRMnw" name="q260457459" interfaceType="_u3_9gJJfEd-E6p6_qzRMnw"/>
+    <required id="_wc-4UKYpEd-F2fxisVCBKw" name="c740778339" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_jwDdQKYqEd-F2fxisVCBKw" name="n1598869031" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_hLW9sKBdEd-CsaCJ13sj1A" operation="_5yz94JJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_tcFWMKVEEd-i1ezDjxCJpg" name="j1273224011">
+    <provided id="_vf95gKVEEd-i1ezDjxCJpg" name="c997361367" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <required id="_MC41gKVHEd-i1ezDjxCJpg" name="r794780116" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_wQia0KVEEd-i1ezDjxCJpg" operation="_r_QL0KVEEd-i1ezDjxCJpg"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_BoprQKVHEd-i1ezDjxCJpg" name="m220787473">
+    <provided id="_DPBMIKVHEd-i1ezDjxCJpg" name="u1504412475" interfaceType="_-hj-gKVGEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_Dz-TUKVHEd-i1ezDjxCJpg" operation="__w_mEKVGEd-i1ezDjxCJpg"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_3TZ5QKVHEd-i1ezDjxCJpg" name="k1414588618">
+    <provided id="_5UdLAKVHEd-i1ezDjxCJpg" name="c1693141786" interfaceType="_0AQtgKVHEd-i1ezDjxCJpg"/>
+    <required id="_6Fx6QKVHEd-i1ezDjxCJpg" name="e1964435050" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_7i6moKVHEd-i1ezDjxCJpg" operation="_1u0hEKVHEd-i1ezDjxCJpg"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_PBV4wKVJEd-i1ezDjxCJpg" name="w159403396">
+    <provided id="_RLCJIKVJEd-i1ezDjxCJpg" name="e1455908173" interfaceType="_NxUbUKVJEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_Rw4oMKVJEd-i1ezDjxCJpg" operation="_QIa1kKVJEd-i1ezDjxCJpg"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_XNyX8KVYEd-aQeVwzPgL-A" name="w1656161790">
+    <provided id="_aoY2kKVYEd-aQeVwzPgL-A" name="f1195380714" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_ZH-MsKVYEd-aQeVwzPgL-A" name="o81822074" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_aAwO0KVYEd-aQeVwzPgL-A" name="x1452933335" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_bw9BIKVYEd-aQeVwzPgL-A" operation="_JB_5IJJIEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_9MKXIKYdEd-F2fxisVCBKw" name="o1758314209">
+    <provided id="__H_xsKYdEd-F2fxisVCBKw" name="j512123574" interfaceType="_6AUtQKYdEd-F2fxisVCBKw"/>
+    <required id="_JeymYKYeEd-F2fxisVCBKw" name="n1462076132" interfaceType="_NxUbUKVJEd-i1ezDjxCJpg"/>
+    <required id="_9hTrQKYeEd-F2fxisVCBKw" name="h2040607443" interfaceType="_0AQtgKVHEd-i1ezDjxCJpg"/>
+    <required id="_zDoWAKYfEd-F2fxisVCBKw" name="b1819511492" interfaceType="_oPCLAKYfEd-F2fxisVCBKw"/>
+    <required id="_mfPy8KYgEd-F2fxisVCBKw" name="b416119096" interfaceType="_ah5QIKYgEd-F2fxisVCBKw"/>
+    <required id="_wxOZEKYgEd-F2fxisVCBKw" name="m553313391" interfaceType="_nbLPsKYgEd-F2fxisVCBKw"/>
+    <required id="_0ImSoKYiEd-F2fxisVCBKw" name="o1128936025" interfaceType="_qjG_EKYiEd-F2fxisVCBKw"/>
+    <required id="_rVg28KYjEd-F2fxisVCBKw" name="b1845503220" interfaceType="_ht9G0KYjEd-F2fxisVCBKw"/>
+    <required id="_5UCAQKYjEd-F2fxisVCBKw" name="i1055039616" interfaceType="_uptLkKYjEd-F2fxisVCBKw"/>
+    <required id="_GVTeMKYkEd-F2fxisVCBKw" name="c1565329918" interfaceType="_6yW_cKYjEd-F2fxisVCBKw"/>
+    <required id="_V2UVAKYkEd-F2fxisVCBKw" name="p1443432125" interfaceType="_J8Hz4KYkEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_BpEnUKYeEd-F2fxisVCBKw" operation="_61Nt4KYdEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_rSiYQKYfEd-F2fxisVCBKw" name="u1436639208">
+    <provided id="_td3AUKYfEd-F2fxisVCBKw" name="t1427154206" interfaceType="_oPCLAKYfEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_uTDi8KYfEd-F2fxisVCBKw" operation="_p95gkKYfEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_fGO-AKYgEd-F2fxisVCBKw" name="o699144745">
+    <provided id="_gmiTIKYgEd-F2fxisVCBKw" name="x276889243" interfaceType="_ah5QIKYgEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_hhanAKYgEd-F2fxisVCBKw" operation="_d3hIIKYgEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_p1UW4KYgEd-F2fxisVCBKw" name="m701813289">
+    <provided id="_rZ8yYKYgEd-F2fxisVCBKw" name="c1170493083" interfaceType="_nbLPsKYgEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_seq-wKYgEd-F2fxisVCBKw" operation="_oqCPgKYgEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_tUloMKYiEd-F2fxisVCBKw" name="x1306488019">
+    <provided id="_u56nQKYiEd-F2fxisVCBKw" name="u1499658930" interfaceType="_qjG_EKYiEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_v51zMKYiEd-F2fxisVCBKw" operation="_sRYewKYiEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_kYRYAKYjEd-F2fxisVCBKw" name="n235316053">
+    <provided id="_lqE-IKYjEd-F2fxisVCBKw" name="j899683508" interfaceType="_ht9G0KYjEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_mNP8oKYjEd-F2fxisVCBKw" operation="_jb7EgKYjEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_xpCqgKYjEd-F2fxisVCBKw" name="l1954246421">
+    <provided id="_zew2AKYjEd-F2fxisVCBKw" name="a541567351" interfaceType="_uptLkKYjEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_0EdkEKYjEd-F2fxisVCBKw" operation="_wIxxoKYjEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_9-p8UKYjEd-F2fxisVCBKw" name="p271965739">
+    <provided id="__ZjNAKYjEd-F2fxisVCBKw" name="h443541295" interfaceType="_6yW_cKYjEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_AJh4cKYkEd-F2fxisVCBKw" operation="_8IfE4KYjEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_NBaw4KYkEd-F2fxisVCBKw" name="t605681984">
+    <provided id="_PvdrgKYkEd-F2fxisVCBKw" name="b1196723455" interfaceType="_J8Hz4KYkEd-F2fxisVCBKw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_QSoC8KYkEd-F2fxisVCBKw" operation="_LlLcYKYkEd-F2fxisVCBKw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_ZUpNEKbUEd-7PvokbmP_og" name="p1244707280">
+    <provided id="_cwS0kKbUEd-7PvokbmP_og" name="g309504986" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_ezIPAKbUEd-7PvokbmP_og" name="d883713139" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_gHUawKbUEd-7PvokbmP_og" name="b1416696844" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_iSM98KbUEd-7PvokbmP_og" operation="_JB_5IJJIEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_5kNPYKbVEd-7PvokbmP_og" name="g1276901347">
+    <provided id="_7SU-EKbVEd-7PvokbmP_og" name="d1396407180" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <required id="_8EjFMKbVEd-7PvokbmP_og" name="b1420011085" interfaceType="_ZIwgUJJTEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_8yvn8KbVEd-7PvokbmP_og" operation="_MvSlUJG7Ed-4y8fXV-XIVA"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:CompositeComponent" id="_V_eiYK93Ed-m0d4ll29Pog" name="b627308896">
+    <provided id="_afqwEK93Ed-m0d4ll29Pog" name="s343081551" interfaceType="_6AUtQKYdEd-F2fxisVCBKw"/>
+    <required id="_ir5xsK93Ed-m0d4ll29Pog" name="p1439681841" interfaceType="_oKh50KVAEd-i1ezDjxCJpg"/>
+    <subcomponents id="_mguuMK93Ed-m0d4ll29Pog" name="k1174196680" realizedBy="_9MKXIKYdEd-F2fxisVCBKw"/>
+    <subcomponents id="_0X88sK93Ed-m0d4ll29Pog" name="v1497910940" realizedBy="_NBaw4KYkEd-F2fxisVCBKw"/>
+    <subcomponents id="_7B_LwK93Ed-m0d4ll29Pog" name="d1324165701" realizedBy="_3TZ5QKVHEd-i1ezDjxCJpg"/>
+    <subcomponents id="_G-RXkK94Ed-m0d4ll29Pog" name="y2139684038" realizedBy="_xpCqgKYjEd-F2fxisVCBKw"/>
+    <subcomponents id="_L-WmQK94Ed-m0d4ll29Pog" name="g1498679971" realizedBy="_9-p8UKYjEd-F2fxisVCBKw"/>
+    <subcomponents id="_QT97oK94Ed-m0d4ll29Pog" name="e7103208" realizedBy="_kYRYAKYjEd-F2fxisVCBKw"/>
+    <subcomponents id="_Xu4OAK94Ed-m0d4ll29Pog" name="h738564862" realizedBy="_tUloMKYiEd-F2fxisVCBKw"/>
+    <subcomponents id="_ccU0kK94Ed-m0d4ll29Pog" name="v1359693093" realizedBy="_p1UW4KYgEd-F2fxisVCBKw"/>
+    <subcomponents id="_iQRJIK94Ed-m0d4ll29Pog" name="s1457820609" realizedBy="_fGO-AKYgEd-F2fxisVCBKw"/>
+    <subcomponents id="_m0x2IK94Ed-m0d4ll29Pog" name="j1236344762" realizedBy="_rSiYQKYfEd-F2fxisVCBKw"/>
+    <subcomponents id="_s0Cp4K94Ed-m0d4ll29Pog" name="h2087768820" realizedBy="_PBV4wKVJEd-i1ezDjxCJpg"/>
+    <connector id="_3KLMsK93Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_3ouJ4K93Ed-m0d4ll29Pog" port="_V2UVAKYkEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_4BdaAK93Ed-m0d4ll29Pog" port="_PvdrgKYkEd-F2fxisVCBKw" subcomponent="_0X88sK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_-F8E8K93Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_-ZAx8K93Ed-m0d4ll29Pog" port="_9hTrQKYeEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="__J41QK93Ed-m0d4ll29Pog" port="_5UdLAKVHEd-i1ezDjxCJpg" subcomponent="_7B_LwK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="__e5b8K93Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="__4FYAK93Ed-m0d4ll29Pog" port="_6Fx6QKVHEd-i1ezDjxCJpg" subcomponent="_7B_LwK93Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_AYRT8K94Ed-m0d4ll29Pog" port="_ir5xsK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_A-to4K94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_BZrtoK94Ed-m0d4ll29Pog" port="__H_xsKYdEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_BzxBkK94Ed-m0d4ll29Pog" port="_afqwEK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_Jzn0EK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_KJ-ekK94Ed-m0d4ll29Pog" port="_zew2AKYjEd-F2fxisVCBKw" subcomponent="_G-RXkK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_KXiZcK94Ed-m0d4ll29Pog" port="_5UCAQKYjEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_PCKVgK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_PbCvkK94Ed-m0d4ll29Pog" port="__ZjNAKYjEd-F2fxisVCBKw" subcomponent="_L-WmQK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_PlUs8K94Ed-m0d4ll29Pog" port="_GVTeMKYkEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_SqB0EK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_TL_4sK94Ed-m0d4ll29Pog" port="_lqE-IKYjEd-F2fxisVCBKw" subcomponent="_QT97oK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_UeZ7wK94Ed-m0d4ll29Pog" port="_rVg28KYjEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_bXfTcK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_buSC0K94Ed-m0d4ll29Pog" port="_u56nQKYiEd-F2fxisVCBKw" subcomponent="_Xu4OAK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_b1SpwK94Ed-m0d4ll29Pog" port="_0ImSoKYiEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_ffGCAK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_f0ZjoK94Ed-m0d4ll29Pog" port="_rZ8yYKYgEd-F2fxisVCBKw" subcomponent="_ccU0kK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_f-rhAK94Ed-m0d4ll29Pog" port="_wxOZEKYgEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_k2HxEK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_lKh60K94Ed-m0d4ll29Pog" port="_gmiTIKYgEd-F2fxisVCBKw" subcomponent="_iQRJIK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_ltGcYK94Ed-m0d4ll29Pog" port="_mfPy8KYgEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_rQzVgK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_rhCw8K94Ed-m0d4ll29Pog" port="_td3AUKYfEd-F2fxisVCBKw" subcomponent="_m0x2IK94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_roMh0K94Ed-m0d4ll29Pog" port="_zDoWAKYfEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+    <connector id="_wecfEK94Ed-m0d4ll29Pog">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_wwBXQK94Ed-m0d4ll29Pog" port="_RLCJIKVJEd-i1ezDjxCJpg" subcomponent="_s0Cp4K94Ed-m0d4ll29Pog"/>
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_w6wAkK94Ed-m0d4ll29Pog" port="_JeymYKYeEd-F2fxisVCBKw" subcomponent="_mguuMK93Ed-m0d4ll29Pog"/>
+    </connector>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_MLNBsLy5Ed-J84sgW-8Kuw" name="o1789790384">
+    <provided id="_Ntj6YLy7Ed-J84sgW-8Kuw" name="b334149041" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_T9M-YLy5Ed-J84sgW-8Kuw" name="r448994500" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_YYcvwLy7Ed-J84sgW-8Kuw" operation="_4CPpUJHMEd-4y8fXV-XIVA"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:CompositeComponent" id="_UxgwMLy5Ed-J84sgW-8Kuw" name="l87284952">
+    <provided id="_kkH34Ly6Ed-J84sgW-8Kuw" name="m421432794" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <required id="_ZR_40Ly5Ed-J84sgW-8Kuw" name="a298502263" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <subcomponents id="_k0XIwLy5Ed-J84sgW-8Kuw" name="w1396136789" realizedBy="_MLNBsLy5Ed-J84sgW-8Kuw"/>
+    <connector id="_ogQLsLy5Ed-J84sgW-8Kuw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_o1teULy5Ed-J84sgW-8Kuw" port="_T9M-YLy5Ed-J84sgW-8Kuw" subcomponent="_k0XIwLy5Ed-J84sgW-8Kuw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_q1HKQLy5Ed-J84sgW-8Kuw" port="_ZR_40Ly5Ed-J84sgW-8Kuw"/>
+    </connector>
+    <connector id="_QNvYILy7Ed-J84sgW-8Kuw">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_QimN0Ly7Ed-J84sgW-8Kuw" port="_Ntj6YLy7Ed-J84sgW-8Kuw" subcomponent="_k0XIwLy5Ed-J84sgW-8Kuw"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_Q0xi8Ly7Ed-J84sgW-8Kuw" port="_kkH34Ly6Ed-J84sgW-8Kuw"/>
+    </connector>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_ohA-cL_fEd-PHYEGGZFL2w" name="a1303622061">
+    <provided id="_qY2p0L_fEd-PHYEGGZFL2w" name="j1931106153" interfaceType="_fvGc4L_fEd-PHYEGGZFL2w"/>
+    <required id="_upnUYL_fEd-PHYEGGZFL2w" name="e713140694" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_rNnuoL_fEd-PHYEGGZFL2w" operation="_j4G5oL_fEd-PHYEGGZFL2w"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:CompositeComponent" id="_6lf3kL_fEd-PHYEGGZFL2w" name="y726319931">
+    <provided id="_8yMYoL_fEd-PHYEGGZFL2w" name="k815697074" interfaceType="_fvGc4L_fEd-PHYEGGZFL2w"/>
+    <required id="_94ZywL_fEd-PHYEGGZFL2w" name="j703484316" interfaceType="_1_tw4JHMEd-4y8fXV-XIVA"/>
+    <subcomponents id="_BuVigL_gEd-PHYEGGZFL2w" name="y1863302516" realizedBy="_ohA-cL_fEd-PHYEGGZFL2w"/>
+    <connector id="_FnryoL_gEd-PHYEGGZFL2w">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_GJhUYL_gEd-PHYEGGZFL2w" port="_qY2p0L_fEd-PHYEGGZFL2w" subcomponent="_BuVigL_gEd-PHYEGGZFL2w"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_GkfZIL_gEd-PHYEGGZFL2w" port="_8yMYoL_fEd-PHYEGGZFL2w"/>
+    </connector>
+    <connector id="_F3yEIL_gEd-PHYEGGZFL2w">
+      <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_HAgmwL_gEd-PHYEGGZFL2w" port="_upnUYL_fEd-PHYEGGZFL2w" subcomponent="_BuVigL_gEd-PHYEGGZFL2w"/>
+      <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_HQ5zML_gEd-PHYEGGZFL2w" port="_94ZywL_fEd-PHYEGGZFL2w"/>
+    </connector>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_w12QUNqXEd-qLr8SJ1mApA" name="j1926057149">
+    <provided id="_5PCv4NqXEd-qLr8SJ1mApA" name="r678563131" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_6s7DINqXEd-qLr8SJ1mApA" name="m305295496" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_8W4DgNqXEd-qLr8SJ1mApA" name="d1692863292" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <required id="_SJW4YNqYEd-qLr8SJ1mApA" name="h1560875539" interfaceType="_HJmNEJJIEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="__IpnkNqXEd-qLr8SJ1mApA" operation="_JB_5IJJIEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_7qUqENqYEd-qLr8SJ1mApA" name="y510771656">
+    <provided id="_DUlnENqZEd-qLr8SJ1mApA" name="x1004815881" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <required id="_FEDZkNqZEd-qLr8SJ1mApA" name="z878567690" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <required id="_GF7GQNqZEd-qLr8SJ1mApA" name="g397346342" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <required id="_G2WdoNqZEd-qLr8SJ1mApA" name="n1486050112" interfaceType="_G0zj4JG7Ed-4y8fXV-XIVA"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_JL0gMNqZEd-qLr8SJ1mApA" operation="_MvSlUJG7Ed-4y8fXV-XIVA"/>
+  </componenttype>
+  <componenttype xsi:type="staticstructure:PrimitiveComponent" id="_wLG_UNqZEd-qLr8SJ1mApA" name="i1812956609">
+    <provided id="_y-hiINqZEd-qLr8SJ1mApA" name="q1730868221" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <required id="_zX3PMNqZEd-qLr8SJ1mApA" name="n687019394" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <required id="_0XpRMNqZEd-qLr8SJ1mApA" name="i1702241997" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <required id="_1zI-0NqZEd-qLr8SJ1mApA" name="v99142819" interfaceType="_8NgbgpJeEd-E6p6_qzRMnw"/>
+    <OperationBehaviour xsi:type="behaviour:SeffBehaviourStub" id="_2rBCANqZEd-qLr8SJ1mApA" operation="_v4BIsJJiEd-E6p6_qzRMnw"/>
+  </componenttype>
+  <interface id="_G0zj4JG7Ed-4y8fXV-XIVA" name="q1032695715">
+    <signatures id="_MvSlUJG7Ed-4y8fXV-XIVA" name="f135208672"/>
+  </interface>
+  <interface id="_1_tw4JHMEd-4y8fXV-XIVA" name="y1453542605">
+    <signatures id="_4CPpUJHMEd-4y8fXV-XIVA" name="w672988811"/>
+  </interface>
+  <interface id="_HJmNEJJIEd-E6p6_qzRMnw" name="d785624215">
+    <signatures id="_JB_5IJJIEd-E6p6_qzRMnw" name="w597785905"/>
+  </interface>
+  <interface id="_ZIwgUJJTEd-E6p6_qzRMnw" name="g172422494">
+    <signatures id="_a07uQJJTEd-E6p6_qzRMnw" name="k1978350621"/>
+  </interface>
+  <interface id="_8NgbgpJeEd-E6p6_qzRMnw" name="d619347162">
+    <signatures id="_v4BIsJJiEd-E6p6_qzRMnw" name="k486708351"/>
+  </interface>
+  <interface id="_O6XjQJJfEd-E6p6_qzRMnw" name="a1259563443"/>
+  <interface id="_Q3PfoJJfEd-E6p6_qzRMnw" name="j370260936">
+    <signatures id="_HspusKBdEd-CsaCJ13sj1A" name="j1251448408"/>
+  </interface>
+  <interface id="_TaHFAJJfEd-E6p6_qzRMnw" name="b803298266">
+    <signatures id="_5yz94JJiEd-E6p6_qzRMnw" name="v1860320206"/>
+  </interface>
+  <interface id="_UxbdQJJfEd-E6p6_qzRMnw" name="b368256780">
+    <signatures id="_TAgBgKBdEd-CsaCJ13sj1A" name="u724890426"/>
+  </interface>
+  <interface id="_u3_9gJJfEd-E6p6_qzRMnw" name="p1530774601">
+    <signatures id="_9yEowJJiEd-E6p6_qzRMnw" name="t877282841"/>
+  </interface>
+  <interface id="_oKh50KVAEd-i1ezDjxCJpg" name="o472792306">
+    <signatures id="_r_QL0KVEEd-i1ezDjxCJpg" name="m1382201869"/>
+  </interface>
+  <interface id="_-hj-gKVGEd-i1ezDjxCJpg" name="y1508178377">
+    <signatures id="__w_mEKVGEd-i1ezDjxCJpg" name="x239021204"/>
+  </interface>
+  <interface id="_0AQtgKVHEd-i1ezDjxCJpg" name="s180109148">
+    <signatures id="_1u0hEKVHEd-i1ezDjxCJpg" name="y1125355430"/>
+  </interface>
+  <interface id="_NxUbUKVJEd-i1ezDjxCJpg" name="p662445536">
+    <signatures id="_QIa1kKVJEd-i1ezDjxCJpg" name="o1525262275"/>
+  </interface>
+  <interface id="_6AUtQKYdEd-F2fxisVCBKw" name="a484306696">
+    <signatures id="_61Nt4KYdEd-F2fxisVCBKw" name="h1409586545"/>
+  </interface>
+  <interface id="_oPCLAKYfEd-F2fxisVCBKw" name="o241122193">
+    <signatures id="_p95gkKYfEd-F2fxisVCBKw" name="c1850084357"/>
+  </interface>
+  <interface id="_ah5QIKYgEd-F2fxisVCBKw" name="i894082446">
+    <signatures id="_d3hIIKYgEd-F2fxisVCBKw" name="k2143561263"/>
+  </interface>
+  <interface id="_nbLPsKYgEd-F2fxisVCBKw" name="o1528420153">
+    <signatures id="_oqCPgKYgEd-F2fxisVCBKw" name="r1387359291"/>
+  </interface>
+  <interface id="_qjG_EKYiEd-F2fxisVCBKw" name="f1185897616">
+    <signatures id="_sRYewKYiEd-F2fxisVCBKw" name="y1467062908"/>
+  </interface>
+  <interface id="_ht9G0KYjEd-F2fxisVCBKw" name="l1986198590">
+    <signatures id="_jb7EgKYjEd-F2fxisVCBKw" name="p827262221"/>
+  </interface>
+  <interface id="_uptLkKYjEd-F2fxisVCBKw" name="g825285891">
+    <signatures id="_wIxxoKYjEd-F2fxisVCBKw" name="r1054782721"/>
+  </interface>
+  <interface id="_6yW_cKYjEd-F2fxisVCBKw" name="o1169040092">
+    <signatures id="_8IfE4KYjEd-F2fxisVCBKw" name="f163711114"/>
+  </interface>
+  <interface id="_J8Hz4KYkEd-F2fxisVCBKw" name="t631807602">
+    <signatures id="_LlLcYKYkEd-F2fxisVCBKw" name="j1953614189"/>
+  </interface>
+  <interface id="_fvGc4L_fEd-PHYEGGZFL2w" name="j1241377939">
+    <signatures id="_j4G5oL_fEd-PHYEGGZFL2w" name="t1158086082"/>
+  </interface>
+</staticstructure:Repository>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targetenvironment:TargetEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:targetenvironment="http://q-impress.eu/samm/deployment/targetenvironment" id="_9uSugJG-Ed-4y8fXV-XIVA" name="w1131943693">
+  <nodes id="_BaxnUJG_Ed-4y8fXV-XIVA" documentation="" name="y1002332860" description="Provides access to controllers and other devices.">
+    <containers id="_SLNeoJG_Ed-4y8fXV-XIVA" name="j819632748" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_7OvGYJG_Ed-4y8fXV-XIVA" documentation="" name="q1053830553" description="" storageDevices="_2fphE5G_Ed-4y8fXV-XIVA"/>
+      <memoryResources id="_KWTTsZHGEd-4y8fXV-XIVA" name="d1301858292" memory="_At_VopHGEd-4y8fXV-XIVA"/>
+      <executionResources fraction="1.0" processor="_meJMUZG_Ed-4y8fXV-XIVA"/>
+      <networkResources id="_OauLYqVOEd-i1ezDjxCJpg" name="v1909557204" networkInterface="_K_hP1KVOEd-i1ezDjxCJpg"/>
+    </containers>
+    <processors id="_meJMUZG_Ed-4y8fXV-XIVA" name="b940916586" clockFrequency="1.0">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_At_VopHGEd-4y8fXV-XIVA" documentation="" name="s1298267956">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_2fphE5G_Ed-4y8fXV-XIVA" documentation="" name="b1513222927" size="80">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_K_hP1KVOEd-i1ezDjxCJpg" name="l1865408274" bandwidth="100000" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_C5vi5aVLEd-i1ezDjxCJpg" name="p545262579">
+    <containers id="_Gu4BYKVLEd-i1ezDjxCJpg" name="w345182584" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_Mx3ekKVLEd-i1ezDjxCJpg" documentation="" name="w1341720796" description="" storageDevices="_XpTiM6VLEd-i1ezDjxCJpg"/>
+      <memoryResources id="_LJZr8aVLEd-i1ezDjxCJpg" documentation="" name="d464436883" description="" memory="_UUN1sqVLEd-i1ezDjxCJpg"/>
+      <executionResources fraction="1.0" processor="_P0oE9KVLEd-i1ezDjxCJpg"/>
+      <networkResources id="_GTBj0qa0Ed-AheCVc_x4-Q" name="j817781716" networkInterface="_DyYMBKa0Ed-AheCVc_x4-Q"/>
+    </containers>
+    <processors id="_P0oE9KVLEd-i1ezDjxCJpg" name="j772003598">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_UUN1sqVLEd-i1ezDjxCJpg" name="e1688776628">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_XpTiM6VLEd-i1ezDjxCJpg" name="e1624301524">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_DyYMBKa0Ed-AheCVc_x4-Q" name="d1080261124" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_GaH8dabXEd-7PvokbmP_og" name="p524535926">
+    <containers id="_I40zh6bXEd-7PvokbmP_og" name="p740835339" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_Y0YRQKbXEd-7PvokbmP_og" name="x1177694432" storageDevices="_OLYSQ6bXEd-7PvokbmP_og"/>
+      <memoryResources id="_U_Go0abXEd-7PvokbmP_og" name="h121338478" memory="_ML01UqbXEd-7PvokbmP_og"/>
+      <executionResources fraction="1.0" processor="_KYMUgabXEd-7PvokbmP_og"/>
+      <networkResources id="_W9K4AqbXEd-7PvokbmP_og" name="u1089671203" networkInterface="_QF3pCabXEd-7PvokbmP_og"/>
+    </containers>
+    <processors id="_KYMUgabXEd-7PvokbmP_og" name="k772588583">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_ML01UqbXEd-7PvokbmP_og" name="g939580877">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_OLYSQ6bXEd-7PvokbmP_og" name="v434708040">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_QF3pCabXEd-7PvokbmP_og" documentation="" name="r1834562799" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_fRmMVabXEd-7PvokbmP_og" name="j75040389">
+    <containers id="_g_IFIKbXEd-7PvokbmP_og" name="a1461234757" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_viwtsKbXEd-7PvokbmP_og" name="h1881626625" storageDevices="_o8wDA6bXEd-7PvokbmP_og"/>
+      <memoryResources id="_x2lxh6bXEd-7PvokbmP_og" name="u1545422745" memory="_m5UysqbXEd-7PvokbmP_og"/>
+      <executionResources fraction="1.0" processor="_kkdNFKbXEd-7PvokbmP_og"/>
+      <networkResources id="_zuixpabXEd-7PvokbmP_og" name="o1572118435" networkInterface="_qjR79KbXEd-7PvokbmP_og"/>
+    </containers>
+    <processors id="_kkdNFKbXEd-7PvokbmP_og" name="x1343093107">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_m5UysqbXEd-7PvokbmP_og" name="s2007438512">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_o8wDA6bXEd-7PvokbmP_og" name="l700863271">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_qjR79KbXEd-7PvokbmP_og" name="i1771000024" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_iVFLBdqWEd-qLr8SJ1mApA" name="l621533658">
+    <containers id="_j6HPINqWEd-qLr8SJ1mApA" name="z1862264006" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_D__mcNqXEd-qLr8SJ1mApA" documentation="" name="q1754706442" storageDevices="_yFyDqNqWEd-qLr8SJ1mApA"/>
+      <memoryResources id="_BuZ-UdqXEd-qLr8SJ1mApA" name="w344466118" memory="_v0fWctqWEd-qLr8SJ1mApA"/>
+      <executionResources processor="_tgNmtNqWEd-qLr8SJ1mApA"/>
+      <networkResources id="_HpMhwtqXEd-qLr8SJ1mApA" name="n524034481" networkInterface="_0IneFNqWEd-qLr8SJ1mApA"/>
+    </containers>
+    <processors id="_tgNmtNqWEd-qLr8SJ1mApA" name="d1728213559">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_v0fWctqWEd-qLr8SJ1mApA" name="p1259094341">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_yFyDqNqWEd-qLr8SJ1mApA" name="i627003221">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_0IneFNqWEd-qLr8SJ1mApA" name="p205241171" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_O7bLFaVWEd-i1ezDjxCJpg" name="r1676566793">
+    <containers id="_R3VikKVWEd-i1ezDjxCJpg" name="c1850676525" schedulingPolicy="ProcessorSharing" description="">
+      <storageResources id="_ho5W0KVWEd-i1ezDjxCJpg" documentation="" name="w722208310" description="" storageDevices="_Yb2Yc6VWEd-i1ezDjxCJpg"/>
+      <memoryResources id="_kgfPAaVWEd-i1ezDjxCJpg" name="x708790174" memory="_ar8y0qVWEd-i1ezDjxCJpg"/>
+      <executionResources fraction="1.0" processor="_VtNA4aVWEd-i1ezDjxCJpg"/>
+      <networkResources id="_Zm9Soqa0Ed-AheCVc_x4-Q" name="j1953070800" networkInterface="_Wx5xFKa0Ed-AheCVc_x4-Q"/>
+    </containers>
+    <processors id="_VtNA4aVWEd-i1ezDjxCJpg" name="y1762806664">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_ar8y0qVWEd-i1ezDjxCJpg" name="d422699830">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_Yb2Yc6VWEd-i1ezDjxCJpg" name="n293678756">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_Wx5xFKa0Ed-AheCVc_x4-Q" name="j1517835374" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <nodes id="_E4auINqVEd-qLr8SJ1mApA" name="p1080824053" description="">
+    <containers id="_IbqycNqVEd-qLr8SJ1mApA" name="z1922655385" schedulingPolicy="ProcessorSharing">
+      <storageResources id="_dyBE89qVEd-qLr8SJ1mApA" name="a831886944" storageDevices="_V0-V49qVEd-qLr8SJ1mApA"/>
+      <memoryResources id="_Z3ODUdqVEd-qLr8SJ1mApA" documentation="" name="y107958584" description="" memory="_PrkHotqVEd-qLr8SJ1mApA"/>
+      <executionResources processor="_NrHS1NqVEd-qLr8SJ1mApA"/>
+      <networkResources id="_gXt74tqVEd-qLr8SJ1mApA" name="k528197576" networkInterface="_RlT3hNqVEd-qLr8SJ1mApA"/>
+    </containers>
+    <processors id="_NrHS1NqVEd-qLr8SJ1mApA" name="b521261255">
+      <descriptor href="system1.samm_hardware#_Sg7scZG-Ed-4y8fXV-XIVA"/>
+    </processors>
+    <memories id="_PrkHotqVEd-qLr8SJ1mApA" name="f1299720721">
+      <descriptor href="system1.samm_hardware#_5IXBA5HFEd-4y8fXV-XIVA"/>
+    </memories>
+    <storageDevices id="_V0-V49qVEd-qLr8SJ1mApA" name="v719608467">
+      <descriptor href="system1.samm_hardware#_uosoYpG-Ed-4y8fXV-XIVA"/>
+    </storageDevices>
+    <networkInterfaces id="_RlT3hNqVEd-qLr8SJ1mApA" name="e1754748340" connection="1234567">
+      <descriptor href="system1.samm_hardware#_EbKK9KVOEd-i1ezDjxCJpg"/>
+    </networkInterfaces>
+  </nodes>
+  <networkElements id="1234567" documentation="This is our router1." name="x923879227" nodeConnections="_K_hP1KVOEd-i1ezDjxCJpg _DyYMBKa0Ed-AheCVc_x4-Q _Wx5xFKa0Ed-AheCVc_x4-Q _QF3pCabXEd-7PvokbmP_og _qjR79KbXEd-7PvokbmP_og _RlT3hNqVEd-qLr8SJ1mApA _0IneFNqWEd-qLr8SJ1mApA">
+    <descriptor href="system1.samm_hardware#_Z1bz0KVREd-i1ezDjxCJpg"/>
+  </networkElements>
+</targetenvironment:TargetEnvironment>

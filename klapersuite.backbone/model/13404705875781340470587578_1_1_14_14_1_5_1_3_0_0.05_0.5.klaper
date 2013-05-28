@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<klaper.core:KlaperModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:klaper.core="http://klaper.sourceforge.net/metamodels/klaper/1.0/core" xmlns:klaper.expr="http://klaper.sourceforge.net/metamodels/klaper/1.0/expression" xmlns:klaper.probability="http://klaper.sourceforge.net/metamodels/klaper/1.0/probability">
+  <resource name="R1">
+    <offeredService name="S1">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.0/@behavior/@transition.0" out="//@resource.0/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="8.58266866998747E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.0" from="//@resource.0/@offeredService.0/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.0/@behavior/@step.2" from="//@resource.0/@offeredService.0/@behavior/@step.0"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S2">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.1/@behavior/@transition.2" out="//@resource.0/@offeredService.1/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.668624008743791E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.1/@behavior/@transition.1" out="//@resource.0/@offeredService.1/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.1/@behavior/@transition.4" out="//@resource.0/@offeredService.1/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.1/@behavior/@transition.0" out="//@resource.0/@offeredService.1/@behavior/@transition.1 //@resource.0/@offeredService.1/@behavior/@transition.4"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.1/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.1/@behavior/@transition.3 //@resource.0/@offeredService.1/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.3" from="//@resource.0/@offeredService.1/@behavior/@step.4"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.1" from="//@resource.0/@offeredService.1/@behavior/@step.3" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.0" from="//@resource.0/@offeredService.1/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.5" from="//@resource.0/@offeredService.1/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.2" from="//@resource.0/@offeredService.1/@behavior/@step.3" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.1/@behavior/@step.5" from="//@resource.0/@offeredService.1/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S3">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.2/@behavior/@transition.1" out="//@resource.0/@offeredService.2/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="3.350604401930468E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.2/@behavior/@transition.2" out="//@resource.0/@offeredService.2/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.926582510553999E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.2/@behavior/@transition.4" out="//@resource.0/@offeredService.2/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.2/@behavior/@transition.0" out="//@resource.0/@offeredService.2/@behavior/@transition.1 //@resource.0/@offeredService.2/@behavior/@transition.4"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.2/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.2/@behavior/@transition.3 //@resource.0/@offeredService.2/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.3" from="//@resource.0/@offeredService.2/@behavior/@step.4"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.0" from="//@resource.0/@offeredService.2/@behavior/@step.3" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.1" from="//@resource.0/@offeredService.2/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.5" from="//@resource.0/@offeredService.2/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.2" from="//@resource.0/@offeredService.2/@behavior/@step.3" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.2/@behavior/@step.5" from="//@resource.0/@offeredService.2/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S4">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.3/@behavior/@transition.2" out="//@resource.0/@offeredService.3/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="8.125739441311453E-7"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.3/@behavior/@transition.3" out="//@resource.0/@offeredService.3/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="6.686133474431699E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.3/@behavior/@transition.1" out="//@resource.0/@offeredService.3/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="9.712643986858893E-7"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.3/@behavior/@transition.0" out="//@resource.0/@offeredService.3/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.1"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.3/@behavior/@transition.4" out="//@resource.0/@offeredService.3/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.3/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.3/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.3" from="//@resource.0/@offeredService.3/@behavior/@step.5"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.2" from="//@resource.0/@offeredService.3/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.0" from="//@resource.0/@offeredService.3/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.1" from="//@resource.0/@offeredService.3/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.4" from="//@resource.0/@offeredService.3/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.3/@behavior/@step.6" from="//@resource.0/@offeredService.3/@behavior/@step.4"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S5">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.4/@behavior/@transition.0" out="//@resource.0/@offeredService.4/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.840475190168945E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.4/@behavior/@transition.1" out="//@resource.0/@offeredService.4/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="4.9194100029126275E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.4/@behavior/@transition.2" out="//@resource.0/@offeredService.4/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.4/@behavior/@transition.3" out="//@resource.0/@offeredService.4/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.1"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.4/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.4/@behavior/@transition.4"/>
+        <transition to="//@resource.0/@offeredService.4/@behavior/@step.0" from="//@resource.0/@offeredService.4/@behavior/@step.4"/>
+        <transition to="//@resource.0/@offeredService.4/@behavior/@step.1" from="//@resource.0/@offeredService.4/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.4/@behavior/@step.2" from="//@resource.0/@offeredService.4/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.4/@behavior/@step.3" from="//@resource.0/@offeredService.4/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.4/@behavior/@step.5" from="//@resource.0/@offeredService.4/@behavior/@step.3"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S6">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.5/@behavior/@transition.0" out="//@resource.0/@offeredService.5/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.5632581380486954E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.5/@behavior/@transition.1" out="//@resource.0/@offeredService.5/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.3"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.5/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.5/@behavior/@transition.2"/>
+        <transition to="//@resource.0/@offeredService.5/@behavior/@step.0" from="//@resource.0/@offeredService.5/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.5/@behavior/@step.1" from="//@resource.0/@offeredService.5/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.5/@behavior/@step.3" from="//@resource.0/@offeredService.5/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S7">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.6/@behavior/@transition.3" out="//@resource.0/@offeredService.6/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="6.190541625983315E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.6/@behavior/@transition.2" out="//@resource.0/@offeredService.6/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="8.770732165430672E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.6/@behavior/@transition.0" out="//@resource.0/@offeredService.6/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="4.48629862148664E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.6/@behavior/@transition.1" out="//@resource.0/@offeredService.6/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.2"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.6/@behavior/@transition.4" out="//@resource.0/@offeredService.6/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.4"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.6/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.6/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.2" from="//@resource.0/@offeredService.6/@behavior/@step.5"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.3" from="//@resource.0/@offeredService.6/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.1" from="//@resource.0/@offeredService.6/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.0" from="//@resource.0/@offeredService.6/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.4" from="//@resource.0/@offeredService.6/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.6/@behavior/@step.6" from="//@resource.0/@offeredService.6/@behavior/@step.4"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S8">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.7/@behavior/@transition.5" out="//@resource.0/@offeredService.7/@behavior/@transition.6">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.5355498110002372E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.7/@behavior/@transition.2" out="//@resource.0/@offeredService.7/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.320645307918312E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.7/@behavior/@transition.3" out="//@resource.0/@offeredService.7/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="5.474793852044968E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.7/@behavior/@transition.1" out="//@resource.0/@offeredService.7/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="7.31336194803589E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.7/@behavior/@transition.6" out="//@resource.0/@offeredService.7/@behavior/@transition.7">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.5"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.7/@behavior/@transition.0" out="//@resource.0/@offeredService.7/@behavior/@transition.1 //@resource.0/@offeredService.7/@behavior/@transition.5"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.7/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.7/@behavior/@transition.4 //@resource.0/@offeredService.7/@behavior/@transition.7"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.5" from="//@resource.0/@offeredService.7/@behavior/@step.6"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.3" from="//@resource.0/@offeredService.7/@behavior/@step.5" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.1" from="//@resource.0/@offeredService.7/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.2" from="//@resource.0/@offeredService.7/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.7" from="//@resource.0/@offeredService.7/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.0" from="//@resource.0/@offeredService.7/@behavior/@step.5" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.4" from="//@resource.0/@offeredService.7/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.7/@behavior/@step.7" from="//@resource.0/@offeredService.7/@behavior/@step.4"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S9">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.8/@behavior/@transition.4" out="//@resource.0/@offeredService.8/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.2012077351973858E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.8/@behavior/@transition.2" out="//@resource.0/@offeredService.8/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="3.412283604120603E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.8/@behavior/@transition.1" out="//@resource.0/@offeredService.8/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="7.393496616714401E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.8/@behavior/@transition.5" out="//@resource.0/@offeredService.8/@behavior/@transition.6">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.4"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.8/@behavior/@transition.0" out="//@resource.0/@offeredService.8/@behavior/@transition.1 //@resource.0/@offeredService.8/@behavior/@transition.4"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.8/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.8/@behavior/@transition.3 //@resource.0/@offeredService.8/@behavior/@transition.6"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.4" from="//@resource.0/@offeredService.8/@behavior/@step.5"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.2" from="//@resource.0/@offeredService.8/@behavior/@step.4" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.1" from="//@resource.0/@offeredService.8/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.6" from="//@resource.0/@offeredService.8/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.0" from="//@resource.0/@offeredService.8/@behavior/@step.4" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.3" from="//@resource.0/@offeredService.8/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.8/@behavior/@step.6" from="//@resource.0/@offeredService.8/@behavior/@step.3"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S10">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.9/@behavior/@transition.2" out="//@resource.0/@offeredService.9/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="3.946711785829393E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.9/@behavior/@transition.1" out="//@resource.0/@offeredService.9/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="7.504203949793009E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.9/@behavior/@transition.3" out="//@resource.0/@offeredService.9/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.5"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.9/@behavior/@transition.0" out="//@resource.0/@offeredService.9/@behavior/@transition.1 //@resource.0/@offeredService.9/@behavior/@transition.5"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.9/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.9/@behavior/@transition.4 //@resource.0/@offeredService.9/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.3" from="//@resource.0/@offeredService.9/@behavior/@step.4"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.1" from="//@resource.0/@offeredService.9/@behavior/@step.3" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.0" from="//@resource.0/@offeredService.9/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.2" from="//@resource.0/@offeredService.9/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.5" from="//@resource.0/@offeredService.9/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.9/@behavior/@step.5" from="//@resource.0/@offeredService.9/@behavior/@step.3" prob="0.5"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S11">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.10/@behavior/@transition.1" out="//@resource.0/@offeredService.10/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.958784650923917E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.10/@behavior/@transition.0" out="//@resource.0/@offeredService.10/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="5.699529083358357E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.10/@behavior/@transition.2" out="//@resource.0/@offeredService.10/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.8"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.10/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.10/@behavior/@transition.3"/>
+        <transition to="//@resource.0/@offeredService.10/@behavior/@step.1" from="//@resource.0/@offeredService.10/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.10/@behavior/@step.0" from="//@resource.0/@offeredService.10/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.10/@behavior/@step.2" from="//@resource.0/@offeredService.10/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.10/@behavior/@step.4" from="//@resource.0/@offeredService.10/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S12">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.11/@behavior/@transition.1" out="//@resource.0/@offeredService.11/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.3573658179666381E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.11/@behavior/@transition.2" out="//@resource.0/@offeredService.11/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.5"/>
+        </step>
+        <step xsi:type="klaper.core:Branch" in="//@resource.0/@offeredService.11/@behavior/@transition.0" out="//@resource.0/@offeredService.11/@behavior/@transition.1 //@resource.0/@offeredService.11/@behavior/@transition.4"/>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.11/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.11/@behavior/@transition.3 //@resource.0/@offeredService.11/@behavior/@transition.4"/>
+        <transition to="//@resource.0/@offeredService.11/@behavior/@step.2" from="//@resource.0/@offeredService.11/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.11/@behavior/@step.0" from="//@resource.0/@offeredService.11/@behavior/@step.2" prob="0.5"/>
+        <transition to="//@resource.0/@offeredService.11/@behavior/@step.1" from="//@resource.0/@offeredService.11/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.11/@behavior/@step.4" from="//@resource.0/@offeredService.11/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.11/@behavior/@step.4" from="//@resource.0/@offeredService.11/@behavior/@step.2" prob="0.5"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S13">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.12/@behavior/@transition.2" out="//@resource.0/@offeredService.12/@behavior/@transition.3">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="8.015465027710889E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.12/@behavior/@transition.1" out="//@resource.0/@offeredService.12/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.2821169548260514E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.12/@behavior/@transition.3" out="//@resource.0/@offeredService.12/@behavior/@transition.4">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="4.94223922942183E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.12/@behavior/@transition.0" out="//@resource.0/@offeredService.12/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="2.972843958559679E-6"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.12/@behavior/@transition.4" out="//@resource.0/@offeredService.12/@behavior/@transition.5">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.10"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.12/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.12/@behavior/@transition.5"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.3" from="//@resource.0/@offeredService.12/@behavior/@step.5"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.1" from="//@resource.0/@offeredService.12/@behavior/@step.3"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.0" from="//@resource.0/@offeredService.12/@behavior/@step.1"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.2" from="//@resource.0/@offeredService.12/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.4" from="//@resource.0/@offeredService.12/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.12/@behavior/@step.6" from="//@resource.0/@offeredService.12/@behavior/@step.4"/>
+      </behavior>
+    </offeredService>
+    <offeredService name="S14">
+      <behavior>
+        <step xsi:type="klaper.core:Activity" in="//@resource.0/@offeredService.13/@behavior/@transition.0" out="//@resource.0/@offeredService.13/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Constant"/>
+          <internalFailProb xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="7.111498234735336E-7"/>
+          </internalFailProb>
+          <repetitions xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </repetitions>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" in="//@resource.0/@offeredService.13/@behavior/@transition.1" out="//@resource.0/@offeredService.13/@behavior/@transition.2">
+          <internalExecTime xsi:type="klaper.probability:Constant">
+            <value xsi:type="klaper.expr:Double" value="1.0"/>
+          </internalExecTime>
+          <binding call="//@resource.0/@offeredService.11"/>
+        </step>
+        <step xsi:type="klaper.core:Start" out="//@resource.0/@offeredService.13/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:End" in="//@resource.0/@offeredService.13/@behavior/@transition.2"/>
+        <transition to="//@resource.0/@offeredService.13/@behavior/@step.0" from="//@resource.0/@offeredService.13/@behavior/@step.2"/>
+        <transition to="//@resource.0/@offeredService.13/@behavior/@step.1" from="//@resource.0/@offeredService.13/@behavior/@step.0"/>
+        <transition to="//@resource.0/@offeredService.13/@behavior/@step.3" from="//@resource.0/@offeredService.13/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <workload type="CLOSED" name="generated with tree[1:1 14:14]">
+    <behavior>
+      <step xsi:type="klaper.core:ServiceControl" in="//@workload.0/@behavior/@transition.1" out="//@workload.0/@behavior/@transition.2">
+        <internalExecTime xsi:type="klaper.probability:Constant">
+          <value xsi:type="klaper.expr:Double" value="1.0"/>
+        </internalExecTime>
+        <binding call="//@resource.0/@offeredService.9"/>
+      </step>
+      <step xsi:type="klaper.core:ServiceControl" in="//@workload.0/@behavior/@transition.3" out="//@workload.0/@behavior/@transition.4">
+        <internalExecTime xsi:type="klaper.probability:Constant">
+          <value xsi:type="klaper.expr:Double" value="1.0"/>
+        </internalExecTime>
+        <binding call="//@resource.0/@offeredService.6"/>
+      </step>
+      <step xsi:type="klaper.core:ServiceControl" in="//@workload.0/@behavior/@transition.2" out="//@workload.0/@behavior/@transition.3">
+        <internalExecTime xsi:type="klaper.probability:Constant">
+          <value xsi:type="klaper.expr:Double" value="1.0"/>
+        </internalExecTime>
+        <binding call="//@resource.0/@offeredService.7"/>
+      </step>
+      <step xsi:type="klaper.core:ServiceControl" in="//@workload.0/@behavior/@transition.0" out="//@workload.0/@behavior/@transition.1">
+        <internalExecTime xsi:type="klaper.probability:Constant">
+          <value xsi:type="klaper.expr:Double" value="1.0"/>
+        </internalExecTime>
+        <binding call="//@resource.0/@offeredService.12"/>
+      </step>
+      <step xsi:type="klaper.core:ServiceControl" in="//@workload.0/@behavior/@transition.4" out="//@workload.0/@behavior/@transition.5">
+        <internalExecTime xsi:type="klaper.probability:Constant">
+          <value xsi:type="klaper.expr:Double" value="1.0"/>
+        </internalExecTime>
+        <binding call="//@resource.0/@offeredService.13"/>
+      </step>
+      <step xsi:type="klaper.core:Start" out="//@workload.0/@behavior/@transition.0"/>
+      <step xsi:type="klaper.core:End" in="//@workload.0/@behavior/@transition.5"/>
+      <transition to="//@workload.0/@behavior/@step.3" from="//@workload.0/@behavior/@step.5"/>
+      <transition to="//@workload.0/@behavior/@step.0" from="//@workload.0/@behavior/@step.3"/>
+      <transition to="//@workload.0/@behavior/@step.2" from="//@workload.0/@behavior/@step.0"/>
+      <transition to="//@workload.0/@behavior/@step.1" from="//@workload.0/@behavior/@step.2"/>
+      <transition to="//@workload.0/@behavior/@step.4" from="//@workload.0/@behavior/@step.1"/>
+      <transition to="//@workload.0/@behavior/@step.6" from="//@workload.0/@behavior/@step.4"/>
+    </behavior>
+  </workload>
+</klaper.core:KlaperModel>

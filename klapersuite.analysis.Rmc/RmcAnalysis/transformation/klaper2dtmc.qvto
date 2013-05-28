@@ -1,0 +1,306 @@
+modeltype dtmc uses 'http://klaper.sourceforge.net/metamodels/dtmc/1.0';
+modeltype klpCore uses 'http://klaper.sourceforge.net/metamodels/klaper/1.0/core';
+modeltype klpExpr uses 'http://klaper.sourceforge.net/metamodels/klaper/1.0/expression';
+modeltype klpProb uses 'http://klaper.sourceforge.net/metamodels/klaper/1.0/probability';
+
+transformation klaper2prism(in kla:klpCore, out prm:dtmc);
+
+intermediate class Id { value:String; };
+property idCounter : Integer = 0;
+mapping String::id(): Id {
+	idCounter:=idCounter+1;
+	result.value:=idCounter.toString();
+}
+
+main() {
+	kla.objects()[klaper::core::KlaperModel]->map model2model();
+	getDtmcModel().modules[dtmc::Module]->forEach(m){
+		m.transitions+=completeTransitions(m);
+	};
+}
+
+mapping klaper::core::KlaperModel::model2model() : dtmc::Dtmc {
+	name:='Reliability analysis model';
+	modules+=self.resource.offeredService->flatten()->map srv2module();
+	modules+=self.workload->map toMainModule();
+}
+mapping klaper::core::Workload::toMainModule(): dtmc::Module {
+        isAutonomous := true;
+        name:="Workload";
+        nodes:=self.behavior.map toNodes(result);
+}
+mapping klaper::core::Behavior::toNodes(inout module: Module): Sequence(Node) {
+	init {
+		result := self.step[klaper::core::Start]->map toNode(module)->oclAsType(Node)
+			->union(self.step[klaper::core::End]->map toNode(module)->oclAsType(Node))
+			->union(self.step[klaper::core::Activity]->map toNode(module)->oclAsType(Node))
+			->union(self.step[klaper::core::ServiceControl]->map toNode(module)->oclAsType(Node))
+			->union(self.step[klaper::core::Branch]->map toNode(module)->oclAsType(Node))
+			->union(self.step[klaper::core::Fork]->map toNode(module)->oclAsType(Node))
+			->union(self.step[klaper::core::Join]->map toNode(module)->oclAsType(Node));
+		self.step[klaper::core::Fork].serialize(module);
+        module.transitions += result.outTransitions;
+	}
+}
+helper klaper::core::Fork::serialize(in module:Module) {
+	var fork := self.resolveone(dtmc::Node);
+	var join:=self._out.to._out.to[klaper::core::Join]->any(true).resolveone(Node);
+	var lastSerialized := self._out.to->any(true).resolveone(dtmc::Node);
+	var t := createTransition(getName("T", self.repr()), fork, lastSerialized, '1');
+	var toSerialize := self._out.to.resolve(Node)->select(x|x.inTransitions->size() = 0);
+	while(toSerialize->size() > 0) {
+		var serializing := toSerialize->any(true);
+		toSerialize := toSerialize->excluding(serializing);
+		serializing.inTransitions:=lastSerialized.outTransitions->any(true);
+		lastSerialized := serializing;
+	};
+	join.inTransitions:=lastSerialized.outTransitions->any(true);
+	return null;
+}
+helper completeTransitions(in mod:Module) : Set(dtmc::StandardTransition) {
+	var acts:=mod.nodes->select(outTransitions->forAll(oclIsTypeOf(dtmc::StandardTransition)))->select(e|e.invresolveone(klpCore::Step).oclIsTypeOf(klpCore::Activity));
+	var res:=object Set(dtmc::StandardTransition){};
+	acts->forEach(a){	
+		var string:="1";
+		a.oclAsType(dtmc::Node).outTransitions->forEach(b){
+			string:="("+string+"-"+b.probability+")";
+		};
+		res+=object dtmc::StandardTransition{
+			name:=getName('F', a.oclAsType(dtmc::Node).repr());
+			_from:=a;
+			_to:=mod.nodes->any(c|c.isFail);
+			probability:=string;
+		};
+	};
+	return res;
+}
+
+mapping klaper::core::Service::srv2module() : dtmc::Module {
+	name:=getName('M', self.repr());
+	description:=self.description;
+	nodes:=object dtmc::Node{
+		name:=getName('F',self.repr());
+		isStart:=false;
+		isFail:=true;
+		isEnd:=false;
+	};
+	nodes+=self.behavior.map toNodes(result);
+}
+
+mapping klaper::core::Behavior::bhv2module() : dtmc::Module {
+	nodes:=object dtmc::Node{
+		name:=getName('F', self.repr());
+		isStart:=false;
+		isFail:=true;
+		isEnd:=false;
+	};
+	name:=getName('M',self.repr());
+	nodes+=self.map toNodes(result);
+	isAutonomous:=false;
+}
+
+mapping klaper::core::Start::toNode(mod:dtmc::Module) : dtmc::Node {
+	isStart:=true;
+	isEnd:=false;
+	name:=getName("S", self.repr());
+	outTransitions+=self._out->map trans2trans(mod);
+}
+
+mapping klaper::core::End::toNode(mod:dtmc::Module) : dtmc::Node {
+	isStart:=false;
+	isEnd:=true;
+	name:=getName("E", self.repr());
+	inTransitions:=self._in.resolve(dtmc::Transition);
+}
+
+mapping klaper::core::Activity::toNode(mod:dtmc::Module) : dtmc::Node 
+	disjuncts klaper::core::Activity::toNodeFork,
+		klaper::core::Activity::toNodeBranch,
+		klaper::core::Activity::toNodeLoop,
+		klaper::core::Activity::toNodeBase {
+}
+mapping klaper::core::Activity::toNodeFork(mod:dtmc::Module) : dtmc::Node 
+	when{self._in->exists(e|e._from.oclIsTypeOf(klaper::core::Fork))} {		
+	name:=getName("C", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	isFail:=false;
+
+	var behaviour := self.map toModule();
+	var invok:=createInvokationToModule(getName('I', self.repr()), behaviour);
+
+	outTransitions:=self._out->map toCallTransition(mod, self.name, result, null, invok);
+}
+mapping klaper::core::Activity::toNodeBranch(mod:dtmc::Module) : dtmc::Node 
+	when{self._in->exists(e|e._from.oclIsTypeOf(klaper::core::Branch))} {
+	name:=getName("C", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	isFail:=false;
+		
+	var behaviourModule:=self.map toModule();
+	var invokation:= createInvokationToModule(getName('I', self.repr()), behaviourModule);
+	self._out->map trans2callTrans(invokation, mod);
+}
+
+helper createInvokationToModule(n:String, inout callee: Module): dtmc::InvokedTransition {
+	var invokation := object dtmc::InvokedTransition{
+		name:=n;
+	};
+	callee.transitions += invokation;
+	return invokation;
+}
+mapping klaper::core::Activity::toNodeLoop(inout module: dtmc::Module) : dtmc::Node 
+	when{not(self.nestedBehavior.oclIsUndefined())} {
+	name:=getName("L", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	isFail:=false;
+
+	var loopModule:=self.map toModule();
+
+	var loopIterations : Set(Node) := Set{ result };
+	var i: Integer :=0;
+	while(i<self.repetitions[klpProb::Constant].value[klpExpr::Double]->any(true).value) {
+		loopIterations+=map createNodeLoopIteration(i.+(1), self.repr(), module, loopModule, loopIterations->any(x|x.outTransitions->isEmpty()));
+		i:=i+1;
+	};
+	module.transitions += self._out->map toTransitionFrom(module, loopIterations->any(x|x.outTransitions->isEmpty()));
+
+	module.nodes += loopIterations;
+	module.transitions += loopIterations.outTransitions;
+}
+mapping createNodeLoopIteration(counter: Integer, id: String, inout module: Module, inout loopModule: Module, lastNode: Node) : dtmc::Node {
+	name:=getName("C"+counter.toString()+"L", id);
+	var invok:=createInvokationToModule(getName('I', id), loopModule);
+	inTransitions+= createCallTransition(module, getName("C"+counter.toString()+"T", id), lastNode, result, invok);
+}
+mapping klaper::core::Activity::toModule(): dtmc::Module {
+	init  {
+		result := self.nestedBehavior.map bhv2module();
+		getDtmcModel().modules+=result;
+	}
+}
+mapping klaper::core::Activity::toNodeBase(mod:dtmc::Module) : dtmc::Node 
+	when{self.nestedBehavior.oclIsUndefined()} {
+	name:=getName("A", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	inTransitions:=self._in.resolve(dtmc::Transition);
+	outTransitions:=self._out->map trans2trans(mod);
+}
+mapping klaper::core::Fork::toNode(mod:dtmc::Module) : dtmc::Node {
+	name:=getName("F", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	isFail:=false;
+	inTransitions:=self._in.resolve(dtmc::Transition);
+}
+mapping klaper::core::Branch::toNode(mod:dtmc::Module) : dtmc::Node {
+	isStart:=false;
+	isEnd:=false;
+	name:=getName("B", self.repr());
+	inTransitions:=self._in.resolve(dtmc::Transition);
+	outTransitions:=self._out->map trans2trans(mod);
+}
+mapping klaper::core::Join::toNode(mod:dtmc::Module) : dtmc::Node {
+	name:=getName("J", self.repr());
+	isStart:=false;
+	isEnd:=false;
+	inTransitions:=self._in.resolve(dtmc::Transition);
+	outTransitions:=self._out->map trans2trans(mod);
+}
+
+mapping klaper::core::ServiceControl::toNode(mod:dtmc::Module) : dtmc::Node {
+	isStart:=false;
+	isEnd:=false;
+	name:=getName("C", self.repr());
+	inTransitions:=self._in.resolve(dtmc::Transition);
+	outTransitions+=(self._out->excluding(self._out->first())->map trans2trans(mod));
+
+	var destMod:=self.binding.call->map srv2module()->any(true);
+	getDtmcModel().modules+=destMod;
+	
+	var invok := createInvokationToModule(getName("I", self.repr()), destMod);
+	outTransitions+=self._out->first()->trans2callTrans(invok,mod);
+}
+
+mapping klaper::core::Transition::trans2trans(inout mod:Module) : dtmc::StandardTransition{
+	_from:=self._from.resolveone(dtmc::Node);
+	_to:=self._to.late resolveone(dtmc::Node);
+	name:=getName("T", self._from.repr());
+	probability:=self.calculateProbability();
+	mod.transitions:=mod.transitions->including(result);	
+}
+mapping klaper::core::Transition::toTransitionFrom(inout mod:Module, a: Node) : dtmc::StandardTransition {
+	_from:=a;
+	_to:=self._to.late resolveone(dtmc::Node);
+	name:=getName("T", self._from.repr());
+	probability:=self.calculateProbability();
+	mod.transitions:=mod.transitions->including(result);	
+}
+helper createTransition(n: String, a: Node, b: Node, prob:String): dtmc::Transition {
+	var t := object dtmc::StandardTransition {
+		name:=n;
+		_from:=a;
+		_to:=b;
+		probability :=prob;
+	};
+	return t;
+}
+mapping klaper::core::Transition::trans2callTrans(inout inv:InvokedTransition,inout mod:Module) : dtmc::CallTransition{
+	_from:=self._from.resolveone(dtmc::Node);
+	_to:=self._to.late resolveone(dtmc::Node);
+	name:=getName("C", self._from.repr());
+	probability:=self.calculateProbability();
+	invokedTransition:=inv;
+	mod.transitions:=mod.transitions->including(result);
+}
+mapping klaper::core::Transition::toCallTransition(inout mod:Module, n: String, a: Node, b: Node, inv:InvokedTransition) : dtmc::CallTransition{
+	_from:=a;
+	_to:=b;
+	name:=getName("C", n);
+	probability:=self.calculateProbability();
+	invokedTransition:=inv;
+}
+helper createCallTransition(inout module: Module, n: String, a: Node, b: Node, invoked: dtmc::InvokedTransition): dtmc::CallTransition {
+	var transition := object dtmc::CallTransition {
+		_from:= a;
+		_to:= b;
+		name:=n;
+		probability:="1";
+		invokedTransition:=invoked;
+	};
+	module.transitions += transition;
+	return transition;
+}
+helper klaper::core::Transition::calculateProbability(): String {
+	if(self._from.oclIsTypeOf(klaper::core::Activity)) then{
+		return "("+self.prob.toString()+"*(1-"+self._from.getActivityFailureProbability()+"))";
+	}endif;
+	return self.prob.toString();
+}
+query getFailureState(in mod:dtmc::Module) : dtmc::Node {
+	return mod.nodes->any(e|e.isFail);
+}
+
+query getServiceByName(in srvName:String) : klaper::core::Service{
+	return kla.objectsOfType(klaper::core::Service)->any(e|e.name.equalsIgnoreCase(srvName));
+}
+
+query klpCore::Step::getActivityFailureProbability() : String {
+	if(self.oclAsType(klpCore::Activity).internalFailProb[klpProb::Constant].value[klpExpr::Double]->any(true).value.oclIsUndefined()) then {
+		return "0";
+	}endif;
+	return self.oclAsType(klpCore::Activity).internalFailProb[klpProb::Constant].value[klpExpr::Double]->any(true).value.toString();	
+}
+query klpCore::Step::getActivityRepetitions() : String {
+	return self.oclAsType(klpCore::Activity).repetitions[klpProb::Constant].value[klpExpr::Double]->any(true).value.toString();
+}
+query getName(prepend: String, obj: String): String {
+--	return name;
+	return prepend+obj.map id().value;
+}
+query getDtmcModel(): dtmc::Dtmc {
+	return prm.rootObjects()[dtmc::Dtmc]->any(true);
+}

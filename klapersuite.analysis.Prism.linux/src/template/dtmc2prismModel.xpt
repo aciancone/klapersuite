@@ -1,0 +1,137 @@
+«IMPORT dtmc»
+
+«DEFINE main FOR Dtmc»
+	«FILE "output.pm"»
+		dtmc
+
+		// Constant for the fail state of a module
+		const int fail = 0;
+		
+		// Constant for the success state of a module
+		const int success = 1;
+		
+		const int fakeStart = 2;
+		
+		
+		«EXPAND generateModule FOREACH modules»
+	«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE generateModule FOR Module»
+	module «EXPAND moduleName» «EXPAND moduleStateVar»:[0..«EXPAND moduleMaxStateNumber»] init fakeStart;
+	«IF isAutonomous == true»
+		[] «EXPAND moduleStateVar» = fakeStart -> 1:(«EXPAND moduleStateVar»' = «EXPAND moduleStartStateNumber»);
+	«ELSE»
+		«EXPAND generateInvokedTransition FOREACH transitions.typeSelect(InvokedTransition)»
+	«ENDIF»
+	
+	«EXPAND generateTransitionsForNode FOREACH nodes.select(e|e.isStart == true)»
+	«EXPAND generateTransitionsForNode FOREACH nodes.select(e|e.isStart == false)»
+	«EXPAND generateEndTransition(this) FOREACH nodes.select(e|e.isEnd == true)»
+	«EXPAND generateFixDeadlockTransitions»
+	endmodule
+«ENDDEFINE»
+
+«REM»Node Utilities«ENDREM»
+«DEFINE moduleStateVar FOR Module»«IF name == null»si_«name»«ELSE»s_«name»«ENDIF»«ENDDEFINE»
+
+«DEFINE moduleName FOR Module»«IF name == null»unnamed_«((Dtmc)eContainer).modules.indexOf(this)»«ELSE»«name»«ENDIF»«ENDDEFINE»
+
+«DEFINE moduleMaxStateNumber FOR Module»«nodes.select(v | v.isFail == false).size + 2 + transitions.typeSelect(CallTransition).size»«ENDDEFINE»
+
+«DEFINE moduleStartStateNumber FOR Module»«EXPAND nodeNumber FOR nodes.select(e|e.isStart == true).first()»«ENDDEFINE»
+
+«DEFINE nodeNumber FOR Node»«IF isFail == true»fail«ELSE»«module.nodes.select(e|e.isFail == false).indexOf(this) + 3»«ENDIF»«ENDDEFINE»
+
+«DEFINE returnNodeNumber FOR CallTransition»«module.nodes.select(e|e.isFail == false).size + 3 + module.transitions.typeSelect(CallTransition).indexOf(this)»«ENDDEFINE»
+
+«REM»Transition Utilities«ENDREM»
+«DEFINE generateEndTransition(Module m) FOR Node»
+	[] «EXPAND moduleStateVar FOR m» = «EXPAND nodeNumber» -> 1:(«EXPAND moduleStateVar FOR m»' = success);
+«ENDDEFINE»
+
+«DEFINE generateFixDeadlockTransitions FOR Module»
+	«IF isAutonomous == true»
+		[] «EXPAND moduleStateVar» = success -> 1:(«EXPAND moduleStateVar»' = success);
+	«ELSE»
+		[] «EXPAND moduleStateVar» = fakeStart -> 1:(«EXPAND moduleStateVar»' = fakeStart);
+	«ENDIF»
+	
+	[] «EXPAND moduleStateVar» = fail -> 1:(«EXPAND moduleStateVar»' = fail);
+«ENDDEFINE»
+
+«DEFINE generateTransitionsForNode FOR Node»
+	«EXPAND generateStandardTransitionsForNode»
+	«EXPAND generateCallTransitionsForNode»
+«ENDDEFINE»
+
+«DEFINE generateCallTransitionsForNode FOR Node»
+	«EXPAND generateCallTransition FOREACH outTransitions.typeSelect(CallTransition)»
+«ENDDEFINE»
+
+«DEFINE generateStandardTransitionsForNode FOR Node»
+	«LET outTransitions.typeSelect(StandardTransition).last() AS lastTransition»
+		«IF lastTransition != null»
+			«EXPAND generateGuard» ->
+				«EXPAND generateIntermediateUpdate FOREACH outTransitions.typeSelect(StandardTransition).select(e|e != lastTransition)»
+				«EXPAND generateUpdate FOR lastTransition»
+		«ENDIF»
+	«ENDLET»
+«ENDDEFINE»
+
+«DEFINE generateGuard FOR Node»
+	// «IF description != null»«description»«ENDIF»
+	[] «EXPAND moduleStateVar FOR module» = «EXPAND nodeNumber»
+«ENDDEFINE»
+
+«DEFINE generateIntermediateUpdate FOR Transition»
+	«probability»:(«EXPAND moduleStateVar FOR module»' = «EXPAND nodeNumber FOR _to») +
+«ENDDEFINE»
+
+«DEFINE generateUpdate FOR Transition»
+	«probability»:(«EXPAND moduleStateVar FOR module»' = «EXPAND nodeNumber FOR _to»);
+«ENDDEFINE»
+
+«REM»comment Generates the transitions needed for a module invocation«ENDREM»
+«DEFINE generateCallTransition FOR CallTransition»
+	[«EXPAND callTransitionLabel»] «EXPAND moduleStateVar FOR module» = «EXPAND nodeNumber FOR _from» ->
+		1:(«EXPAND moduleStateVar FOR module»' = «EXPAND returnNodeNumber»);
+		
+	[«EXPAND returnTransitionLabel»] «EXPAND moduleStateVar FOR module» = «EXPAND returnNodeNumber» & «EXPAND moduleStateVar FOR invokedTransition.module» = success ->
+		1:(«EXPAND moduleStateVar FOR module»' = «EXPAND nodeNumber FOR _to»);
+			
+	[«EXPAND returnTransitionLabel»] «EXPAND moduleStateVar FOR module» = «EXPAND returnNodeNumber» & «EXPAND moduleStateVar FOR invokedTransition.module» = fail ->
+		1:(«EXPAND moduleStateVar FOR module»' = fail);
+«ENDDEFINE»
+
+
+«REM»Generates the transitions (in the called module) needed for a module invocation«ENDREM»
+«DEFINE generateInvokedTransition FOR InvokedTransition»
+	[«EXPAND callTransitionLabel»] «EXPAND moduleStateVar FOR module» = fakeStart ->
+		1:(«EXPAND moduleStateVar FOR module»' = «EXPAND moduleStartStateNumber FOR module»);
+		
+	[«EXPAND returnTransitionLabel»] «EXPAND moduleStateVar FOR module» = success ->
+		1:(«EXPAND moduleStateVar FOR module»' = fakeStart);
+	
+	[«EXPAND returnTransitionLabel»] «EXPAND moduleStateVar FOR module» = fail ->
+		1:(«EXPAND moduleStateVar FOR module»' = fail);
+«ENDDEFINE»
+
+«REM»Computes the label used to synchronize a call transition«ENDREM»
+«DEFINE callTransitionLabel FOR CallTransition»
+	call_«module.name»_«EXPAND nodeNumber FOR _from»_«invokedTransition.module.name»
+«ENDDEFINE»
+
+«DEFINE returnTransitionLabel FOR CallTransition»
+	ret_«module.name»_«EXPAND nodeNumber FOR _from»_«invokedTransition.module.name»
+«ENDDEFINE»
+
+«REM»Computes the label used to synchronize a call transition«ENDREM»
+«DEFINE callTransitionLabel FOR InvokedTransition»
+	call_«callTransition.module.name»_«EXPAND nodeNumber FOR callTransition._from»_«module.name»
+«ENDDEFINE»
+
+«REM»Computes the label used to synchronize a call transition«ENDREM»
+«DEFINE returnTransitionLabel FOR InvokedTransition»
+	ret_«callTransition.module.name»_«EXPAND nodeNumber FOR callTransition._from»_«module.name»
+«ENDDEFINE»

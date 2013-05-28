@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticstructure:ServiceArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:staticstructure="http://q-impress.eu/samm/staticstructure" id="_L1onMJHAEd-4y8fXV-XIVA" documentation="" name="p840242195">
+  <provided id="_iYGf15HGEd-4y8fXV-XIVA" name="n571210373">
+    <interfaceType href="system1.samm_repository#_1_tw4JHMEd-4y8fXV-XIVA"/>
+  </provided>
+  <provided id="_BMEXUJJLEd-E6p6_qzRMnw" name="b1011236150">
+    <interfaceType href="system1.samm_repository#_HJmNEJJIEd-E6p6_qzRMnw"/>
+  </provided>
+  <provided id="_6l81kJJjEd-E6p6_qzRMnw" name="m1310566859">
+    <interfaceType href="system1.samm_repository#_8NgbgpJeEd-E6p6_qzRMnw"/>
+  </provided>
+  <provided id="_ZpNmkKYeEd-F2fxisVCBKw" documentation="" name="g1271319244">
+    <interfaceType href="system1.samm_repository#_6AUtQKYdEd-F2fxisVCBKw"/>
+  </provided>
+  <provided id="_r7aMQL_gEd-PHYEGGZFL2w" name="j1214636109">
+    <interfaceType href="system1.samm_repository#_fvGc4L_fEd-PHYEGGZFL2w"/>
+  </provided>
+  <subcomponents id="_VyNlEJHAEd-4y8fXV-XIVA" name="l59944105">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_4SX1MJG6Ed-4y8fXV-XIVA"/>
+  </subcomponents>
+  <subcomponents id="_rYGcgJHNEd-4y8fXV-XIVA" name="z424502607">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_xrJkYJHMEd-4y8fXV-XIVA"/>
+  </subcomponents>
+  <subcomponents id="_9EKt0JJKEd-E6p6_qzRMnw" name="x1655466953">
+    <realizedBy xsi:type="staticstructure:CompositeComponent" href="system1.samm_repository#_B4-oAJJIEd-E6p6_qzRMnw"/>
+  </subcomponents>
+  <subcomponents id="_6SrukJJTEd-E6p6_qzRMnw" name="e920165503">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_YSg00JJTEd-E6p6_qzRMnw"/>
+  </subcomponents>
+  <subcomponents id="_1IOBkJJjEd-E6p6_qzRMnw" name="l489208261">
+    <realizedBy xsi:type="staticstructure:CompositeComponent" href="system1.samm_repository#_1KoZMJJfEd-E6p6_qzRMnw"/>
+  </subcomponents>
+  <subcomponents id="_I1KGQJJkEd-E6p6_qzRMnw" name="m1831664956">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_x9aEuJJeEd-E6p6_qzRMnw"/>
+  </subcomponents>
+  <subcomponents id="_ewpAAKVFEd-i1ezDjxCJpg" name="y1746058212">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_tcFWMKVEEd-i1ezDjxCJpg"/>
+  </subcomponents>
+  <subcomponents id="_mqaGsKVHEd-i1ezDjxCJpg" name="n1717327745">
+    <realizedBy xsi:type="staticstructure:PrimitiveComponent" href="system1.samm_repository#_BoprQKVHEd-i1ezDjxCJpg"/>
+  </subcomponents>
+  <subcomponents id="_6IQR8K94Ed-m0d4ll29Pog" name="n1393318649">
+    <realizedBy xsi:type="staticstructure:CompositeComponent" href="system1.samm_repository#_V_eiYK93Ed-m0d4ll29Pog"/>
+  </subcomponents>
+  <subcomponents id="_5nNFkLy5Ed-J84sgW-8Kuw" name="n332689521">
+    <realizedBy xsi:type="staticstructure:CompositeComponent" href="system1.samm_repository#_UxgwMLy5Ed-J84sgW-8Kuw"/>
+  </subcomponents>
+  <subcomponents id="_kxb44L_gEd-PHYEGGZFL2w" name="m34987999">
+    <realizedBy xsi:type="staticstructure:CompositeComponent" href="system1.samm_repository#_6lf3kL_fEd-PHYEGGZFL2w"/>
+  </subcomponents>
+  <connector id="_2XSt8JHNEd-4y8fXV-XIVA">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_3WeTAJHNEd-4y8fXV-XIVA" subcomponent="_VyNlEJHAEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_PI7WMJG7Ed-4y8fXV-XIVA"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_gGK_0JHOEd-4y8fXV-XIVA" subcomponent="_rYGcgJHNEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_6lQ_sJHMEd-4y8fXV-XIVA"/>
+    </endpoints>
+  </connector>
+  <connector id="_ASA38JJNEd-E6p6_qzRMnw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_DvcoIJJNEd-E6p6_qzRMnw" subcomponent="_9EKt0JJKEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_O2hcgJJIEd-E6p6_qzRMnw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_GHcaQZJNEd-E6p6_qzRMnw" port="_BMEXUJJLEd-E6p6_qzRMnw"/>
+  </connector>
+  <connector id="_8wWnsJJPEd-E6p6_qzRMnw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_9MX1UJJPEd-E6p6_qzRMnw" subcomponent="_9EKt0JJKEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_Q4UVIJJIEd-E6p6_qzRMnw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_U2lF4NqTEd-qLr8SJ1mApA" subcomponent="_rYGcgJHNEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_5ymzsJHMEd-4y8fXV-XIVA"/>
+    </endpoints>
+  </connector>
+  <connector id="_GfMuwJJUEd-E6p6_qzRMnw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_G8jZIJJUEd-E6p6_qzRMnw" subcomponent="_VyNlEJHAEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_dzqwQJJTEd-E6p6_qzRMnw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_HHSCcJJUEd-E6p6_qzRMnw" subcomponent="_6SrukJJTEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_cN5FQJJTEd-E6p6_qzRMnw"/>
+    </endpoints>
+  </connector>
+  <connector id="_-UrKEJJjEd-E6p6_qzRMnw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_qaNKQJJkEd-E6p6_qzRMnw" subcomponent="_1IOBkJJjEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_LruAgJJgEd-E6p6_qzRMnw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_tc9woZJkEd-E6p6_qzRMnw" port="_6l81kJJjEd-E6p6_qzRMnw"/>
+  </connector>
+  <connector id="_MWna0JJkEd-E6p6_qzRMnw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_NG5BMJJkEd-E6p6_qzRMnw" subcomponent="_I1KGQJJkEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_xDBqoJJfEd-E6p6_qzRMnw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_qFyZcJJkEd-E6p6_qzRMnw" subcomponent="_1IOBkJJjEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_NS_gUJJgEd-E6p6_qzRMnw"/>
+    </endpoints>
+  </connector>
+  <connector id="_hePOsKVFEd-i1ezDjxCJpg">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_h9O30KVFEd-i1ezDjxCJpg" subcomponent="_9EKt0JJKEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_R4clkKVFEd-i1ezDjxCJpg"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_ifqPcKVFEd-i1ezDjxCJpg" subcomponent="_ewpAAKVFEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_vf95gKVEEd-i1ezDjxCJpg"/>
+    </endpoints>
+  </connector>
+  <connector id="_o2x3oKVHEd-i1ezDjxCJpg">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_pdq4gKVHEd-i1ezDjxCJpg" subcomponent="_ewpAAKVFEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_MC41gKVHEd-i1ezDjxCJpg"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_qAGQIKVHEd-i1ezDjxCJpg" subcomponent="_mqaGsKVHEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_DPBMIKVHEd-i1ezDjxCJpg"/>
+    </endpoints>
+  </connector>
+  <connector id="_J_iFgKYqEd-F2fxisVCBKw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_KU_YIKYqEd-F2fxisVCBKw" subcomponent="_1IOBkJJjEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_y2DBcKYpEd-F2fxisVCBKw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_XscDQNqUEd-qLr8SJ1mApA" subcomponent="_rYGcgJHNEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_5ymzsJHMEd-4y8fXV-XIVA"/>
+    </endpoints>
+  </connector>
+  <connector id="_1osSwKYqEd-F2fxisVCBKw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_2EjvYKYqEd-F2fxisVCBKw" subcomponent="_1IOBkJJjEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_nWSkIKYqEd-F2fxisVCBKw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_2iN7wKYqEd-F2fxisVCBKw" subcomponent="_mqaGsKVHEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_DPBMIKVHEd-i1ezDjxCJpg"/>
+    </endpoints>
+  </connector>
+  <connector id="_-c0ecK94Ed-m0d4ll29Pog">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_ApCeYK95Ed-m0d4ll29Pog" subcomponent="_6IQR8K94Ed-m0d4ll29Pog">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_afqwEK93Ed-m0d4ll29Pog"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_HiRnEa95Ed-m0d4ll29Pog" port="_ZpNmkKYeEd-F2fxisVCBKw"/>
+  </connector>
+  <connector id="_CKWgIK95Ed-m0d4ll29Pog">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_CjYrMK95Ed-m0d4ll29Pog" subcomponent="_6IQR8K94Ed-m0d4ll29Pog">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_ir5xsK93Ed-m0d4ll29Pog"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_C1txUK95Ed-m0d4ll29Pog" subcomponent="_ewpAAKVFEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_vf95gKVEEd-i1ezDjxCJpg"/>
+    </endpoints>
+  </connector>
+  <connector id="_Bje_oLy6Ed-J84sgW-8Kuw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_CDOPoLy6Ed-J84sgW-8Kuw" subcomponent="_5nNFkLy5Ed-J84sgW-8Kuw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_ZR_40Ly5Ed-J84sgW-8Kuw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_CeDKcLy6Ed-J84sgW-8Kuw" subcomponent="_rYGcgJHNEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_5ymzsJHMEd-4y8fXV-XIVA"/>
+    </endpoints>
+  </connector>
+  <connector id="_zW-oMLy6Ed-J84sgW-8Kuw">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_z8OqULy6Ed-J84sgW-8Kuw" subcomponent="_5nNFkLy5Ed-J84sgW-8Kuw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_kkH34Ly6Ed-J84sgW-8Kuw"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_3Y5lgby6Ed-J84sgW-8Kuw" port="_iYGf15HGEd-4y8fXV-XIVA"/>
+  </connector>
+  <connector id="_p4QowL_gEd-PHYEGGZFL2w">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_qwvv8L_gEd-PHYEGGZFL2w" subcomponent="_kxb44L_gEd-PHYEGGZFL2w">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_94ZywL_fEd-PHYEGGZFL2w"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_rHifUL_gEd-PHYEGGZFL2w" subcomponent="_rYGcgJHNEd-4y8fXV-XIVA">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_5ymzsJHMEd-4y8fXV-XIVA"/>
+    </endpoints>
+  </connector>
+  <connector id="_wl6zkL_gEd-PHYEGGZFL2w">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_w-qDsL_gEd-PHYEGGZFL2w" subcomponent="_kxb44L_gEd-PHYEGGZFL2w">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_8yMYoL_fEd-PHYEGGZFL2w"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:ComponentEndpoint" id="_y1lJEb_gEd-PHYEGGZFL2w" port="_r7aMQL_gEd-PHYEGGZFL2w"/>
+  </connector>
+  <connector id="_ztt1oMDKEd-uuPjDOeDPqg">
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_0IPOcMDKEd-uuPjDOeDPqg" subcomponent="_9EKt0JJKEd-E6p6_qzRMnw">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_rD_mwMDKEd-uuPjDOeDPqg"/>
+    </endpoints>
+    <endpoints xsi:type="staticstructure:SubcomponentEndpoint" id="_0tMVoMDKEd-uuPjDOeDPqg" subcomponent="_mqaGsKVHEd-i1ezDjxCJpg">
+      <port xsi:type="staticstructure:InterfacePort" href="system1.samm_repository#_DPBMIKVHEd-i1ezDjxCJpg"/>
+    </endpoints>
+  </connector>
+  <service id="_4FqVRpHCEd-4y8fXV-XIVA" name="j1062515832" subcomponentInstance="_VyNlEJHAEd-4y8fXV-XIVA">
+    <container href="system1.samm_targetenvironment#_SLNeoJG_Ed-4y8fXV-XIVA"/>
+  </service>
+  <service id="_6dZntpHNEd-4y8fXV-XIVA" name="o1541272464" subcomponentInstance="_rYGcgJHNEd-4y8fXV-XIVA">
+    <container href="system1.samm_targetenvironment#_SLNeoJG_Ed-4y8fXV-XIVA"/>
+  </service>
+  <service id="_IFnzppJMEd-E6p6_qzRMnw" documentation="" name="m835240368" subcomponentInstance="_9EKt0JJKEd-E6p6_qzRMnw">
+    <container href="system1.samm_targetenvironment#_Gu4BYKVLEd-i1ezDjxCJpg"/>
+  </service>
+  <service id="_3hcGRpJkEd-E6p6_qzRMnw" name="y641301960" subcomponentInstance="_1IOBkJJjEd-E6p6_qzRMnw">
+    <container href="system1.samm_targetenvironment#_SLNeoJG_Ed-4y8fXV-XIVA"/>
+  </service>
+  <service id="_6hqWBpJkEd-E6p6_qzRMnw" name="g1298711595" subcomponentInstance="_I1KGQJJkEd-E6p6_qzRMnw">
+    <container href="system1.samm_targetenvironment#_SLNeoJG_Ed-4y8fXV-XIVA"/>
+  </service>
+  <service id="_KEYsxpJUEd-E6p6_qzRMnw" name="e1860235940" subcomponentInstance="_6SrukJJTEd-E6p6_qzRMnw">
+    <container href="system1.samm_targetenvironment#_SLNeoJG_Ed-4y8fXV-XIVA"/>
+  </service>
+  <service id="_3dq6dqVFEd-i1ezDjxCJpg" name="z2043586659" subcomponentInstance="_ewpAAKVFEd-i1ezDjxCJpg">
+    <container href="system1.samm_targetenvironment#_R3VikKVWEd-i1ezDjxCJpg"/>
+  </service>
+  <service id="_czJHNq96Ed-m0d4ll29Pog" documentation="" name="q1222289697" subcomponentInstance="_6IQR8K94Ed-m0d4ll29Pog">
+    <container href="system1.samm_targetenvironment#_R3VikKVWEd-i1ezDjxCJpg"/>
+  </service>
+  <service id="_stWhJq96Ed-m0d4ll29Pog" name="y1167699172" subcomponentInstance="_mqaGsKVHEd-i1ezDjxCJpg">
+    <container href="system1.samm_targetenvironment#_R3VikKVWEd-i1ezDjxCJpg"/>
+  </service>
+  <service id="_SHVzhry6Ed-J84sgW-8Kuw" name="h231876395" subcomponentInstance="_5nNFkLy5Ed-J84sgW-8Kuw">
+    <container href="system1.samm_targetenvironment#_IbqycNqVEd-qLr8SJ1mApA"/>
+  </service>
+  <service id="_5pLj1r_gEd-PHYEGGZFL2w" name="m213360592" subcomponentInstance="_kxb44L_gEd-PHYEGGZFL2w">
+    <container href="system1.samm_targetenvironment#_IbqycNqVEd-qLr8SJ1mApA"/>
+  </service>
+</staticstructure:ServiceArchitectureModel>

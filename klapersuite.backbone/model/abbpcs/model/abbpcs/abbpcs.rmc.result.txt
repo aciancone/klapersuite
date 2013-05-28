@@ -1,0 +1,4 @@
+Klaper Model Reliability:0.9997999364447162
+Execution time: 118
+Number of iterations: 26
+Max Value Error: 0.0

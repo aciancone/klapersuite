@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:seff="http://q-impress.eu/seff" xmi:id="_yEr0kJJiEd-E6p6_qzRMnw" type="Seff" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ydIJwZJiEd-E6p6_qzRMnw" type="2001">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ydIJwpJiEd-E6p6_qzRMnw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ydIJw5JiEd-E6p6_qzRMnw"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_ydIJxJJiEd-E6p6_qzRMnw"/>
+    <element xmi:type="seff:StartAction" href="../system1.samm_seff#_ydIJwJJiEd-E6p6_qzRMnw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ydIJxZJiEd-E6p6_qzRMnw" x="155" y="60"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ysVDYZJiEd-E6p6_qzRMnw" type="2003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ysVDY5JiEd-E6p6_qzRMnw" type="5003"/>
+    <element xmi:type="seff:InternalAction" href="../system1.samm_seff#_ysVDYJJiEd-E6p6_qzRMnw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ysVDYpJiEd-E6p6_qzRMnw" x="70" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_3cm7gZJiEd-E6p6_qzRMnw" type="2007">
+    <element xmi:type="seff:StopAction" href="../system1.samm_seff#_3cm7gJJiEd-E6p6_qzRMnw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cm7gpJiEd-E6p6_qzRMnw" x="150" y="540"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_d06TIJJjEd-E6p6_qzRMnw" type="2002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_d06TIpJjEd-E6p6_qzRMnw" type="5002"/>
+    <element xmi:type="seff:ExternalCallAction" href="../system1.samm_seff#_dRTPwJJjEd-E6p6_qzRMnw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d06TIZJjEd-E6p6_qzRMnw" x="60" y="240"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="__MPz4KBcEd-CsaCJ13sj1A" type="2002">
+    <children xmi:type="notation:DecorationNode" xmi:id="__MPz4qBcEd-CsaCJ13sj1A" type="5002"/>
+    <element xmi:type="seff:ExternalCallAction" href="../system1.samm_seff#_79rmIKBcEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__MPz4aBcEd-CsaCJ13sj1A" x="60" y="340"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_waT0IKBdEd-CsaCJ13sj1A" type="2002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_waT0IqBdEd-CsaCJ13sj1A" type="5002"/>
+    <element xmi:type="seff:ExternalCallAction" href="../system1.samm_seff#_vnMVIKBdEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_waT0IaBdEd-CsaCJ13sj1A" x="60" y="440"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_yEr0kZJiEd-E6p6_qzRMnw"/>
+  <element xmi:type="seff:ResourceDemandingSEFF" href="../system1.samm_seff#//@resourceDemandingSeff.6"/>
+  <edges xmi:type="notation:Connector" xmi:id="_32YtcJJiEd-E6p6_qzRMnw" type="4001" source="_ydIJwZJiEd-E6p6_qzRMnw" target="_ysVDYZJiEd-E6p6_qzRMnw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_32YtcZJiEd-E6p6_qzRMnw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_32YtcpJiEd-E6p6_qzRMnw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_32Ytc5JiEd-E6p6_qzRMnw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_32YtdJJiEd-E6p6_qzRMnw" id="(0.49740932642487046,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_3-b2MJJiEd-E6p6_qzRMnw" type="4001" source="_ysVDYZJiEd-E6p6_qzRMnw" target="_d06TIJJjEd-E6p6_qzRMnw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_3-b2MZJiEd-E6p6_qzRMnw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3-b2MpJiEd-E6p6_qzRMnw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fUIqMpJjEd-E6p6_qzRMnw" id="(0.49740932642487046,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-b2M5JiEd-E6p6_qzRMnw" id="(0.49760765550239233,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_e9fEwJJjEd-E6p6_qzRMnw" type="4001" source="_d06TIJJjEd-E6p6_qzRMnw" target="__MPz4KBcEd-CsaCJ13sj1A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_e9fEwZJjEd-E6p6_qzRMnw"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e9fEwpJjEd-E6p6_qzRMnw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fUIqMJJjEd-E6p6_qzRMnw" id="(0.49760765550239233,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zimaw6BdEd-CsaCJ13sj1A" id="(0.49760765550239233,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yx3hYKBdEd-CsaCJ13sj1A" type="4001" source="__MPz4KBcEd-CsaCJ13sj1A" target="_waT0IKBdEd-CsaCJ13sj1A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yx3hYaBdEd-CsaCJ13sj1A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yx3hYqBdEd-CsaCJ13sj1A" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zimawaBdEd-CsaCJ13sj1A" id="(0.49760765550239233,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zimawqBdEd-CsaCJ13sj1A" id="(0.4975609756097561,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zB9y4KBdEd-CsaCJ13sj1A" type="4001" source="_waT0IKBdEd-CsaCJ13sj1A" target="_3cm7gZJiEd-E6p6_qzRMnw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_zB9y4aBdEd-CsaCJ13sj1A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zB9y4qBdEd-CsaCJ13sj1A" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zimawKBdEd-CsaCJ13sj1A" id="(0.4975609756097561,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zB9y46BdEd-CsaCJ13sj1A" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>

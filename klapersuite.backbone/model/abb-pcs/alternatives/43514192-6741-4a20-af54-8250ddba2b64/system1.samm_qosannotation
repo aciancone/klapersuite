@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qosannotation:QosAnnotations xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qosannotation="http://q-impress.eu/samm/qosannotation" xmlns:seffdecorator="http://q-impress.eu/qualityannotationdecorator/seffdecorator" id="_5GQ60JG7Ed-4y8fXV-XIVA" name="m9340568">
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_9jAql5HJEd-4y8fXV-XIVA" documentation="" name="m841678150">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_t1ysIJG7Ed-4y8fXV-XIVA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_Yxfi98DOEd-uuPjDOeDPqg" name="l605001265">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_v2q9YL_fEd-PHYEGGZFL2w"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_aXEDh6X8Ed-n99B-3_d8zQ" documentation="" name="j1924277333">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_FZkkcJJJEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_moksR7UBEd-MKLhF4A9QCQ" documentation="" name="f563472582">
+    <constantNumber value="1.0E-6"/>
+    <internalAction href="system1.samm_seff#_ysVDYJJiEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_IvkX57aQEd-2LuqyIpmU-g" documentation="" name="r2131736083">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_oqsOUKVFEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_TIALV7aQEd-2LuqyIpmU-g" documentation="" name="f1743332176">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_FNiHQKVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_bKFyd7aQEd-2LuqyIpmU-g" documentation="" name="e811508086">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_9cD5kKVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:ActivityFailureProbability" id="_uYNdl7y5Ed-J84sgW-8Kuw" name="i51364321">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_ZzfKYLy7Ed-J84sgW-8Kuw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_uJHk4pHIEd-4y8fXV-XIVA" documentation="Norm(0.003021, 0.0008)" name="b468752798">
+    <parametricFormula specification="Norm(0.003021, 0.0008)"/>
+    <internalAction href="system1.samm_seff#_t1ysIJG7Ed-4y8fXV-XIVA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_Iuvf4qbWEd-7PvokbmP_og" name="l99567629">
+    <constantNumber value="0.0028"/>
+    <internalAction href="system1.samm_seff#_A4kN0KbWEd-7PvokbmP_og"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_ak1TopHNEd-4y8fXV-XIVA" name="v946547868">
+    <constantNumber value="1.0E-5"/>
+    <internalAction href="system1.samm_seff#_JGgbkJHNEd-4y8fXV-XIVA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_MpLJQpJKEd-E6p6_qzRMnw" documentation="Norm(0.00431,0.0008)" name="z245658508">
+    <parametricFormula specification="Norm(0.00431,0.0008)"/>
+    <internalAction href="system1.samm_seff#_FZkkcJJJEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:HddResourceDemand" id="_iHOas5JUEd-E6p6_qzRMnw" documentation="Norm(0.03,0.01)" name="x988996254">
+    <parametricFormula specification="0.03"/>
+    <internalAction href="system1.samm_seff#_FZkkcJJJEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_2fv_AqVYEd-aQeVwzPgL-A" name="z176608702">
+    <constantNumber value="0.0021"/>
+    <internalAction href="system1.samm_seff#_iPEUEKVYEd-aQeVwzPgL-A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:HddResourceDemand" id="_-LIWU6VYEd-aQeVwzPgL-A" name="t1684892304">
+    <constantNumber value="0.04"/>
+    <internalAction href="system1.samm_seff#_iPEUEKVYEd-aQeVwzPgL-A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_QMWWYqbVEd-7PvokbmP_og" name="d489722924">
+    <constantNumber value="0.0035"/>
+    <internalAction href="system1.samm_seff#_jxlGAKbUEd-7PvokbmP_og"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:HddResourceDemand" id="_Z-N5E6bVEd-7PvokbmP_og" name="y1803853467">
+    <constantNumber value="0.025"/>
+    <internalAction href="system1.samm_seff#_jxlGAKbUEd-7PvokbmP_og"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_n5o6spJTEd-E6p6_qzRMnw" name="u966669205">
+    <constantNumber value="2.8E-4"/>
+    <internalAction href="system1.samm_seff#_inrR0JJTEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_fN8e8p_SEd-aVsa98WhODQ" name="b636983015">
+    <constantNumber value="1.9E-4"/>
+    <internalAction href="system1.samm_seff#_ysVDYJJiEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_JfYtQqCBEd-CsaCJ13sj1A" name="h830387196">
+    <constantNumber value="4.8E-4"/>
+    <internalAction href="system1.samm_seff#_OmiEcJJjEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_x7IjUqCBEd-CsaCJ13sj1A" name="i52137778">
+    <constantNumber value="0.00138"/>
+    <internalAction href="system1.samm_seff#_KbUUYKBdEd-CsaCJ13sj1A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_8KhvgqCBEd-CsaCJ13sj1A" name="o604420149">
+    <constantNumber value="0.00113"/>
+    <internalAction href="system1.samm_seff#_XEai4KBdEd-CsaCJ13sj1A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_D3MgQqCCEd-CsaCJ13sj1A" name="y1111154337">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_CCAz8JJjEd-E6p6_qzRMnw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_q1FRMqCCEd-CsaCJ13sj1A" name="m993350577">
+    <constantNumber value="4.9E-4"/>
+    <internalAction href="system1.samm_seff#_jvThUKCCEd-CsaCJ13sj1A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_uod0UqVFEd-i1ezDjxCJpg" name="m751768713">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_oqsOUKVFEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_RTSisqVIEd-i1ezDjxCJpg" name="s1859970345">
+    <constantNumber value="1.0E-5"/>
+    <internalAction href="system1.samm_seff#_FNiHQKVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_aBMuAqVIEd-i1ezDjxCJpg" name="r1178912328">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_9cD5kKVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_dN4P8qVJEd-i1ezDjxCJpg" name="j400362277">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_SzCowKVJEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_HXTDgqYgEd-F2fxisVCBKw" name="k1597191564">
+    <constantNumber value="0.00282"/>
+    <internalAction href="system1.samm_seff#_viB3gKYfEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_sISpq6YhEd-F2fxisVCBKw" name="x1724284082">
+    <constantNumber value="0.00128"/>
+    <internalAction href="system1.samm_seff#_ihXoIKYgEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_3ie1AqYhEd-F2fxisVCBKw" name="c163768933">
+    <constantNumber value="0.00574"/>
+    <internalAction href="system1.samm_seff#_tj13EKYgEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_cqvroqYjEd-F2fxisVCBKw" name="d908093864">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_xH7W8KYiEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_VgkSAqYlEd-F2fxisVCBKw" name="j1481381403">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_nLYY0KYjEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_bkcgAqYlEd-F2fxisVCBKw" name="c1864496564">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_1Lig4KYjEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_iCsV0qYlEd-F2fxisVCBKw" name="t1874544133">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_BQT6UKYkEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:CpuResourceDemand" id="_m89QYqYlEd-F2fxisVCBKw" name="s6130339">
+    <constantNumber value="1.0E-4"/>
+    <internalAction href="system1.samm_seff#_RIt9cKYkEd-F2fxisVCBKw"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_QlX-sKVGEd-i1ezDjxCJpg" name="d803874796">
+    <constantNumber value="0.01"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_GmjlIKVGEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_gcdMIKVGEd-i1ezDjxCJpg" name="q1420167954">
+    <constantNumber value="0.96"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_N6KVoKVGEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_sAH0oMDGEd-uuPjDOeDPqg" name="w340473107">
+    <constantNumber value="0.03"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_zNA5IMDGEd-uuPjDOeDPqg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_aN7X4KVHEd-i1ezDjxCJpg" name="w1520010968">
+    <constantNumber/>
+    <probabilisticBranchTransition href="system1.samm_seff#_PMNW4KVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_dm5e0KVHEd-i1ezDjxCJpg" name="f1864258099">
+    <constantNumber value="1.0"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_UMuqcKVHEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_gb4ScKVIEd-i1ezDjxCJpg" name="t86431345">
+    <constantNumber/>
+    <probabilisticBranchTransition href="system1.samm_seff#_B4YT4KVIEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_mriSoKVIEd-i1ezDjxCJpg" name="g2075097280">
+    <constantNumber value="1.0"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_IwaisKVIEd-i1ezDjxCJpg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_mpDWoKVZEd-aQeVwzPgL-A" name="s1660290830">
+    <constantNumber value="0.01"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_qsuc4KVYEd-aQeVwzPgL-A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_sX36oKVZEd-aQeVwzPgL-A" name="m1179556746">
+    <constantNumber value="0.99"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_vUuiwKVYEd-aQeVwzPgL-A"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_nvWGoKbVEd-7PvokbmP_og" name="m962565586">
+    <constantNumber value="0.01"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_pXN40KbUEd-7PvokbmP_og"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_thpccKbVEd-7PvokbmP_og" name="j1960726987">
+    <constantNumber value="0.99"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_vFpbQKbUEd-7PvokbmP_og"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_SigqUL_gEd-PHYEGGZFL2w" name="q289251120">
+    <constantNumber value="0.01"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_ymZ6EL_fEd-PHYEGGZFL2w"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_cVC7YL_gEd-PHYEGGZFL2w" name="u1888138507">
+    <constantNumber value="0.99"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_zB-bwL_fEd-PHYEGGZFL2w"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_fUTewMDFEd-uuPjDOeDPqg" name="i431155156">
+    <constantNumber value="0.04"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_dg9uUMDEEd-uuPjDOeDPqg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_viT-cMDFEd-uuPjDOeDPqg" name="d1840105684">
+    <constantNumber value="0.96"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_eNEmYMDEEd-uuPjDOeDPqg"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_d-qScNqYEd-qLr8SJ1mApA" name="r644171017">
+    <constantNumber value="0.34"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_DeQ88NqYEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_tkn6sNqYEd-qLr8SJ1mApA" name="i903804434">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_EHsUcNqYEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_w9vyoNqYEd-qLr8SJ1mApA" name="v1551108535">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_Eeyl0NqYEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_V7_AANqZEd-qLr8SJ1mApA" name="z452968357">
+    <constantNumber value="0.34"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_LV9cgNqZEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_acogsNqZEd-qLr8SJ1mApA" name="y1045516251">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_LoIxoNqZEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_c7oSsNqZEd-qLr8SJ1mApA" name="c1851372607">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_L4rIANqZEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_EPMYsNqaEd-qLr8SJ1mApA" name="j1652878534">
+    <constantNumber value="0.34"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_4uv0UNqZEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_HlCTINqaEd-qLr8SJ1mApA" name="r1563545166">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_5ENG8NqZEd-qLr8SJ1mApA"/>
+  </annotation>
+  <annotation xsi:type="seffdecorator:BranchProbability" id="_J01ykNqaEd-qLr8SJ1mApA" name="k1647139344">
+    <constantNumber value="0.33"/>
+    <probabilisticBranchTransition href="system1.samm_seff#_5V8XMNqZEd-qLr8SJ1mApA"/>
+  </annotation>
+</qosannotation:QosAnnotations>

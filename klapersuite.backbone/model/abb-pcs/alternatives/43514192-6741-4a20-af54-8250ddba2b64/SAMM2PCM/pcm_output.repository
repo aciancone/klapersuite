@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sdq.ipd.uka.de/PalladioComponentModel/Repository/4.0" xmlns:_1="http://sdq.ipd.uka.de/PalladioComponentModel/SEFF/4.0" xmlns:pcm.reliability="http://sdq.ipd.uka.de/PalladioComponentModel/Reliability/4.0" id="_ASWupwdbEeC-IN0-0NqnlQ" entityName="i1182748678">
+  <components__Repository xsi:type="BasicComponent" id="_AU4eQAdbEeC-IN0-0NqnlQ" entityName="y510771656">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AU4eQQdbEeC-IN0-0NqnlQ" entityName="x1004815881 _G0zj4JG7Ed-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AU4eQwdbEeC-IN0-0NqnlQ" entityName="g397346342 _G0zj4JG7Ed-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AU4eQgdbEeC-IN0-0NqnlQ" entityName="n1486050112 _G0zj4JG7Ed-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AU4eRAdbEeC-IN0-0NqnlQ" entityName="z878567690 _G0zj4JG7Ed-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AU4eRQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4pQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AU4eRwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eSAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AU4eSAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eRgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4eRwdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AU4eTQdbEeC-IN0-0NqnlQ" branchProbability="0.34">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AVCPMAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVCPMgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AVCPMgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPMAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPMQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pQdbEeC-IN0-0NqnlQ" role_ExternalService="_AU4eRAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AVCPMQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPMgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AVCPMwdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AVCPNgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPNAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPNQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pQdbEeC-IN0-0NqnlQ" role_ExternalService="_AU4eQgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AVCPNQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPNgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AVCPNAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVCPNgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AU4eSQdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AU4eSgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AU4eTAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AU4eTAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eSgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4eSwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pQdbEeC-IN0-0NqnlQ" role_ExternalService="_AU4eQwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AU4eSwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eTAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AU4eRgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AU4eSAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUcZUgdbEeC-IN0-0NqnlQ" entityName="x1306488019">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUcZUwdbEeC-IN0-0NqnlQ" entityName="u1499658930 _qjG_EKYiEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASppkAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUcZVAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASppkQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUcZVwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZVQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZVgdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUcZVQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZVwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUcZVgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZVwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATQGjgdbEeC-IN0-0NqnlQ" entityName="m1541782504">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATQGjwdbEeC-IN0-0NqnlQ" entityName="e418339463 _Q3PfoJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4rAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATQGkAdbEeC-IN0-0NqnlQ" entityName="t346108581 _UxbdQJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4lAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATQGkQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4rQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATQGlQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGkgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATQGlAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.00138"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATQGkgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATQGlQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATQGkwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGlAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATQGlAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGlQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATQGkwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lQdbEeC-IN0-0NqnlQ" role_ExternalService="_ATQGkAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUljTgdbEeC-IN0-0NqnlQ" entityName="z324943616">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUljTwdbEeC-IN0-0NqnlQ" entityName="k725396457 _u3_9gJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4qgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUljUAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4qwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUljUgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljUwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUljUwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljUQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljUgdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUljUQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUljUwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT_tYAdbEeC-IN0-0NqnlQ" entityName="t605681984">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT_tYQdbEeC-IN0-0NqnlQ" entityName="b1196723455 _J8Hz4KYkEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4kAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT_tYgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4kQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT_tYwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT_tZQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT_tZAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tZQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT_tZQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tYwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT_tZAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AVCPNwdbEeC-IN0-0NqnlQ" entityName="o1789790384">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AVCPOAdbEeC-IN0-0NqnlQ" entityName="b334149041 _1_tw4JHMEd-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVCPOQdbEeC-IN0-0NqnlQ" entityName="r448994500 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AVCPOgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4lwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AVCPPQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPPgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPPAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_AVCPOQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AVCPPgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPOwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPPQdbEeC-IN0-0NqnlQ">
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AVCPOwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVCPPgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AVCPPAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPPQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUljQAdbEeC-IN0-0NqnlQ" entityName="l1954246421">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUljQQdbEeC-IN0-0NqnlQ" entityName="a541567351 _uptLkKYjEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4nAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUljQgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4nQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUljRAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljRQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUljQwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUljRQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUljRQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljQwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljRAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATGVgQdbEeC-IN0-0NqnlQ" entityName="s1768389653">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATGVggdbEeC-IN0-0NqnlQ" entityName="y845217919 _8NgbgpJeEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATGVhAdbEeC-IN0-0NqnlQ" entityName="i1243987711 _TaHFAJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4pgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATGVhQdbEeC-IN0-0NqnlQ" entityName="o287954643 _TaHFAJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4pgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATGVgwdbEeC-IN0-0NqnlQ" entityName="a1915996862 _Q3PfoJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4rAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATGVhgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4oQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATGViQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGVigdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATGViAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4rQdbEeC-IN0-0NqnlQ" role_ExternalService="_ATGVgwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATGVjAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGVhwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATGViwdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.9E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATGVigdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGViwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATGViQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATGVhQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATGViAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGViQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATGViwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGVjAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATGVigdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATGVhAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATGVhwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATGVjAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT_tZgdbEeC-IN0-0NqnlQ" entityName="m220787473">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT_tZwdbEeC-IN0-0NqnlQ" entityName="u1504412475 _-hj-gKVGEd-i1ezDjxCJpg" providedInterface__OperationProvidedRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT_taAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT_tawdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_taQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT_tagdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-5"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT_tagdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tawdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT_taQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT_tawdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AVCPRQdbEeC-IN0-0NqnlQ" entityName="s307715417">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AVCPRgdbEeC-IN0-0NqnlQ" entityName="w2047533909 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVCPRwdbEeC-IN0-0NqnlQ" entityName="s988537529 _HJmNEJJIEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AVCPSAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AVCPSQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVCPSwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AVCPSgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPSwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AVCPSwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPSQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPSgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplwdbEeC-IN0-0NqnlQ" role_ExternalService="_AVCPRwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATZQcAdbEeC-IN0-0NqnlQ" entityName="s1292793047">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATZQcQdbEeC-IN0-0NqnlQ" entityName="v253474530 _TaHFAJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4pgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATZQcgdbEeC-IN0-0NqnlQ" entityName="n1598869031 _-hj-gKVGEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATZQcwdbEeC-IN0-0NqnlQ" entityName="q260457459 _u3_9gJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4qgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATZQdAdbEeC-IN0-0NqnlQ" entityName="c740778339 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATZQdQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4pwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATZQdgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATZQggdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATZQgQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQggdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATZQgAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATZQdAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATZQdwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQeAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_ATZQeAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQgAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATZQdwdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATZQeQdbEeC-IN0-0NqnlQ" branchProbability="0.04">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATZQewdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQfAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATZQfAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQegdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATZQewdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplQdbEeC-IN0-0NqnlQ" role_ExternalService="_ATZQcgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATZQegdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATZQfAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATZQfQdbEeC-IN0-0NqnlQ" branchProbability="0.96">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATZQfwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQfgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATZQfgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATZQfwdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATZQgAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQgQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATZQeAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4qwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATZQcwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATZQggdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATZQdgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATZQgQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATQGiAdbEeC-IN0-0NqnlQ" entityName="u1436639208">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATQGiQdbEeC-IN0-0NqnlQ" entityName="t1427154206 _oPCLAKYfEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4rgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATQGigdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4rwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATQGjAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGjQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATQGjQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGiwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATQGjAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.00282"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATQGiwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATQGjQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AVCPTAdbEeC-IN0-0NqnlQ" entityName="k1414588618">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AVCPTQdbEeC-IN0-0NqnlQ" entityName="c1693141786 _0AQtgKVHEd-i1ezDjxCJpg" providedInterface__OperationProvidedRole="_ASppmQdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVCPTgdbEeC-IN0-0NqnlQ" entityName="e1964435050 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AVCPTwdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASppmgdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AVMAMQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMAMgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AVMAOgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMAMAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVMAMgdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AVMAMAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVMAOgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AVMAMgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMAOgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVMAMQdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AVMAMwdbEeC-IN0-0NqnlQ">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AVMANQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMANgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AVMANgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMANAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVMANQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppkwdbEeC-IN0-0NqnlQ" role_ExternalService="_AVCPTgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AVMANAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVMANgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AVMANwdbEeC-IN0-0NqnlQ" branchProbability="1.0">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AVMAOQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVMAOAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AVMAOAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVMAOQdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATjBcAdbEeC-IN0-0NqnlQ" entityName="x1949192412">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATjBcQdbEeC-IN0-0NqnlQ" entityName="s87186840 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATjBcgdbEeC-IN0-0NqnlQ" entityName="r1944711663 _-hj-gKVGEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATjBdAdbEeC-IN0-0NqnlQ" entityName="k1286129236 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATjBcwdbEeC-IN0-0NqnlQ" entityName="v2039705692 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATjBdQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATjBhAdbEeC-IN0-0NqnlQ" entityName="" predecessor_AbstractAction="_ATjBdgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATjBhQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATjBdAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATjBhQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBhAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATjBeAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.03"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="Norm(0.00431,0.0008)"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_ATjBeAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBhQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATjBdwdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATjBeQdbEeC-IN0-0NqnlQ" branchProbability="0.01">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATjBfAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBegdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATjBewdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppkwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATjBcwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATjBewdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBfAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATjBegdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATjBfAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATjBfQdbEeC-IN0-0NqnlQ" branchProbability="0.03">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATjBfwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBgAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATjBfgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATjBgAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATjBgAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBfgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATjBfwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplQdbEeC-IN0-0NqnlQ" role_ExternalService="_ATjBcgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATjBgQdbEeC-IN0-0NqnlQ" branchProbability="0.96">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATjBgwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBggdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATjBggdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATjBgwdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATjBdwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATjBeAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATjBdgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATjBhAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AU4eMgdbEeC-IN0-0NqnlQ" entityName="y2139285955">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AU4eMwdbEeC-IN0-0NqnlQ" entityName="a1753425839 _UxbdQJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4lAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AU4eNAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4lQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AU4eNwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eNQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4eNgdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.00113"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AU4eNgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eNwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AU4eNQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AU4eNwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="CompositeComponent" id="_AVMAOwdbEeC-IN0-0NqnlQ" entityName="k516382164">
+    <assemblyContexts_ComposedStructure id="_AWYTAQdbEeC-IN0-0NqnlQ" entityName="b2096235597" encapsulatedComponent_AssemblyContext="_ATZQcAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AWYTAgdbEeC-IN0-0NqnlQ" entityName="i412502101" encapsulatedComponent_AssemblyContext="_AU4eMgdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AWYTAwdbEeC-IN0-0NqnlQ" entityName="y1190107841" encapsulatedComponent_AssemblyContext="_ATQGjgdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AWYTAAdbEeC-IN0-0NqnlQ" entityName="p593147574" encapsulatedComponent_AssemblyContext="_ATGVgQdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AWYTBAdbEeC-IN0-0NqnlQ" entityName="o1109485878" encapsulatedComponent_AssemblyContext="_AT18ZgdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AWYTBQdbEeC-IN0-0NqnlQ" entityName="p735650097" encapsulatedComponent_AssemblyContext="_AUljRgdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AWhc8AdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AWYTAAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AWYTAQdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ATZQcQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_ATGVhQdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AW-I4AdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AWYTAAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AWYTAwdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ATQGjwdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_ATGVgwdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AW0-8AdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AWYTAAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AWYTBQdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AUljRwdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_ATGVhAdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AWYTBgdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AWYTAwdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AWYTAgdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AU4eMwdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_ATQGkAdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AWrN8AdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AWYTAQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AWYTBAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AT18ZwdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_ATZQcwdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_AXRD0AdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_ATZQdAdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AVMAPgdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AWYTAQdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_AXH54QdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_ATZQcgdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AVMAPQdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AWYTAQdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_AXRD0QdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_AUljSAdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AVMAPwdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AWYTBQdbEeC-IN0-0NqnlQ"/>
+    <providedDelegationConnectors_ComposedStructure id="_AXH54AdbEeC-IN0-0NqnlQ" entityName="defaultName" innerProvidedRole_ProvidedDelegationConnector="_ATGVggdbEeC-IN0-0NqnlQ" outerProvidedRole_ProvidedDelegationConnector="_AVMAPAdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_AWYTAAdbEeC-IN0-0NqnlQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AVMAPAdbEeC-IN0-0NqnlQ" entityName="k1161115098 _8NgbgpJeEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVMAPQdbEeC-IN0-0NqnlQ" entityName="z604722654 _-hj-gKVGEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVMAPgdbEeC-IN0-0NqnlQ" entityName="w1935582245 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AVMAPwdbEeC-IN0-0NqnlQ" entityName="a2034057860 _u3_9gJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4qgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT18cgdbEeC-IN0-0NqnlQ" entityName="w1514441660">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT18cwdbEeC-IN0-0NqnlQ" entityName="h1086497165 _ZIwgUJJTEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4ngdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT18dAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4nwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT18dwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18dQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT18dgdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="2.8E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT18dQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT18dwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT18dgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18dwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="CompositeComponent" id="_Aa18QQdbEeC-IN0-0NqnlQ" entityName="l87284952">
+    <assemblyContexts_ComposedStructure id="_Aa_tQAdbEeC-IN0-0NqnlQ" entityName="w1396136789" encapsulatedComponent_AssemblyContext="_AVCPNwdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_Aa_tQgdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_AVCPOQdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_Aa18QwdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_Aa_tQAdbEeC-IN0-0NqnlQ"/>
+    <providedDelegationConnectors_ComposedStructure id="_Aa_tQQdbEeC-IN0-0NqnlQ" entityName="defaultName" innerProvidedRole_ProvidedDelegationConnector="_AVCPOAdbEeC-IN0-0NqnlQ" outerProvidedRole_ProvidedDelegationConnector="_Aa18QgdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aa_tQAdbEeC-IN0-0NqnlQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_Aa18QgdbEeC-IN0-0NqnlQ" entityName="m421432794 _1_tw4JHMEd-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_Aa18QwdbEeC-IN0-0NqnlQ" entityName="a298502263 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="CompositeComponent" id="_AXtvwAdbEeC-IN0-0NqnlQ" entityName="b627308896">
+    <assemblyContexts_ComposedStructure id="_AZWuiAdbEeC-IN0-0NqnlQ" entityName="j1236344762" encapsulatedComponent_AssemblyContext="_ATQGiAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuhAdbEeC-IN0-0NqnlQ" entityName="y2139684038" encapsulatedComponent_AssemblyContext="_AUljQAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuhwdbEeC-IN0-0NqnlQ" entityName="d1324165701" encapsulatedComponent_AssemblyContext="_AVCPTAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWugQdbEeC-IN0-0NqnlQ" entityName="k1174196680" encapsulatedComponent_AssemblyContext="_AUSoXwdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWugwdbEeC-IN0-0NqnlQ" entityName="h738564862" encapsulatedComponent_AssemblyContext="_AUcZUgdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuiQdbEeC-IN0-0NqnlQ" entityName="v1359693093" encapsulatedComponent_AssemblyContext="_AT18bAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZgfgAdbEeC-IN0-0NqnlQ" entityName="g1498679971" encapsulatedComponent_AssemblyContext="_AVCPPwdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuggdbEeC-IN0-0NqnlQ" entityName="h2087768820" encapsulatedComponent_AssemblyContext="_AT18YAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWugAdbEeC-IN0-0NqnlQ" entityName="s1457820609" encapsulatedComponent_AssemblyContext="_ASppnwdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuhQdbEeC-IN0-0NqnlQ" entityName="e7103208" encapsulatedComponent_AssemblyContext="_ATsLYAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AZWuhgdbEeC-IN0-0NqnlQ" entityName="v1497910940" encapsulatedComponent_AssemblyContext="_AT_tYAdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AaQGYAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuhgdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AT_tYQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoZwdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AajBUQdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuhwdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AVCPTQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoagdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AajBUAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuhQdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ATsLYQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoZQdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AaGVYAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWugAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ASppoAdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoaAdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AZgfggdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZgfgAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AVCPQAdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoYgdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AZzacAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuiAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ATQGiQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoaQdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AZgfgQdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuhAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AUljQQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoYQdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AZppcAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuiQdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AT18bQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoZgdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AaZ3YAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWuggdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AT18YQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoYwdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AZ9LcAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AZWugQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AZWugwdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_AUcZUwdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AUSoZAdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_Aa18QAdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_AVCPTgdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AXtvwgdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AZWuhwdbEeC-IN0-0NqnlQ"/>
+    <providedDelegationConnectors_ComposedStructure id="_AasyUAdbEeC-IN0-0NqnlQ" entityName="defaultName" innerProvidedRole_ProvidedDelegationConnector="_AUSoYAdbEeC-IN0-0NqnlQ" outerProvidedRole_ProvidedDelegationConnector="_AXtvwQdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_AZWugQdbEeC-IN0-0NqnlQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AXtvwQdbEeC-IN0-0NqnlQ" entityName="s343081551 _6AUtQKYdEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASppmwdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AXtvwgdbEeC-IN0-0NqnlQ" entityName="p1439681841 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUvUSQdbEeC-IN0-0NqnlQ" entityName="i1812956609">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUvUSgdbEeC-IN0-0NqnlQ" entityName="q1730868221 _8NgbgpJeEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUvUTAdbEeC-IN0-0NqnlQ" entityName="n687019394 _8NgbgpJeEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUvUTQdbEeC-IN0-0NqnlQ" entityName="v99142819 _8NgbgpJeEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUvUSwdbEeC-IN0-0NqnlQ" entityName="i1702241997 _8NgbgpJeEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4oAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUvUTgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4oQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUvUTwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvUUQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AUvUUQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUTwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUvUUAdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUvUVgdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUvUWAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUWQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUvUVwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvUWQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUvUWQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUVwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUvUWAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4oQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUvUTQdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUvUUgdbEeC-IN0-0NqnlQ" branchProbability="0.34">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUvUVQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUUwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUvUVAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4oQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUvUTAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUvUUwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvUVQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUvUVAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUVQdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUvUWgdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AU4eMQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUWwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4eMAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4oQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUvUSwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AU4eMAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4eMQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUvUWwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AU4eMQdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUvUUAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUUQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT18YAdbEeC-IN0-0NqnlQ" entityName="w159403396">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT18YQdbEeC-IN0-0NqnlQ" entityName="e1455908173 _NxUbUKVJEd-i1ezDjxCJpg" providedInterface__OperationProvidedRole="_ASppnQdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT18YgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASppngdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT18ZQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18YwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT18ZAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT18ZAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18ZQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT18YwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT18ZQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATsLZgdbEeC-IN0-0NqnlQ" entityName="e1318475698">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATsLZwdbEeC-IN0-0NqnlQ" entityName="x1468551312 _O6XjQJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASppmAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATsLaAdbEeC-IN0-0NqnlQ" entityName="p1156320673 _TaHFAJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4pgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATsLaQdbEeC-IN0-0NqnlQ" entityName="j1273224011">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATsLagdbEeC-IN0-0NqnlQ" entityName="c997361367 _oKh50KVAEd-i1ezDjxCJpg" providedInterface__OperationProvidedRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATsLawdbEeC-IN0-0NqnlQ" entityName="r794780116 _-hj-gKVGEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATsLbAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASppkwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_ATsLbwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLdwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATsLbgdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATsLcAdbEeC-IN0-0NqnlQ" branchProbability="1.0">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATsLcgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLcQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATsLcQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATsLcgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_ATsLcwdbEeC-IN0-0NqnlQ">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATsLdgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLdAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATsLdQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplQdbEeC-IN0-0NqnlQ" role_ExternalService="_ATsLawdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_ATsLdQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLdgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_ATsLdAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATsLdgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATsLbQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATsLdwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATsLbgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLbwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATsLdwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLbQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATsLbwdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATQGgAdbEeC-IN0-0NqnlQ" entityName="f1893487746">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATQGgQdbEeC-IN0-0NqnlQ" entityName="p779601574 _G0zj4JG7Ed-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_ATQGggdbEeC-IN0-0NqnlQ" entityName="p195110338 _ZIwgUJJTEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4ngdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATQGgwdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4pQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATQGhQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGhwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATQGhAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATQGhgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATQGhwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGhgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATQGhQdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="Norm(0.003021, 0.0008)"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_ATQGhgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATQGhAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATQGhwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4nwdbEeC-IN0-0NqnlQ" role_ExternalService="_ATQGggdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUSoXwdbEeC-IN0-0NqnlQ" entityName="o1758314209">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUSoYAdbEeC-IN0-0NqnlQ" entityName="j512123574 _6AUtQKYdEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASppmwdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoYgdbEeC-IN0-0NqnlQ" entityName="c1565329918 _6yW_cKYjEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4mAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoZwdbEeC-IN0-0NqnlQ" entityName="p1443432125 _J8Hz4KYkEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4kAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoYQdbEeC-IN0-0NqnlQ" entityName="i1055039616 _uptLkKYjEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4nAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoYwdbEeC-IN0-0NqnlQ" entityName="n1462076132 _NxUbUKVJEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppnQdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoaQdbEeC-IN0-0NqnlQ" entityName="b1819511492 _oPCLAKYfEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4rgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoagdbEeC-IN0-0NqnlQ" entityName="h2040607443 _0AQtgKVHEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppmQdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoZgdbEeC-IN0-0NqnlQ" entityName="m553313391 _nbLPsKYgEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4kgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoZQdbEeC-IN0-0NqnlQ" entityName="b1845503220 _ht9G0KYjEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4ogdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoaAdbEeC-IN0-0NqnlQ" entityName="b416119096 _ah5QIKYgEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASf4mgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoZAdbEeC-IN0-0NqnlQ" entityName="o1128936025 _qjG_EKYiEd-F2fxisVCBKw" requiredInterface__OperationRequiredRole="_ASppkAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUSoawdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASppnAdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUSobAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZUQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSocgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSodAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSodQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4rwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoaQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSocwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZUAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSobQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4kQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoZwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUcZUQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSobAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSocAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUcZUAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSocQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSocwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4mQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoYgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSocQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSobwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZUAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4nQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoYQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSodQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSocgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSodgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4mwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoaAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUSobQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSocwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSocAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZUQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSodAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppngdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoYwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSodAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSocAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSocgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppmgdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoagdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSodgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSodQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSobgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4kwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoZgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSobgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSodgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSobwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppkQdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoZAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSobwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSobgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSocQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4owdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoZQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="CompositeComponent" id="_AXRD0gdbEeC-IN0-0NqnlQ" entityName="y726319931">
+    <assemblyContexts_ComposedStructure id="_AXkl0AdbEeC-IN0-0NqnlQ" entityName="y1863302516" encapsulatedComponent_AssemblyContext="_AUSoUAdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_AXkl0gdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_AUSoUgdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AXa00AdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AXkl0AdbEeC-IN0-0NqnlQ"/>
+    <providedDelegationConnectors_ComposedStructure id="_AXkl0QdbEeC-IN0-0NqnlQ" entityName="defaultName" innerProvidedRole_ProvidedDelegationConnector="_AUSoUQdbEeC-IN0-0NqnlQ" outerProvidedRole_ProvidedDelegationConnector="_AXRD0wdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_AXkl0AdbEeC-IN0-0NqnlQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AXRD0wdbEeC-IN0-0NqnlQ" entityName="k815697074 _fvGc4L_fEd-PHYEGGZFL2w" providedInterface__OperationProvidedRole="_ASf4qAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AXa00AdbEeC-IN0-0NqnlQ" entityName="j703484316 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUljVAdbEeC-IN0-0NqnlQ" entityName="p1244707280">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUljVQdbEeC-IN0-0NqnlQ" entityName="g309504986 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUljVgdbEeC-IN0-0NqnlQ" entityName="d883713139 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUljVwdbEeC-IN0-0NqnlQ" entityName="b1416696844 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUljWAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUvURwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljWQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUvUSAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUljVgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUvUSAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvURwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljWwdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.025"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.0035"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUljWQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvURwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUljWgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljWwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AUljWwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUSAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljWgdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUvUQAdbEeC-IN0-0NqnlQ" branchProbability="0.01">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUvUQQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvUQwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUvUQgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUQwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUvUQwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvUQQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUvUQgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppkwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUljVwdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUvURAdbEeC-IN0-0NqnlQ" branchProbability="0.99">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUvURQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUvURgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUvURgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUvURQdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT_tbAdbEeC-IN0-0NqnlQ" entityName="w1656161790">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT_tbQdbEeC-IN0-0NqnlQ" entityName="f1195380714 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AT_tbwdbEeC-IN0-0NqnlQ" entityName="o81822074 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AT_tbgdbEeC-IN0-0NqnlQ" entityName="x1452933335 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT_tcAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT_tcgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tcwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUI3VAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUI3UwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT_tcwdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.04"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.0021"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AT_tcwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUI3VAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT_tcgdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUI3UAdbEeC-IN0-0NqnlQ" branchProbability="0.99">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUI3UgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUI3UQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUI3UQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUI3UgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AT_tdAdbEeC-IN0-0NqnlQ" branchProbability="0.01">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AT_tdQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT_tdwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AT_tdwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tdQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT_tdgdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASppkwdbEeC-IN0-0NqnlQ" role_ExternalService="_AT_tbgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AT_tdgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tdwdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT_tcQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUI3UwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUI3UwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT_tcQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUI3VAdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_AT_tbwdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AVCPPwdbEeC-IN0-0NqnlQ" entityName="p271965739">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AVCPQAdbEeC-IN0-0NqnlQ" entityName="h443541295 _6yW_cKYjEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4mAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AVCPQQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4mQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AVCPQgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AVCPRAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AVCPRAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPQgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AVCPQwdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AVCPQwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AVCPRAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUcZWAdbEeC-IN0-0NqnlQ" entityName="j1926057149">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUcZWQdbEeC-IN0-0NqnlQ" entityName="r678563131 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUcZWgdbEeC-IN0-0NqnlQ" entityName="m305295496 _HJmNEJJIEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUcZWwdbEeC-IN0-0NqnlQ" entityName="d1692863292 _HJmNEJJIEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUcZXAdbEeC-IN0-0NqnlQ" entityName="h1560875539 _HJmNEJJIEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUcZXQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASpplwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUcZXgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZYAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUcZXwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZYAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AUcZYAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZXgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZXwdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUcZYQdbEeC-IN0-0NqnlQ" branchProbability="0.34">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUcZYgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZZAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUcZYwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZZAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUcZZAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZYgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZYwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUcZWgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUcZaQdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUcZawdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZbAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUcZbAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZagdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZawdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUcZWwdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUcZagdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZbAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUcZZQdbEeC-IN0-0NqnlQ" branchProbability="0.33">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUcZZgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUcZaAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUcZaAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZZgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUcZZwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASpplwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUcZXAdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUcZZwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUcZaAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AS8kggdbEeC-IN0-0NqnlQ" entityName="u1659182858">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AS8kgwdbEeC-IN0-0NqnlQ" entityName="d1409076496 _1_tw4JHMEd-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AS8khAdbEeC-IN0-0NqnlQ" entityName="i699746795 _G0zj4JG7Ed-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AS8khQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4lwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AS8khgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATGVgAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATGVgAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AS8khgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AS8kiAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-5"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AS8khwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AS8kiAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AS8kiAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATGVgAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AS8khwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4pQdbEeC-IN0-0NqnlQ" role_ExternalService="_AS8khAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUSoUAdbEeC-IN0-0NqnlQ" entityName="a1303622061">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUSoUQdbEeC-IN0-0NqnlQ" entityName="j1931106153 _fvGc4L_fEd-PHYEGGZFL2w" providedInterface__OperationProvidedRole="_ASf4qAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUSoUgdbEeC-IN0-0NqnlQ" entityName="e713140694 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUSoUwdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4qQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUSoVAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUSoXgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUSoVQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoVgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUSoXgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoVAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSoVgdbEeC-IN0-0NqnlQ">
+        <failureOccurrenceDescriptions_InternalAction failureProbability="1.0E-4" applicationFailureType_FailureOccurrenceDescription="_ATGVjQdbEeC-IN0-0NqnlQ"/>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:BranchAction" id="_AUSoVgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoXgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSoVQdbEeC-IN0-0NqnlQ">
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUSoVwdbEeC-IN0-0NqnlQ" branchProbability="0.01">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUSoWQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoWgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUSoWAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUSoWgdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUSoWgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoWAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUSoWQdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4lwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUSoUgdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+        <branches_Branch xsi:type="_1:ProbabilisticBranchTransition" id="_AUSoWwdbEeC-IN0-0NqnlQ" branchProbability="0.99">
+          <branchBehaviour_BranchTransition>
+            <steps_Behaviour xsi:type="_1:StartAction" id="_AUSoXAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUSoXQdbEeC-IN0-0NqnlQ"/>
+            <steps_Behaviour xsi:type="_1:StopAction" id="_AUSoXQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUSoXAdbEeC-IN0-0NqnlQ"/>
+          </branchBehaviour_BranchTransition>
+        </branches_Branch>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ATsLYAdbEeC-IN0-0NqnlQ" entityName="n235316053">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ATsLYQdbEeC-IN0-0NqnlQ" entityName="j899683508 _ht9G0KYjEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4ogdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ATsLYgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4owdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_ATsLZAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLZQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ATsLYwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_ATsLZQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_ATsLZQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ATsLYwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_ATsLZAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="1.0E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AUljRgdbEeC-IN0-0NqnlQ" entityName="b138302396">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AUljRwdbEeC-IN0-0NqnlQ" entityName="l677359437 _TaHFAJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4pgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AUljSAdbEeC-IN0-0NqnlQ" entityName="x1645954577 _u3_9gJJfEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4qgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AUljSQdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4pwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AUljSgdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AUljTQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AUljTQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljSgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljTAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="4.8E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AUljTAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljTQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AUljSwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4qwdbEeC-IN0-0NqnlQ" role_ExternalService="_AUljSAdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AUljSwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AUljTAdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_ASppnwdbEeC-IN0-0NqnlQ" entityName="o699144745">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_ASppoAdbEeC-IN0-0NqnlQ" entityName="x276889243 _ah5QIKYgEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4mgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_ASzakAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4mwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_ASzakQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AS8kgQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AS8kgAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AS8kgQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AS8kgQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_ASzakQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AS8kgAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.00128"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT18ZgdbEeC-IN0-0NqnlQ" entityName="k1437649938">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT18ZwdbEeC-IN0-0NqnlQ" entityName="d597752824 _u3_9gJJfEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASf4qgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT18aAdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4qwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT18agdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18awdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT18awdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18aQdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT18agdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="4.9E-4"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT18aQdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT18awdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AU4eOAdbEeC-IN0-0NqnlQ" entityName="g1276901347">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AU4eOQdbEeC-IN0-0NqnlQ" entityName="d1396407180 _G0zj4JG7Ed-4y8fXV-XIVA" providedInterface__OperationProvidedRole="_ASf4pAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AU4eOgdbEeC-IN0-0NqnlQ" entityName="b1420011085 _ZIwgUJJTEd-E6p6_qzRMnw" requiredInterface__OperationRequiredRole="_ASf4ngdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AU4eOwdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4pQdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AU4ePAdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AU4ePgdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AU4ePwdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4ePgdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4ePQdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.0028"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AU4ePQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4ePwdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:ExternalCallAction" id="_AU4ePgdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AU4ePAdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AU4ePwdbEeC-IN0-0NqnlQ" calledService_ExternalService="_ASf4nwdbEeC-IN0-0NqnlQ" role_ExternalService="_AU4eOgdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="BasicComponent" id="_AT18bAdbEeC-IN0-0NqnlQ" entityName="m701813289">
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AT18bQdbEeC-IN0-0NqnlQ" entityName="c1170493083 _nbLPsKYgEd-F2fxisVCBKw" providedInterface__OperationProvidedRole="_ASf4kgdbEeC-IN0-0NqnlQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="_1:ResourceDemandingSEFF" id="_AT18bgdbEeC-IN0-0NqnlQ" describedService__SEFF="_ASf4kwdbEeC-IN0-0NqnlQ">
+      <steps_Behaviour xsi:type="_1:InternalAction" id="_AT18cQdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18bwdbEeC-IN0-0NqnlQ" successor_AbstractAction="_AT18cAdbEeC-IN0-0NqnlQ">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="0.00574"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="_1:StartAction" id="_AT18bwdbEeC-IN0-0NqnlQ" entityName="defaultName" successor_AbstractAction="_AT18cQdbEeC-IN0-0NqnlQ"/>
+      <steps_Behaviour xsi:type="_1:StopAction" id="_AT18cAdbEeC-IN0-0NqnlQ" entityName="defaultName" predecessor_AbstractAction="_AT18cQdbEeC-IN0-0NqnlQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="CompositeComponent" id="_AbJeQAdbEeC-IN0-0NqnlQ" entityName="z1538712968">
+    <assemblyContexts_ComposedStructure id="_AbmKMAdbEeC-IN0-0NqnlQ" entityName="b1728219518" encapsulatedComponent_AssemblyContext="_ATjBcAdbEeC-IN0-0NqnlQ"/>
+    <assemblyContexts_ComposedStructure id="_AbmKMQdbEeC-IN0-0NqnlQ" entityName="s561586144" encapsulatedComponent_AssemblyContext="_AVCPRQdbEeC-IN0-0NqnlQ"/>
+    <assemblyConnectors_ComposedStructure id="_AbmKMgdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_AbmKMQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_AbmKMAdbEeC-IN0-0NqnlQ" providedRole_AssemblyConnector="_ATjBcQdbEeC-IN0-0NqnlQ" requiredRole_AssemblyConnector="_AVCPRwdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_AbvUIQdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_ATjBcgdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AbJeQgdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AbmKMAdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_Ab5FIQdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_ATjBcwdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AbJeRAdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AbmKMAdbEeC-IN0-0NqnlQ"/>
+    <requiredDelegationConnectors_ComposedStructure id="_Ab5FIAdbEeC-IN0-0NqnlQ" entityName="defaultName" innerRequiredRole_RequiredDelegationConnector="_ATjBdAdbEeC-IN0-0NqnlQ" outerRequiredRole_RequiredDelegationConnector="_AbJeQwdbEeC-IN0-0NqnlQ" assemblyContext_RequiredDelegationConnector="_AbmKMAdbEeC-IN0-0NqnlQ"/>
+    <providedDelegationConnectors_ComposedStructure id="_AbvUIAdbEeC-IN0-0NqnlQ" entityName="defaultName" innerProvidedRole_ProvidedDelegationConnector="_AVCPRgdbEeC-IN0-0NqnlQ" outerProvidedRole_ProvidedDelegationConnector="_AbJeQQdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_AbmKMQdbEeC-IN0-0NqnlQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="OperationProvidedRole" id="_AbJeQQdbEeC-IN0-0NqnlQ" entityName="e685002853 _HJmNEJJIEd-E6p6_qzRMnw" providedInterface__OperationProvidedRole="_ASpplgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AbJeRAdbEeC-IN0-0NqnlQ" entityName="s1948003855 _oKh50KVAEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASppkgdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AbJeQgdbEeC-IN0-0NqnlQ" entityName="u2125857969 _-hj-gKVGEd-i1ezDjxCJpg" requiredInterface__OperationRequiredRole="_ASpplAdbEeC-IN0-0NqnlQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="OperationRequiredRole" id="_AbJeQwdbEeC-IN0-0NqnlQ" entityName="l2023840030 _1_tw4JHMEd-4y8fXV-XIVA" requiredInterface__OperationRequiredRole="_ASf4lgdbEeC-IN0-0NqnlQ"/>
+  </components__Repository>
+  <failureTypes_Repository xsi:type="pcm.reliability:ApplicationFailureType" id="_ATGVjQdbEeC-IN0-0NqnlQ" entityName="GenericFailureType"/>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4pgdbEeC-IN0-0NqnlQ" entityName="b803298266">
+    <signatures__OperationInterface id="_ASf4pwdbEeC-IN0-0NqnlQ" entityName="v1860320206"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4ngdbEeC-IN0-0NqnlQ" entityName="g172422494">
+    <signatures__OperationInterface id="_ASf4nwdbEeC-IN0-0NqnlQ" entityName="k1978350621"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4kAdbEeC-IN0-0NqnlQ" entityName="t631807602">
+    <signatures__OperationInterface id="_ASf4kQdbEeC-IN0-0NqnlQ" entityName="j1953614189"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4rgdbEeC-IN0-0NqnlQ" entityName="o241122193">
+    <signatures__OperationInterface id="_ASf4rwdbEeC-IN0-0NqnlQ" entityName="c1850084357"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4qAdbEeC-IN0-0NqnlQ" entityName="j1241377939">
+    <signatures__OperationInterface id="_ASf4qQdbEeC-IN0-0NqnlQ" entityName="t1158086082"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4rAdbEeC-IN0-0NqnlQ" entityName="j370260936">
+    <signatures__OperationInterface id="_ASf4rQdbEeC-IN0-0NqnlQ" entityName="j1251448408"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4mgdbEeC-IN0-0NqnlQ" entityName="i894082446">
+    <signatures__OperationInterface id="_ASf4mwdbEeC-IN0-0NqnlQ" entityName="k2143561263"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASpplgdbEeC-IN0-0NqnlQ" entityName="d785624215">
+    <signatures__OperationInterface id="_ASpplwdbEeC-IN0-0NqnlQ" entityName="w597785905"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppmAdbEeC-IN0-0NqnlQ" entityName="a1259563443"/>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4mAdbEeC-IN0-0NqnlQ" entityName="o1169040092">
+    <signatures__OperationInterface id="_ASf4mQdbEeC-IN0-0NqnlQ" entityName="f163711114"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4kgdbEeC-IN0-0NqnlQ" entityName="o1528420153">
+    <signatures__OperationInterface id="_ASf4kwdbEeC-IN0-0NqnlQ" entityName="r1387359291"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4nAdbEeC-IN0-0NqnlQ" entityName="g825285891">
+    <signatures__OperationInterface id="_ASf4nQdbEeC-IN0-0NqnlQ" entityName="r1054782721"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppnQdbEeC-IN0-0NqnlQ" entityName="p662445536">
+    <signatures__OperationInterface id="_ASppngdbEeC-IN0-0NqnlQ" entityName="o1525262275"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppmQdbEeC-IN0-0NqnlQ" entityName="s180109148">
+    <signatures__OperationInterface id="_ASppmgdbEeC-IN0-0NqnlQ" entityName="y1125355430"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4lAdbEeC-IN0-0NqnlQ" entityName="b368256780">
+    <signatures__OperationInterface id="_ASf4lQdbEeC-IN0-0NqnlQ" entityName="u724890426"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4lgdbEeC-IN0-0NqnlQ" entityName="y1453542605">
+    <signatures__OperationInterface id="_ASf4lwdbEeC-IN0-0NqnlQ" entityName="w672988811"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4oAdbEeC-IN0-0NqnlQ" entityName="d619347162">
+    <signatures__OperationInterface id="_ASf4oQdbEeC-IN0-0NqnlQ" entityName="k486708351"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4pAdbEeC-IN0-0NqnlQ" entityName="q1032695715">
+    <signatures__OperationInterface id="_ASf4pQdbEeC-IN0-0NqnlQ" entityName="f135208672"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppkgdbEeC-IN0-0NqnlQ" entityName="o472792306">
+    <signatures__OperationInterface id="_ASppkwdbEeC-IN0-0NqnlQ" entityName="m1382201869"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASpplAdbEeC-IN0-0NqnlQ" entityName="y1508178377">
+    <signatures__OperationInterface id="_ASpplQdbEeC-IN0-0NqnlQ" entityName="x239021204"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppmwdbEeC-IN0-0NqnlQ" entityName="a484306696">
+    <signatures__OperationInterface id="_ASppnAdbEeC-IN0-0NqnlQ" entityName="h1409586545"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4ogdbEeC-IN0-0NqnlQ" entityName="l1986198590">
+    <signatures__OperationInterface id="_ASf4owdbEeC-IN0-0NqnlQ" entityName="p827262221"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASf4qgdbEeC-IN0-0NqnlQ" entityName="p1530774601">
+    <signatures__OperationInterface id="_ASf4qwdbEeC-IN0-0NqnlQ" entityName="t877282841"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="OperationInterface" id="_ASppkAdbEeC-IN0-0NqnlQ" entityName="f1185897616">
+    <signatures__OperationInterface id="_ASppkQdbEeC-IN0-0NqnlQ" entityName="y1467062908"/>
+  </interfaces__Repository>
+</Repository>

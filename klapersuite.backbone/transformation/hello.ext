@@ -1,0 +1,2 @@
+String sayHello(String s) :
+   "Hello " + s;

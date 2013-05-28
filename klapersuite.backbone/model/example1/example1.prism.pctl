@@ -1,0 +1,4 @@
+
+		// Checks the global reliability value
+		P=? [ true U s_Workload = success ]
+	

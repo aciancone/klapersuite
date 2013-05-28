@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hardware:HardwareDescriptorRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hardware="http://q-impress.eu/samm/deployment/hardware" id="_OztMwJG-Ed-4y8fXV-XIVA" name="g324265855">
+  <descriptors xsi:type="hardware:ProcessorDescriptor" id="_Sg7scZG-Ed-4y8fXV-XIVA" name="l1274653959">
+    <cores id="_kVxAAJG-Ed-4y8fXV-XIVA" name="w2073995125"/>
+  </descriptors>
+  <descriptors xsi:type="hardware:StorageDeviceDescriptor" id="_uosoYpG-Ed-4y8fXV-XIVA" name="c1846482655"/>
+  <descriptors xsi:type="hardware:MemoryDescriptor" id="_5IXBA5HFEd-4y8fXV-XIVA" name="x1476333970"/>
+  <descriptors xsi:type="hardware:NetworkInterfaceDescriptor" id="_EbKK9KVOEd-i1ezDjxCJpg" documentation="" name="x394966584" linkLatency="1.0E-5" linkSpeed="100000"/>
+  <descriptors xsi:type="hardware:NetworkElementDescriptor" id="_Z1bz0KVREd-i1ezDjxCJpg" name="h246566526" aggregateBandwidth="100000" forwardingLatency="1.0E-5"/>
+</hardware:HardwareDescriptorRepository>

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: klapersuite.prismanalysis.linux
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",klaper
+ suite.backbone;bundle-version="1.0.0",org.eclipse.osgi;bundle-version
+ ="3.6.1",org.eclipse.emf.ecore,org.eclipse.xpand,klapersuite.metamode
+ l.dtmc,klapersuite.metamodel.dtmc.edit;bundle-version="1.0.0",klapers
+ uite.metamodel.dtmc.editor;bundle-version="1.0.0",klapersuite.metamod
+ el.dtmc.tests;bundle-version="1.0.0",org.apache.ant,org.apache.log4j;
+ bundle-version="1.2.15"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,lib/commons-io-2.0.jar,lib/commons-logging-1.1.1.j
+ ar
+Bundle-Version: 1.0.0.qualifier
+Bundle-Name: Linux
+Bundle-Activator: klapersuite.prismanalysis.linux.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: klapersuite.analysis.Prism.linux;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

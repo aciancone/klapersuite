@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ASCII"?>
+<klaper.core:KlaperModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:klaper.core="http://www.ing.uniroma2.it/klaper/core/1.0" xmlns:klaper.probability="http://www.ing.uniroma2.it/klaper/probability/1.0"
+    xsi:schemaLocation="http://www.ing.uniroma2.it/klaper/core/1.0 file:/home/enrico/Projects/workspace/org.klaper.core/bin/org/klaper/core/klaper.ecore#//core http://www.ing.uniroma2.it/klaper/probability/1.0 file:/home/enrico/Projects/workspace/org.klaper.core/bin/org/klaper/core/klaper.ecore#//probability">
+  <resource name="guiComponent" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisGUI">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="wigs" out="#//@resource.0/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="wigc1" in="#//@resource.0/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.0/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.7/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="wigc2" in="#//@resource.0/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.0/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.1/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="wige" in="#//@resource.0/@offeredService.0/@behavior/@transition.2"/>
+        <transition to="#//@resource.0/@offeredService.0/@behavior/@step.1" from="#//@resource.0/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.0/@offeredService.0/@behavior/@step.2" from="#//@resource.0/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.0/@offeredService.0/@behavior/@step.3" from="#//@resource.0/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="dataRetriever" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisDataRetriever">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="wida" out="#//@resource.1/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="widc1" in="#//@resource.1/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.1/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.7/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="widc2" in="#//@resource.1/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.1/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.2/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="wide" in="#//@resource.1/@offeredService.0/@behavior/@transition.2"/>
+        <transition to="#//@resource.1/@offeredService.0/@behavior/@step.1" from="#//@resource.1/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.1/@offeredService.0/@behavior/@step.2" from="#//@resource.1/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.1/@offeredService.0/@behavior/@step.3" from="#//@resource.1/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="SOAPConnector" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisSOAP">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="wiscs" out="#//@resource.2/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="wiscsend" in="#//@resource.2/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.2/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.11/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="wiscc" in="#//@resource.2/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.2/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.3/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="wiscreceive" in="#//@resource.2/@offeredService.0/@behavior/@transition.2"
+            out="#//@resource.2/@offeredService.0/@behavior/@transition.3" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.11/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="wisce" in="#//@resource.2/@offeredService.0/@behavior/@transition.3"/>
+        <transition to="#//@resource.2/@offeredService.0/@behavior/@step.1" from="#//@resource.2/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.2/@offeredService.0/@behavior/@step.2" from="#//@resource.2/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.2/@offeredService.0/@behavior/@step.3" from="#//@resource.2/@offeredService.0/@behavior/@step.2"/>
+        <transition to="#//@resource.2/@offeredService.0/@behavior/@step.4" from="#//@resource.2/@offeredService.0/@behavior/@step.3"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="dataService" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisDataService">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="widss" out="#//@resource.3/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="widsc1" in="#//@resource.3/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.3/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.8/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="widsc2" in="#//@resource.3/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.3/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.4/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="widse" in="#//@resource.3/@offeredService.0/@behavior/@transition.2"/>
+        <transition to="#//@resource.3/@offeredService.0/@behavior/@step.1" from="#//@resource.3/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.3/@offeredService.0/@behavior/@step.2" from="#//@resource.3/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.3/@offeredService.0/@behavior/@step.3" from="#//@resource.3/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="databaseManager" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisDatabaseManager">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="widms" out="#//@resource.4/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="widmc1" in="#//@resource.4/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.4/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.8/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="widmc2" in="#//@resource.4/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.4/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.5/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="widme" in="#//@resource.4/@offeredService.0/@behavior/@transition.2"/>
+        <transition to="#//@resource.4/@offeredService.0/@behavior/@step.1" from="#//@resource.4/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.4/@offeredService.0/@behavior/@step.2" from="#//@resource.4/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.4/@offeredService.0/@behavior/@step.3" from="#//@resource.4/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="JDBCConnector" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisJDBC">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="wijs" out="#//@resource.5/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="wijsend" in="#//@resource.5/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.5/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.12/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="wijc" in="#//@resource.5/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.5/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.6/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="wijreceive" in="#//@resource.5/@offeredService.0/@behavior/@transition.2"
+            out="#//@resource.5/@offeredService.0/@behavior/@transition.3" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.12/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="wije" in="#//@resource.5/@offeredService.0/@behavior/@transition.3"/>
+        <transition to="#//@resource.5/@offeredService.0/@behavior/@step.1" from="#//@resource.5/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.5/@offeredService.0/@behavior/@step.2" from="#//@resource.5/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.5/@offeredService.0/@behavior/@step.3" from="#//@resource.5/@offeredService.0/@behavior/@step.2"/>
+        <transition to="#//@resource.5/@offeredService.0/@behavior/@step.4" from="#//@resource.5/@offeredService.0/@behavior/@step.3"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="database" type="application" capacity="40.0" schedulingPolicy="RoundRobin">
+    <offeredService name="whoisDatabase">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="widbs" out="#//@resource.6/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:ServiceControl" name="widbc1" in="#//@resource.6/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.6/@offeredService.0/@behavior/@transition.1" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.9/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:ServiceControl" name="widbc2" in="#//@resource.6/@offeredService.0/@behavior/@transition.1"
+            out="#//@resource.6/@offeredService.0/@behavior/@transition.2" isSynch="true">
+          <internalExecTime xsi:type="klaper.probability:Exponential"/>
+          <binding call="#//@resource.10/@offeredService.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="widbe" in="#//@resource.6/@offeredService.0/@behavior/@transition.2"/>
+        <transition to="#//@resource.6/@offeredService.0/@behavior/@step.1" from="#//@resource.6/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.6/@offeredService.0/@behavior/@step.2" from="#//@resource.6/@offeredService.0/@behavior/@step.1"/>
+        <transition to="#//@resource.6/@offeredService.0/@behavior/@step.3" from="#//@resource.6/@offeredService.0/@behavior/@step.2"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="clientCPU" type="cpu" schedulingPolicy="RoundRobin">
+    <offeredService name="clientCPU_process">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="cps" out="#//@resource.7/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="cpa" in="#//@resource.7/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.7/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="0.0010"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.05"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="cpe" in="#//@resource.7/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.7/@offeredService.0/@behavior/@step.1" from="#//@resource.7/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.7/@offeredService.0/@behavior/@step.2" from="#//@resource.7/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="serverCPU" type="cpu" schedulingPolicy="RoundRobin">
+    <offeredService name="serverCPU_process">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="sps" out="#//@resource.8/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="spa" in="#//@resource.8/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.8/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="0.0010"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.05"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="spe" in="#//@resource.8/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.8/@offeredService.0/@behavior/@step.1" from="#//@resource.8/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.8/@offeredService.0/@behavior/@step.2" from="#//@resource.8/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="databaseCPU" type="cpu" schedulingPolicy="RoundRobin">
+    <offeredService name="databaseCPU_process">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="dps" out="#//@resource.9/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="dpa" in="#//@resource.9/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.9/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="0.0010"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.05"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="dpe" in="#//@resource.9/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.9/@offeredService.0/@behavior/@step.1" from="#//@resource.9/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.9/@offeredService.0/@behavior/@step.2" from="#//@resource.9/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="databaseDisk" type="disk" schedulingPolicy="FIFO">
+    <offeredService name="databaseDisk_IO">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="dds" out="#//@resource.10/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="dda" in="#//@resource.10/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.10/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="0.01"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.0010"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="dde" in="#//@resource.10/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.10/@offeredService.0/@behavior/@step.1" from="#//@resource.10/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.10/@offeredService.0/@behavior/@step.2" from="#//@resource.10/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="clientServerNetwork" type="network" schedulingPolicy="FIFO">
+    <offeredService name="clientServerNetwork_transmit">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="csns" out="#//@resource.11/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="csna" in="#//@resource.11/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.11/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="8.0E-4"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.02"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="csne" in="#//@resource.11/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.11/@offeredService.0/@behavior/@step.1" from="#//@resource.11/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.11/@offeredService.0/@behavior/@step.2" from="#//@resource.11/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <resource name="serverDatabaseNetwork" type="network" schedulingPolicy="FIFO">
+    <offeredService name="serverDatabaseNetwork_transmit">
+      <behavior>
+        <step xsi:type="klaper.core:Start" name="sdns" out="#//@resource.12/@offeredService.0/@behavior/@transition.0"/>
+        <step xsi:type="klaper.core:Activity" name="sdna" in="#//@resource.12/@offeredService.0/@behavior/@transition.0"
+            out="#//@resource.12/@offeredService.0/@behavior/@transition.1">
+          <internalExecTime xsi:type="klaper.probability:Exponential" mean="8.0E-4"/>
+          <internalFailProb xsi:type="klaper.probability:Poisson" mean="0.02"/>
+          <repetitions xsi:type="klaper.probability:Constant" value="1.0"/>
+        </step>
+        <step xsi:type="klaper.core:End" name="sdne" in="#//@resource.12/@offeredService.0/@behavior/@transition.1"/>
+        <transition to="#//@resource.12/@offeredService.0/@behavior/@step.1" from="#//@resource.12/@offeredService.0/@behavior/@step.0"/>
+        <transition to="#//@resource.12/@offeredService.0/@behavior/@step.2" from="#//@resource.12/@offeredService.0/@behavior/@step.1"/>
+      </behavior>
+    </offeredService>
+  </resource>
+  <workload type="OPEN" name="qworkload">
+    <behavior>
+      <step xsi:type="klaper.core:Start" name="qws" out="#//@workload.0/@behavior/@transition.0"/>
+      <step xsi:type="klaper.core:ServiceControl" name="qwc1" in="#//@workload.0/@behavior/@transition.0"
+          out="#//@workload.0/@behavior/@transition.1" isSynch="true">
+        <internalExecTime xsi:type="klaper.probability:Exponential"/>
+        <binding call="#//@resource.0/@offeredService.0"/>
+      </step>
+      <step xsi:type="klaper.core:End" name="qwe" in="#//@workload.0/@behavior/@transition.1"/>
+      <transition to="#//@workload.0/@behavior/@step.1" from="#//@workload.0/@behavior/@step.0"/>
+      <transition to="#//@workload.0/@behavior/@step.2" from="#//@workload.0/@behavior/@step.1"/>
+    </behavior>
+    <arrivalProcess xsi:type="klaper.probability:Exponential" mean="0.05"/>
+  </workload>
+</klaper.core:KlaperModel>

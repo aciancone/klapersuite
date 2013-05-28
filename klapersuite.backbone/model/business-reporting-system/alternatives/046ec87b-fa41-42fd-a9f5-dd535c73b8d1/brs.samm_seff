@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seff:SeffRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:seff="http://q-impress.eu/seff">
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_wxOmQGkGEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_0aImoGkGEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:BranchAction" id="_0aImoGkGEeCkc9u3PuyOhw" name="branchWebServer" predecessor_AbstractAction="_wxOmQGkGEeCkc9u3PuyOhw" successor_AbstractAction="__MD4IGkGEeCkc9u3PuyOhw">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_2MR5sGkGEeCkc9u3PuyOhw" name="branchWebServerReport">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_4tXWYGkGEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_5A4IQGkGEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_MsU_NGkHEeCkc9u3PuyOhw" documentation="" name="callReport" predecessor_AbstractAction="_5A4IQGkGEeCkc9u3PuyOhw" successor_AbstractAction="_-54jAGkGEeCkc9u3PuyOhw">
+            <calledService href="brs.samm_repository#_Qfe9MGkGEeCkc9u3PuyOhw"/>
+            <calledInterfacePort href="brs.samm_repository#_orIPkGkLEeCkc9u3PuyOhw"/>
+          </steps>
+          <steps xsi:type="seff:InternalAction" id="_5A4IQGkGEeCkc9u3PuyOhw" name="acceptReport" predecessor_AbstractAction="_4tXWYGkGEeCkc9u3PuyOhw" successor_AbstractAction="_MsU_NGkHEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:StopAction" id="_-54jAGkGEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_MsU_NGkHEeCkc9u3PuyOhw"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="__tcG4GkGEeCkc9u3PuyOhw" name="branchWebServerView">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_ASZOEGkHEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_A83HYGkHEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:StopAction" id="_AqryQGkHEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_az7zFGkHEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:InternalAction" id="_A83HYGkHEeCkc9u3PuyOhw" name="acceptView" predecessor_AbstractAction="_ASZOEGkHEeCkc9u3PuyOhw" successor_AbstractAction="_az7zFGkHEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_az7zFGkHEeCkc9u3PuyOhw" name="callView" predecessor_AbstractAction="_A83HYGkHEeCkc9u3PuyOhw" successor_AbstractAction="_AqryQGkHEeCkc9u3PuyOhw">
+            <calledService href="brs.samm_repository#_SKBzcGkGEeCkc9u3PuyOhw"/>
+            <calledInterfacePort href="brs.samm_repository#_orIPkGkLEeCkc9u3PuyOhw"/>
+          </steps>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="__MD4IGkGEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_0aImoGkGEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_vjvfcGkGEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_rKl4cGkHEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_rVUhwGkHEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_rVUhwGkHEeCkc9u3PuyOhw" name="callReport" predecessor_AbstractAction="_rKl4cGkHEeCkc9u3PuyOhw" successor_AbstractAction="_ttdd0GkHEeCkc9u3PuyOhw">
+      <calledService href="brs.samm_repository#_Qfe9MGkGEeCkc9u3PuyOhw"/>
+      <calledInterfacePort href="brs.samm_repository#_Vs0kwGkGEeCkc9u3PuyOhw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_ttdd0GkHEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_rVUhwGkHEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_pjeJoGkHEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_xTPRsGkHEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_xcU8QGkHEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_xcU8QGkHEeCkc9u3PuyOhw" name="callView" predecessor_AbstractAction="_xTPRsGkHEeCkc9u3PuyOhw" successor_AbstractAction="_x1NWUGkHEeCkc9u3PuyOhw">
+      <calledService href="brs.samm_repository#_SKBzcGkGEeCkc9u3PuyOhw"/>
+      <calledInterfacePort href="brs.samm_repository#_Vs0kwGkGEeCkc9u3PuyOhw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_x1NWUGkHEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_xcU8QGkHEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_qRqsYGkHEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_8FmoEGkHEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_9SpqAGkHEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_9SpqAGkHEeCkc9u3PuyOhw" name="prepareViewing" predecessor_AbstractAction="_8FmoEGkHEeCkc9u3PuyOhw" successor_AbstractAction="_-k58EGkHEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_-k58EGkHEeCkc9u3PuyOhw" name="callCache" predecessor_AbstractAction="_9SpqAGkHEeCkc9u3PuyOhw" successor_AbstractAction="_AF50wGkIEeCkc9u3PuyOhw">
+      <calledService href="brs.samm_repository#_ZafwYGkGEeCkc9u3PuyOhw"/>
+      <calledInterfacePort href="brs.samm_repository#_kvlZUGkGEeCkc9u3PuyOhw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_AF50wGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_-k58EGkHEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_7S8cEGkHEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_Gj3WsGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_GydzYGkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_GydzYGkIEeCkc9u3PuyOhw" name="prepareReporting" predecessor_AbstractAction="_Gj3WsGkIEeCkc9u3PuyOhw" successor_AbstractAction="_H-BAgGkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:BranchAction" id="_H-BAgGkIEeCkc9u3PuyOhw" name="branchReporting" predecessor_AbstractAction="_GydzYGkIEeCkc9u3PuyOhw" successor_AbstractAction="_L4D0MGkIEeCkc9u3PuyOhw">
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_IfPeQGkIEeCkc9u3PuyOhw" name="branchReportingBig">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_NeuQAGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_N8E6YGkIEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:InternalAction" id="_N8E6YGkIEeCkc9u3PuyOhw" name="prepareBigReport" predecessor_AbstractAction="_NeuQAGkIEeCkc9u3PuyOhw" successor_AbstractAction="_RoHHQGkIEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:LoopAction" id="_RoHHQGkIEeCkc9u3PuyOhw" name="bigReportLoop" predecessor_AbstractAction="_N8E6YGkIEeCkc9u3PuyOhw" successor_AbstractAction="_fDnDEGkIEeCkc9u3PuyOhw">
+            <bodyBehaviour>
+              <steps xsi:type="seff:StartAction" id="_WnJNEGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_W56_IGkIEeCkc9u3PuyOhw"/>
+              <steps xsi:type="seff:ExternalCallAction" id="_W56_IGkIEeCkc9u3PuyOhw" name="getBigReportFromDB" predecessor_AbstractAction="_WnJNEGkIEeCkc9u3PuyOhw" successor_AbstractAction="_X3dlcGkIEeCkc9u3PuyOhw">
+                <calledService href="brs.samm_repository#_eGAdQGkGEeCkc9u3PuyOhw"/>
+                <calledInterfacePort href="brs.samm_repository#_l4KK8GkGEeCkc9u3PuyOhw"/>
+              </steps>
+              <steps xsi:type="seff:StopAction" id="_X3dlcGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_W56_IGkIEeCkc9u3PuyOhw"/>
+            </bodyBehaviour>
+          </steps>
+          <steps xsi:type="seff:InternalAction" id="_fDnDEGkIEeCkc9u3PuyOhw" name="genBigReport" predecessor_AbstractAction="_RoHHQGkIEeCkc9u3PuyOhw" successor_AbstractAction="_gWK3IGkIEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_gWK3IGkIEeCkc9u3PuyOhw" name="callDoCacheAccess" predecessor_AbstractAction="_fDnDEGkIEeCkc9u3PuyOhw" successor_AbstractAction="_hRU30GkIEeCkc9u3PuyOhw">
+            <calledService href="brs.samm_repository#_ZafwYGkGEeCkc9u3PuyOhw"/>
+            <calledInterfacePort href="brs.samm_repository#_kvlZUGkGEeCkc9u3PuyOhw"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_hRU30GkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_gWK3IGkIEeCkc9u3PuyOhw"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+      <abstractBranchTransition xsi:type="seff:ProbabilisticBranchTransition" id="_JKwgcGkIEeCkc9u3PuyOhw" name="branchReportingSmall">
+        <resourceDemandingBehaviour>
+          <steps xsi:type="seff:StartAction" id="_joHwEGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_j0yTEGkIEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:InternalAction" id="_j0yTEGkIEeCkc9u3PuyOhw" name="prepareSmallReport" predecessor_AbstractAction="_joHwEGkIEeCkc9u3PuyOhw" successor_AbstractAction="_pzcp4GkIEeCkc9u3PuyOhw"/>
+          <steps xsi:type="seff:ExternalCallAction" id="_pzcp4GkIEeCkc9u3PuyOhw" name="callGetSmallReport" predecessor_AbstractAction="_j0yTEGkIEeCkc9u3PuyOhw" successor_AbstractAction="_qlEUEGkIEeCkc9u3PuyOhw">
+            <calledService href="brs.samm_repository#_cuPZEGkGEeCkc9u3PuyOhw"/>
+            <calledInterfacePort href="brs.samm_repository#_l4KK8GkGEeCkc9u3PuyOhw"/>
+          </steps>
+          <steps xsi:type="seff:StopAction" id="_qlEUEGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_pzcp4GkIEeCkc9u3PuyOhw"/>
+        </resourceDemandingBehaviour>
+      </abstractBranchTransition>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_L4D0MGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_H-BAgGkIEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_EfGCkGkIEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_vWjGEGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_vf7rkGkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_vf7rkGkIEeCkc9u3PuyOhw" name="cacheAccess" predecessor_AbstractAction="_vWjGEGkIEeCkc9u3PuyOhw" successor_AbstractAction="_xg-WQGkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:ExternalCallAction" id="_xg-WQGkIEeCkc9u3PuyOhw" name="getCachedDataFromDB" predecessor_AbstractAction="_vf7rkGkIEeCkc9u3PuyOhw" successor_AbstractAction="_zVDjAGkIEeCkc9u3PuyOhw">
+      <calledService href="brs.samm_repository#_fSKHUGkGEeCkc9u3PuyOhw"/>
+      <calledInterfacePort href="brs.samm_repository#_i4hxEGkGEeCkc9u3PuyOhw"/>
+    </steps>
+    <steps xsi:type="seff:StopAction" id="_zVDjAGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_xg-WQGkIEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_ub-7QGkIEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_5weuUGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_6FyP8GkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_6FyP8GkIEeCkc9u3PuyOhw" name="dbGetSmallReport" predecessor_AbstractAction="_5weuUGkIEeCkc9u3PuyOhw" successor_AbstractAction="_76BNsGkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:StopAction" id="_76BNsGkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_6FyP8GkIEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_3KCQgGkIEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_92StIGkIEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_-LAY4GkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_-LAY4GkIEeCkc9u3PuyOhw" name="dbGetBigReport" predecessor_AbstractAction="_92StIGkIEeCkc9u3PuyOhw" successor_AbstractAction="__XcW0GkIEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:StopAction" id="__XcW0GkIEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_-LAY4GkIEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_4HbF0GkIEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+  <resourceDemandingSeff>
+    <steps xsi:type="seff:StartAction" id="_BPjH8GkJEeCkc9u3PuyOhw" name="brsName" successor_AbstractAction="_BbBYIGkJEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:InternalAction" id="_BbBYIGkJEeCkc9u3PuyOhw" name="dbGetCachedData" predecessor_AbstractAction="_BPjH8GkJEeCkc9u3PuyOhw" successor_AbstractAction="_CfH5cGkJEeCkc9u3PuyOhw"/>
+    <steps xsi:type="seff:StopAction" id="_CfH5cGkJEeCkc9u3PuyOhw" name="brsName" predecessor_AbstractAction="_BbBYIGkJEeCkc9u3PuyOhw"/>
+    <seffBehaviourStub href="brs.samm_repository#_4ud3sGkIEeCkc9u3PuyOhw"/>
+  </resourceDemandingSeff>
+</seff:SeffRepository>

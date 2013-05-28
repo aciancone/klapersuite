@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sdq.ipd.uka.de/PalladioComponentModel/System/4.0" xmlns:_1="http://sdq.ipd.uka.de/PalladioComponentModel/Repository/4.0" id="_Ab5FIgdbEeC-IN0-0NqnlQ" entityName="System">
+  <assemblyContexts_ComposedStructure id="_Aea0sQdbEeC-IN0-0NqnlQ" entityName="y1746058212">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_ATsLaQdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0ugdbEeC-IN0-0NqnlQ" entityName="z424502607">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_AS8kggdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0tAdbEeC-IN0-0NqnlQ" entityName="x1655466953">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:CompositeComponent" href="pcm_output.repository#_AbJeQAdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0swdbEeC-IN0-0NqnlQ" entityName="n1393318649">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:CompositeComponent" href="pcm_output.repository#_AXtvwAdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0tQdbEeC-IN0-0NqnlQ" entityName="n332689521">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:CompositeComponent" href="pcm_output.repository#_Aa18QQdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0twdbEeC-IN0-0NqnlQ" entityName="m1831664956">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_AUljTgdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0tgdbEeC-IN0-0NqnlQ" entityName="l489208261">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:CompositeComponent" href="pcm_output.repository#_AVMAOwdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0sgdbEeC-IN0-0NqnlQ" entityName="l59944105">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_ATQGgAdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0sAdbEeC-IN0-0NqnlQ" entityName="n1717327745">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_AT_tZgdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0uQdbEeC-IN0-0NqnlQ" entityName="m34987999">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:CompositeComponent" href="pcm_output.repository#_AXRD0gdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyContexts_ComposedStructure id="_Aea0uAdbEeC-IN0-0NqnlQ" entityName="e920165503">
+    <encapsulatedComponent_AssemblyContext xsi:type="_1:BasicComponent" href="pcm_output.repository#_AT18cgdbEeC-IN0-0NqnlQ"/>
+  </assemblyContexts_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_Aea0uwdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sAdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AT_tZwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AbJeQgdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AeklsAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0sQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sAdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AT_tZwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_ATsLawdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AfBRoAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0ugdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AS8kgwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AbJeQwdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AfnHgAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tgdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0ugdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AS8kgwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AVMAPgdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_Afd9kAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tAdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sQdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_ATsLagdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AbJeRAdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AfLCoAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tgdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sAdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AT_tZwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AVMAPQdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_Ae3goAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0swdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sQdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_ATsLagdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AXtvwgdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AfnHgQdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0ugdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AS8kgwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_Aa18QwdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_Afw4gAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0tgdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0twdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AUljTwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AVMAPwdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AeuWsAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0ugdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0sgdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_ATQGgQdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AS8khAdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AeuWsQdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0sgdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0uAdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AT18cwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_ATQGggdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <assemblyConnectors_ComposedStructure id="_AfUMkAdbEeC-IN0-0NqnlQ" entityName="defaultName" requiringAssemblyContext_AssemblyConnector="_Aea0uQdbEeC-IN0-0NqnlQ" providingAssemblyContext_AssemblyConnector="_Aea0ugdbEeC-IN0-0NqnlQ">
+    <providedRole_AssemblyConnector href="pcm_output.repository#_AS8kgwdbEeC-IN0-0NqnlQ"/>
+    <requiredRole_AssemblyConnector href="pcm_output.repository#_AXa00AdbEeC-IN0-0NqnlQ"/>
+  </assemblyConnectors_ComposedStructure>
+  <providedDelegationConnectors_ComposedStructure id="_Af6pgQdbEeC-IN0-0NqnlQ" entityName="defaultName" outerProvidedRole_ProvidedDelegationConnector="_Ab5FIwdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aea0tAdbEeC-IN0-0NqnlQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm_output.repository#_AbJeQQdbEeC-IN0-0NqnlQ"/>
+  </providedDelegationConnectors_ComposedStructure>
+  <providedDelegationConnectors_ComposedStructure id="_AgDzcgdbEeC-IN0-0NqnlQ" entityName="defaultName" outerProvidedRole_ProvidedDelegationConnector="_Ab5FJAdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aea0tgdbEeC-IN0-0NqnlQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm_output.repository#_AVMAPAdbEeC-IN0-0NqnlQ"/>
+  </providedDelegationConnectors_ComposedStructure>
+  <providedDelegationConnectors_ComposedStructure id="_AgDzcQdbEeC-IN0-0NqnlQ" entityName="defaultName" outerProvidedRole_ProvidedDelegationConnector="_Ab5FJQdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aea0tQdbEeC-IN0-0NqnlQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm_output.repository#_Aa18QgdbEeC-IN0-0NqnlQ"/>
+  </providedDelegationConnectors_ComposedStructure>
+  <providedDelegationConnectors_ComposedStructure id="_AgDzcAdbEeC-IN0-0NqnlQ" entityName="defaultName" outerProvidedRole_ProvidedDelegationConnector="_Ab5FJgdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aea0uQdbEeC-IN0-0NqnlQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm_output.repository#_AXRD0wdbEeC-IN0-0NqnlQ"/>
+  </providedDelegationConnectors_ComposedStructure>
+  <providedDelegationConnectors_ComposedStructure id="_Af6pgAdbEeC-IN0-0NqnlQ" entityName="defaultName" outerProvidedRole_ProvidedDelegationConnector="_Ab5FJwdbEeC-IN0-0NqnlQ" assemblyContext_ProvidedDelegationConnector="_Aea0swdbEeC-IN0-0NqnlQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="pcm_output.repository#_AXtvwQdbEeC-IN0-0NqnlQ"/>
+  </providedDelegationConnectors_ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="_1:OperationProvidedRole" id="_Ab5FJAdbEeC-IN0-0NqnlQ" entityName="m1310566859 _8NgbgpJeEd-E6p6_qzRMnw">
+    <providedInterface__OperationProvidedRole href="pcm_output.repository#_ASf4oAdbEeC-IN0-0NqnlQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="_1:OperationProvidedRole" id="_Ab5FJQdbEeC-IN0-0NqnlQ" entityName="n571210373 _1_tw4JHMEd-4y8fXV-XIVA">
+    <providedInterface__OperationProvidedRole href="pcm_output.repository#_ASf4lgdbEeC-IN0-0NqnlQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="_1:OperationProvidedRole" id="_Ab5FJwdbEeC-IN0-0NqnlQ" entityName="g1271319244 _6AUtQKYdEd-F2fxisVCBKw">
+    <providedInterface__OperationProvidedRole href="pcm_output.repository#_ASppmwdbEeC-IN0-0NqnlQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="_1:OperationProvidedRole" id="_Ab5FJgdbEeC-IN0-0NqnlQ" entityName="j1214636109 _fvGc4L_fEd-PHYEGGZFL2w">
+    <providedInterface__OperationProvidedRole href="pcm_output.repository#_ASf4qAdbEeC-IN0-0NqnlQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="_1:OperationProvidedRole" id="_Ab5FIwdbEeC-IN0-0NqnlQ" entityName="b1011236150 _HJmNEJJIEd-E6p6_qzRMnw">
+    <providedInterface__OperationProvidedRole href="pcm_output.repository#_ASpplgdbEeC-IN0-0NqnlQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+</System>

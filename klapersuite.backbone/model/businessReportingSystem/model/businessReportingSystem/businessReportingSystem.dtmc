@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dtmc:Dtmc xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dtmc="http://klaper.sourceforge.net/metamodels/dtmc/1.0" name="Reliability analysis model">
+  <modules name="M25">
+    <nodes name="F25" inTransitions="//@modules.0/@transitions.3" isFail="true"/>
+    <nodes name="S26" outTransitions="//@modules.0/@transitions.0" isStart="true"/>
+    <nodes name="E27" inTransitions="//@modules.0/@transitions.1" isEnd="true"/>
+    <nodes name="A28" outTransitions="//@modules.0/@transitions.1 //@modules.0/@transitions.3" inTransitions="//@modules.0/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T26" probability="1.0" _from="//@modules.0/@nodes.1" _to="//@modules.0/@nodes.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T28" probability="(1.0*(1-4.2E-4))" _from="//@modules.0/@nodes.3" _to="//@modules.0/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I24" callTransition="//@modules.1/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F83" probability="(1-(1.0*(1-4.2E-4)))" _from="//@modules.0/@nodes.3" _to="//@modules.0/@nodes.0"/>
+  </modules>
+  <modules name="M21">
+    <nodes name="F21" inTransitions="//@modules.1/@transitions.5" isFail="true"/>
+    <nodes name="S22" outTransitions="//@modules.1/@transitions.0" isStart="true"/>
+    <nodes name="E23" inTransitions="//@modules.1/@transitions.1" isEnd="true"/>
+    <nodes name="C24" outTransitions="//@modules.1/@transitions.1" inTransitions="//@modules.1/@transitions.2"/>
+    <nodes name="A29" outTransitions="//@modules.1/@transitions.2 //@modules.1/@transitions.5" inTransitions="//@modules.1/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T22" probability="1.0" _from="//@modules.1/@nodes.1" _to="//@modules.1/@nodes.4"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C24" probability="1.0" _from="//@modules.1/@nodes.3" _to="//@modules.1/@nodes.2" invokedTransition="//@modules.0/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T29" probability="(1.0*(1-4.9E-4))" _from="//@modules.1/@nodes.4" _to="//@modules.1/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I20" callTransition="//@modules.2/@transitions.1"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I50" callTransition="//@modules.7/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F84" probability="(1-(1.0*(1-4.9E-4)))" _from="//@modules.1/@nodes.4" _to="//@modules.1/@nodes.0"/>
+  </modules>
+  <modules name="M17">
+    <nodes name="F17" inTransitions="//@modules.2/@transitions.4" isFail="true"/>
+    <nodes name="S18" outTransitions="//@modules.2/@transitions.0" isStart="true"/>
+    <nodes name="E19" inTransitions="//@modules.2/@transitions.1" isEnd="true"/>
+    <nodes name="C20" outTransitions="//@modules.2/@transitions.1" inTransitions="//@modules.2/@transitions.2"/>
+    <nodes name="A30" outTransitions="//@modules.2/@transitions.2 //@modules.2/@transitions.4" inTransitions="//@modules.2/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T18" probability="1.0" _from="//@modules.2/@nodes.1" _to="//@modules.2/@nodes.4"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C20" probability="1.0" _from="//@modules.2/@nodes.3" _to="//@modules.2/@nodes.2" invokedTransition="//@modules.1/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T30" probability="(1.0*(1-2.3E-4))" _from="//@modules.2/@nodes.4" _to="//@modules.2/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I16" callTransition="//@modules.3/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F85" probability="(1-(1.0*(1-2.3E-4)))" _from="//@modules.2/@nodes.4" _to="//@modules.2/@nodes.0"/>
+  </modules>
+  <modules name="M13">
+    <nodes name="F13" isFail="true"/>
+    <nodes name="S14" outTransitions="//@modules.3/@transitions.0" isStart="true"/>
+    <nodes name="E15" inTransitions="//@modules.3/@transitions.1" isEnd="true"/>
+    <nodes name="C16" outTransitions="//@modules.3/@transitions.1" inTransitions="//@modules.3/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T14" probability="1.0" _from="//@modules.3/@nodes.1" _to="//@modules.3/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C16" probability="1.0" _from="//@modules.3/@nodes.3" _to="//@modules.3/@nodes.2" invokedTransition="//@modules.2/@transitions.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I12" callTransition="//@modules.4/@transitions.1"/>
+  </modules>
+  <modules name="M9">
+    <nodes name="F9" inTransitions="//@modules.4/@transitions.4" isFail="true"/>
+    <nodes name="S10" outTransitions="//@modules.4/@transitions.0" isStart="true"/>
+    <nodes name="E11" inTransitions="//@modules.4/@transitions.1" isEnd="true"/>
+    <nodes name="C12" outTransitions="//@modules.4/@transitions.1" inTransitions="//@modules.4/@transitions.2"/>
+    <nodes name="A31" outTransitions="//@modules.4/@transitions.2 //@modules.4/@transitions.4" inTransitions="//@modules.4/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T10" probability="1.0" _from="//@modules.4/@nodes.1" _to="//@modules.4/@nodes.4"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C12" probability="1.0" _from="//@modules.4/@nodes.3" _to="//@modules.4/@nodes.2" invokedTransition="//@modules.3/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T31" probability="(1.0*(1-1.2E-4))" _from="//@modules.4/@nodes.4" _to="//@modules.4/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I8" callTransition="//@modules.13/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F86" probability="(1-(1.0*(1-1.2E-4)))" _from="//@modules.4/@nodes.4" _to="//@modules.4/@nodes.0"/>
+  </modules>
+  <modules name="M58">
+    <nodes name="F58" inTransitions="//@modules.5/@transitions.3" isFail="true"/>
+    <nodes name="S59" outTransitions="//@modules.5/@transitions.0" isStart="true"/>
+    <nodes name="E60" inTransitions="//@modules.5/@transitions.1" isEnd="true"/>
+    <nodes name="A61" outTransitions="//@modules.5/@transitions.1 //@modules.5/@transitions.3" inTransitions="//@modules.5/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T59" probability="1.0" _from="//@modules.5/@nodes.1" _to="//@modules.5/@nodes.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T61" probability="(1.0*(1-7.1E-4))" _from="//@modules.5/@nodes.3" _to="//@modules.5/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I57" callTransition="//@modules.6/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F87" probability="(1-(1.0*(1-7.1E-4)))" _from="//@modules.5/@nodes.3" _to="//@modules.5/@nodes.0"/>
+  </modules>
+  <modules name="M54">
+    <nodes name="F54" isFail="true"/>
+    <nodes name="S55" outTransitions="//@modules.6/@transitions.0" isStart="true"/>
+    <nodes name="E56" inTransitions="//@modules.6/@transitions.1" isEnd="true"/>
+    <nodes name="C57" outTransitions="//@modules.6/@transitions.1" inTransitions="//@modules.6/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T55" probability="1.0" _from="//@modules.6/@nodes.1" _to="//@modules.6/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C57" probability="1.0" _from="//@modules.6/@nodes.3" _to="//@modules.6/@nodes.2" invokedTransition="//@modules.5/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I53" callTransition="//@modules.7/@transitions.4"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I53" callTransition="//@modules.7/@transitions.5"/>
+  </modules>
+  <modules name="M47">
+    <nodes name="F47" inTransitions="//@modules.7/@transitions.8 //@modules.7/@transitions.9" isFail="true"/>
+    <nodes name="C2L53" outTransitions="//@modules.7/@transitions.6" inTransitions="//@modules.7/@transitions.5"/>
+    <nodes name="L53" outTransitions="//@modules.7/@transitions.4" inTransitions="//@modules.7/@transitions.2"/>
+    <nodes name="C1L53" outTransitions="//@modules.7/@transitions.5" inTransitions="//@modules.7/@transitions.4"/>
+    <nodes name="S48" outTransitions="//@modules.7/@transitions.0" isStart="true"/>
+    <nodes name="E49" inTransitions="//@modules.7/@transitions.1" isEnd="true"/>
+    <nodes name="C50" outTransitions="//@modules.7/@transitions.1" inTransitions="//@modules.7/@transitions.3"/>
+    <nodes name="A51" outTransitions="//@modules.7/@transitions.2 //@modules.7/@transitions.8" inTransitions="//@modules.7/@transitions.0"/>
+    <nodes name="A52" outTransitions="//@modules.7/@transitions.3 //@modules.7/@transitions.9" inTransitions="//@modules.7/@transitions.6"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T48" probability="1.0" _from="//@modules.7/@nodes.4" _to="//@modules.7/@nodes.7"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C50" probability="1.0" _from="//@modules.7/@nodes.6" _to="//@modules.7/@nodes.5" invokedTransition="//@modules.1/@transitions.4"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T51" probability="(1.0*(1-6.6E-4))" _from="//@modules.7/@nodes.7" _to="//@modules.7/@nodes.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T52" probability="(1.0*(1-8.8E-4))" _from="//@modules.7/@nodes.8" _to="//@modules.7/@nodes.6"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C1T53" _from="//@modules.7/@nodes.2" _to="//@modules.7/@nodes.3" invokedTransition="//@modules.6/@transitions.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C2T53" _from="//@modules.7/@nodes.3" _to="//@modules.7/@nodes.1" invokedTransition="//@modules.6/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T53" probability="(1.0*(1-0.0))" _from="//@modules.7/@nodes.1" _to="//@modules.7/@nodes.8"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I46" callTransition="//@modules.10/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F88" probability="(1-(1.0*(1-6.6E-4)))" _from="//@modules.7/@nodes.7" _to="//@modules.7/@nodes.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F89" probability="(1-(1.0*(1-8.8E-4)))" _from="//@modules.7/@nodes.8" _to="//@modules.7/@nodes.0"/>
+  </modules>
+  <modules name="M67">
+    <nodes name="F67" inTransitions="//@modules.8/@transitions.3" isFail="true"/>
+    <nodes name="S68" outTransitions="//@modules.8/@transitions.0" isStart="true"/>
+    <nodes name="E69" inTransitions="//@modules.8/@transitions.1" isEnd="true"/>
+    <nodes name="A70" outTransitions="//@modules.8/@transitions.1 //@modules.8/@transitions.3" inTransitions="//@modules.8/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T68" probability="1.0" _from="//@modules.8/@nodes.1" _to="//@modules.8/@nodes.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T70" probability="(1.0*(1-3.3E-4))" _from="//@modules.8/@nodes.3" _to="//@modules.8/@nodes.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I66" callTransition="//@modules.9/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F90" probability="(1-(1.0*(1-3.3E-4)))" _from="//@modules.8/@nodes.3" _to="//@modules.8/@nodes.0"/>
+  </modules>
+  <modules name="M63">
+    <nodes name="F63" inTransitions="//@modules.9/@transitions.4" isFail="true"/>
+    <nodes name="S64" outTransitions="//@modules.9/@transitions.0" isStart="true"/>
+    <nodes name="E65" inTransitions="//@modules.9/@transitions.1" isEnd="true"/>
+    <nodes name="C66" outTransitions="//@modules.9/@transitions.1" inTransitions="//@modules.9/@transitions.2"/>
+    <nodes name="A71" outTransitions="//@modules.9/@transitions.2 //@modules.9/@transitions.4" inTransitions="//@modules.9/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T64" probability="1.0" _from="//@modules.9/@nodes.1" _to="//@modules.9/@nodes.4"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C66" probability="1.0" _from="//@modules.9/@nodes.3" _to="//@modules.9/@nodes.2" invokedTransition="//@modules.8/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T71" probability="(1.0*(1-6.9E-4))" _from="//@modules.9/@nodes.4" _to="//@modules.9/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I62" callTransition="//@modules.10/@transitions.4"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F91" probability="(1-(1.0*(1-6.9E-4)))" _from="//@modules.9/@nodes.4" _to="//@modules.9/@nodes.0"/>
+  </modules>
+  <modules name="M41">
+    <nodes name="F41" inTransitions="//@modules.10/@transitions.9 //@modules.10/@transitions.8" isFail="true"/>
+    <nodes name="S42" outTransitions="//@modules.10/@transitions.0" isStart="true"/>
+    <nodes name="E43" inTransitions="//@modules.10/@transitions.2" isEnd="true"/>
+    <nodes name="A44" outTransitions="//@modules.10/@transitions.1 //@modules.10/@transitions.9" inTransitions="//@modules.10/@transitions.0"/>
+    <nodes name="A45" outTransitions="//@modules.10/@transitions.2 //@modules.10/@transitions.8" inTransitions="//@modules.10/@transitions.3 //@modules.10/@transitions.4"/>
+    <nodes name="C46" outTransitions="//@modules.10/@transitions.3" inTransitions="//@modules.10/@transitions.5"/>
+    <nodes name="C62" outTransitions="//@modules.10/@transitions.4" inTransitions="//@modules.10/@transitions.6"/>
+    <nodes name="B72" outTransitions="//@modules.10/@transitions.5 //@modules.10/@transitions.6" inTransitions="//@modules.10/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T42" probability="1.0" _from="//@modules.10/@nodes.1" _to="//@modules.10/@nodes.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T44" probability="(1.0*(1-1.1E-4))" _from="//@modules.10/@nodes.3" _to="//@modules.10/@nodes.7"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T45" probability="(1.0*(1-0))" _from="//@modules.10/@nodes.4" _to="//@modules.10/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C46" probability="(1.0*(1-0.0))" _from="//@modules.10/@nodes.5" _to="//@modules.10/@nodes.4" invokedTransition="//@modules.7/@transitions.7"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C62" probability="(1.0*(1-0.0))" _from="//@modules.10/@nodes.6" _to="//@modules.10/@nodes.4" invokedTransition="//@modules.9/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T72" probability="0.3" _from="//@modules.10/@nodes.7" _to="//@modules.10/@nodes.5"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T72" probability="0.7" _from="//@modules.10/@nodes.7" _to="//@modules.10/@nodes.6"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I40" callTransition="//@modules.11/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F93" probability="(1-(1.0*(1-0)))" _from="//@modules.10/@nodes.4" _to="//@modules.10/@nodes.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F92" probability="(1-(1.0*(1-1.1E-4)))" _from="//@modules.10/@nodes.3" _to="//@modules.10/@nodes.0"/>
+  </modules>
+  <modules name="M37">
+    <nodes name="F37" isFail="true"/>
+    <nodes name="S38" outTransitions="//@modules.11/@transitions.0" isStart="true"/>
+    <nodes name="E39" inTransitions="//@modules.11/@transitions.1" isEnd="true"/>
+    <nodes name="C40" outTransitions="//@modules.11/@transitions.1" inTransitions="//@modules.11/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T38" probability="1.0" _from="//@modules.11/@nodes.1" _to="//@modules.11/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C40" probability="1.0" _from="//@modules.11/@nodes.3" _to="//@modules.11/@nodes.2" invokedTransition="//@modules.10/@transitions.7"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I36" callTransition="//@modules.12/@transitions.1"/>
+  </modules>
+  <modules name="M33">
+    <nodes name="F33" inTransitions="//@modules.12/@transitions.4" isFail="true"/>
+    <nodes name="S34" outTransitions="//@modules.12/@transitions.0" isStart="true"/>
+    <nodes name="E35" inTransitions="//@modules.12/@transitions.1" isEnd="true"/>
+    <nodes name="C36" outTransitions="//@modules.12/@transitions.1" inTransitions="//@modules.12/@transitions.2"/>
+    <nodes name="A73" outTransitions="//@modules.12/@transitions.2 //@modules.12/@transitions.4" inTransitions="//@modules.12/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T34" probability="1.0" _from="//@modules.12/@nodes.1" _to="//@modules.12/@nodes.4"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C36" probability="1.0" _from="//@modules.12/@nodes.3" _to="//@modules.12/@nodes.2" invokedTransition="//@modules.11/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T73" probability="(1.0*(1-1.7E-4))" _from="//@modules.12/@nodes.4" _to="//@modules.12/@nodes.3"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I32" callTransition="//@modules.13/@transitions.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F94" probability="(1-(1.0*(1-1.7E-4)))" _from="//@modules.12/@nodes.4" _to="//@modules.12/@nodes.0"/>
+  </modules>
+  <modules name="M5">
+    <nodes name="F5" inTransitions="//@modules.13/@transitions.7" isFail="true"/>
+    <nodes name="S6" outTransitions="//@modules.13/@transitions.0" isStart="true"/>
+    <nodes name="E7" inTransitions="//@modules.13/@transitions.3" isEnd="true"/>
+    <nodes name="C8" outTransitions="//@modules.13/@transitions.1" inTransitions="//@modules.13/@transitions.4"/>
+    <nodes name="C32" outTransitions="//@modules.13/@transitions.2" inTransitions="//@modules.13/@transitions.5"/>
+    <nodes name="A74" outTransitions="//@modules.13/@transitions.3 //@modules.13/@transitions.7" inTransitions="//@modules.13/@transitions.1 //@modules.13/@transitions.2"/>
+    <nodes name="B75" outTransitions="//@modules.13/@transitions.4 //@modules.13/@transitions.5" inTransitions="//@modules.13/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T6" probability="1.0" _from="//@modules.13/@nodes.1" _to="//@modules.13/@nodes.6"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C8" probability="(1.0*(1-0.0))" _from="//@modules.13/@nodes.3" _to="//@modules.13/@nodes.5" invokedTransition="//@modules.4/@transitions.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C32" probability="(1.0*(1-0.0))" _from="//@modules.13/@nodes.4" _to="//@modules.13/@nodes.5" invokedTransition="//@modules.12/@transitions.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T74" probability="(1.0*(1-0))" _from="//@modules.13/@nodes.5" _to="//@modules.13/@nodes.2"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T75" probability="0.9" _from="//@modules.13/@nodes.6" _to="//@modules.13/@nodes.3"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T75" probability="0.1" _from="//@modules.13/@nodes.6" _to="//@modules.13/@nodes.4"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I4" callTransition="//@modules.14/@transitions.1"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="F95" probability="(1-(1.0*(1-0)))" _from="//@modules.13/@nodes.5" _to="//@modules.13/@nodes.0"/>
+  </modules>
+  <modules name="M1">
+    <nodes name="F1" isFail="true"/>
+    <nodes name="S2" outTransitions="//@modules.14/@transitions.0" isStart="true"/>
+    <nodes name="E3" inTransitions="//@modules.14/@transitions.1" isEnd="true"/>
+    <nodes name="C4" outTransitions="//@modules.14/@transitions.1" inTransitions="//@modules.14/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T2" probability="1.0" _from="//@modules.14/@nodes.1" _to="//@modules.14/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C4" probability="1.0" _from="//@modules.14/@nodes.3" _to="//@modules.14/@nodes.2" invokedTransition="//@modules.13/@transitions.6"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I79" callTransition="//@modules.15/@transitions.1"/>
+  </modules>
+  <modules name="M76">
+    <nodes name="F76" isFail="true"/>
+    <nodes name="S77" outTransitions="//@modules.15/@transitions.0" isStart="true"/>
+    <nodes name="E78" inTransitions="//@modules.15/@transitions.1" isEnd="true"/>
+    <nodes name="C79" outTransitions="//@modules.15/@transitions.1" inTransitions="//@modules.15/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T77" probability="1.0" _from="//@modules.15/@nodes.1" _to="//@modules.15/@nodes.3"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C79" probability="1.0" _from="//@modules.15/@nodes.3" _to="//@modules.15/@nodes.2" invokedTransition="//@modules.14/@transitions.2"/>
+    <transitions xsi:type="dtmc:InvokedTransition" name="I82" callTransition="//@modules.16/@transitions.1"/>
+  </modules>
+  <modules name="Workload" isAutonomous="true">
+    <nodes name="S80" outTransitions="//@modules.16/@transitions.0" isStart="true"/>
+    <nodes name="E81" inTransitions="//@modules.16/@transitions.1" isEnd="true"/>
+    <nodes name="C82" outTransitions="//@modules.16/@transitions.1" inTransitions="//@modules.16/@transitions.0"/>
+    <transitions xsi:type="dtmc:StandardTransition" name="T80" probability="1.0" _from="//@modules.16/@nodes.0" _to="//@modules.16/@nodes.2"/>
+    <transitions xsi:type="dtmc:CallTransition" name="C82" probability="1.0" _from="//@modules.16/@nodes.2" _to="//@modules.16/@nodes.1" invokedTransition="//@modules.15/@transitions.2"/>
+  </modules>
+</dtmc:Dtmc>

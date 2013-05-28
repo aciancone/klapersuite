@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:seff="http://q-impress.eu/seff" xmi:id="_JOt-YKBdEd-CsaCJ13sj1A" type="Seff" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_Jfj2wKBdEd-CsaCJ13sj1A" type="2001">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Jfj2waBdEd-CsaCJ13sj1A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Jfj2wqBdEd-CsaCJ13sj1A"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_Jfj2w6BdEd-CsaCJ13sj1A"/>
+    <element xmi:type="seff:StartAction" href="../system1.samm_seff#_JfaFwKBdEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jfj2xKBdEd-CsaCJ13sj1A" x="145" y="60"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_KbUUYaBdEd-CsaCJ13sj1A" type="2003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_KbUUY6BdEd-CsaCJ13sj1A" type="5003"/>
+    <element xmi:type="seff:InternalAction" href="../system1.samm_seff#_KbUUYKBdEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KbUUYqBdEd-CsaCJ13sj1A" x="60" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_PmUZoKBdEd-CsaCJ13sj1A" type="2007">
+    <element xmi:type="seff:StopAction" href="../system1.samm_seff#_PmKooKBdEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PmUZoaBdEd-CsaCJ13sj1A" x="140" y="340"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_czBrgKBdEd-CsaCJ13sj1A" type="2002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_czBrgqBdEd-CsaCJ13sj1A" type="5002"/>
+    <element xmi:type="seff:ExternalCallAction" href="../system1.samm_seff#_ccYGEKBdEd-CsaCJ13sj1A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_czBrgaBdEd-CsaCJ13sj1A" x="85" y="240"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_JOt-YaBdEd-CsaCJ13sj1A"/>
+  <element xmi:type="seff:ResourceDemandingSEFF" href="../system1.samm_seff#//@resourceDemandingSeff.9"/>
+  <edges xmi:type="notation:Connector" xmi:id="_P3UDAKBdEd-CsaCJ13sj1A" type="4001" source="_Jfj2wKBdEd-CsaCJ13sj1A" target="_KbUUYaBdEd-CsaCJ13sj1A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_P3UDAaBdEd-CsaCJ13sj1A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P3UDAqBdEd-CsaCJ13sj1A" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d9QC8qBdEd-CsaCJ13sj1A" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P3UDA6BdEd-CsaCJ13sj1A" id="(0.49732620320855614,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_P93W8KBdEd-CsaCJ13sj1A" type="4001" source="_KbUUYaBdEd-CsaCJ13sj1A" target="_czBrgKBdEd-CsaCJ13sj1A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_P93W8aBdEd-CsaCJ13sj1A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P93W8qBdEd-CsaCJ13sj1A" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d9QC8KBdEd-CsaCJ13sj1A" id="(0.49732620320855614,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d9QC8aBdEd-CsaCJ13sj1A" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dm5YcKBdEd-CsaCJ13sj1A" type="4001" source="_czBrgKBdEd-CsaCJ13sj1A" target="_PmUZoKBdEd-CsaCJ13sj1A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_dm5YcaBdEd-CsaCJ13sj1A"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dm5YcqBdEd-CsaCJ13sj1A" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d9QC86BdEd-CsaCJ13sj1A" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d9QC9KBdEd-CsaCJ13sj1A" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>

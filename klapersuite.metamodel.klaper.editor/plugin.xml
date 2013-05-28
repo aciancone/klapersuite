@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="klaper.core.presentation.CoreModelWizardID"
+            name="%_UI_CoreModelWizard_label"
+            class="klaper.core.presentation.CoreModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CoreModelFile.gif">
+         <description>%_UI_CoreModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="klaper.core.presentation.CoreEditorID"
+            name="%_UI_CoreEditor_label"
+            icon="icons/full/obj16/CoreModelFile.gif"
+            extensions="core"
+            class="klaper.core.presentation.CoreEditor"
+            contributorClass="klaper.core.presentation.CoreActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="klaper.probability.presentation.ProbabilityModelWizardID"
+            name="%_UI_ProbabilityModelWizard_label"
+            class="klaper.probability.presentation.ProbabilityModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ProbabilityModelFile.gif">
+         <description>%_UI_ProbabilityModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="klaper.probability.presentation.ProbabilityEditorID"
+            name="%_UI_ProbabilityEditor_label"
+            icon="icons/full/obj16/ProbabilityModelFile.gif"
+            extensions="probability"
+            class="klaper.probability.presentation.ProbabilityEditor"
+            contributorClass="klaper.probability.presentation.ProbabilityActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="klaper.expr.presentation.ExprModelWizardID"
+            name="%_UI_ExprModelWizard_label"
+            class="klaper.expr.presentation.ExprModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ExprModelFile.gif">
+         <description>%_UI_ExprModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="klaper.expr.presentation.ExprEditorID"
+            name="%_UI_ExprEditor_label"
+            icon="icons/full/obj16/ExprModelFile.gif"
+            extensions="expr"
+            class="klaper.expr.presentation.ExprEditor"
+            contributorClass="klaper.expr.presentation.ExprActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
