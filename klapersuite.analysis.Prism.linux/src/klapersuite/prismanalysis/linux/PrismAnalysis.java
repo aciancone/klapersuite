@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import java.io.File;
+import java.io.IOException;
+
+import klapersuite.prismanalysis.preference.PrismPreferencePage;
+
+import org.apache.log4j.Logger;
+
+public class PrismAnalysis {
+	private final File pmFile;
+	private final File pctlFile;
+	private final int resultDecimalDigitsPrecision;
 	private static final Logger logger = Logger.getLogger(PrismAnalysis.class);
 
 

@@ -5,3 +5,15 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+
+public class Memory4Prism {
+	@Test
+	public void getAvailableMemory() {
+		assertNotNull(new SystemMemory().availableRam(null));
+	}
+}

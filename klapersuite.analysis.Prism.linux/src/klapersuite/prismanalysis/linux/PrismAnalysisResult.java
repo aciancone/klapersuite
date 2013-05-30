@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.log4j.Logger;
+import org.apache.tools.ant.util.StringUtils;
+
+public class PrismAnalysisResult {
 	public final int exitValue;
 	private String output=null;
 	private BigDecimal reliability = new BigDecimal(-1);

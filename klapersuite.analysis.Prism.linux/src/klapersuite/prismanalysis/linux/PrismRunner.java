@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.zip.GZIPInputStream;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.tools.tar.TarEntry;
+import org.apache.tools.tar.TarInputStream;
 
 public class PrismRunner {
 	private static final long IN_KB_512MB = 512*1024;

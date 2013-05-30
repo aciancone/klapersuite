@@ -3,7 +3,21 @@
  * Licensed under the terms of the Eclipse Public License (EPL).
  * Please see the LICENSE.MD included with this distribution for details.
  * Any modifications to this file must keep this entire header intact.
+ * The activator class controls the plug-in life cycle
  */
+
+package klapersuite.prismanalysis.linux;
+
+import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.osgi.framework.BundleContext;
+
+/**
+ * The activator class controls the plug-in life cycle
+ */
+public class Activator extends AbstractUIPlugin {
+
+	// The plug-in ID
+	public static final String PLUGIN_ID = "klapersuite.PrismAnalysis.linux"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

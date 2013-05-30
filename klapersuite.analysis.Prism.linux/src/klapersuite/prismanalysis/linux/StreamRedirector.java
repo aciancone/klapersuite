@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.apache.log4j.Logger;
+
+/**
+ * Redirects an input stream onto a logging stream.
+ * @author Mauro Luigi Drago, Andrea Ciancone
+ *
  */
 public class StreamRedirector extends Thread {
 	

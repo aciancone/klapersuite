@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class SystemMemory {
+	String cacheRegex = "[0-9]+";
+	String bufferRegex = "[0-9]+";
+	String sharedRegex = "[0-9]+";
 	String freeRegex = "[0-9]+";
 	String spacesRegex = "\\s+";
 	final Pattern memoryPattern = Pattern.compile(spacesRegex+"("+freeRegex+")"+spacesRegex+sharedRegex+spacesRegex+bufferRegex+spacesRegex+"("+cacheRegex+")$");

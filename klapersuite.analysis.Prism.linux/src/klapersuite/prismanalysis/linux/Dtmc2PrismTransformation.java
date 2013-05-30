@@ -5,6 +5,19 @@
  * Any modifications to this file must keep this entire header intact.
  */
 
+package klapersuite.prismanalysis.linux;
+import java.util.HashMap;
+
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.xpand2.output.Outlet;
+import klapersuite.backbone.utility.LazyXpand;
+
+import dtmc.Dtmc;
+
+public class Dtmc2PrismTransformation {
+	private static final String DTMC2PRISMPROPERTIES_XPANDTRANSFORMATION = "template::dtmc2prismProperties";
+	private static final String DTMC2PRISMMODEL_XPANDTRANSFORMATION = "template::dtmc2prismModel";
 	private final Dtmc dtmcModel;
 
 	public Dtmc2PrismTransformation(Dtmc dtmcModel) {
