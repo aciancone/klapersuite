@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="q4bpmn.presentation.Q4bpmnModelWizardID"
+            name="%_UI_Q4bpmnModelWizard_label"
+            class="q4bpmn.presentation.Q4bpmnModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Q4bpmnModelFile.gif">
+         <description>%_UI_Q4bpmnModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="q4bpmn.presentation.Q4bpmnEditorID"
+            name="%_UI_Q4bpmnEditor_label"
+            icon="icons/full/obj16/Q4bpmnModelFile.gif"
+            extensions="q4bpmn"
+            class="q4bpmn.presentation.Q4bpmnEditor"
+            contributorClass="q4bpmn.presentation.Q4bpmnActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

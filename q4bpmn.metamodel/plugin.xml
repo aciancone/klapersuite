@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://klaper.sourceforge.net/metamodels/q4bpmn/1.0"
+            class="q4bpmn.Q4bpmnPackage"
+            genModel="model/q4bpmn.genmodel"/>
+   </extension>
+</plugin>

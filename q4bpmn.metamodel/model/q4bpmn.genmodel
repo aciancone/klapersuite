@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/q4bpmn.metamodel/src"
+    modelPluginID="q4bpmn.metamodel" modelName="Q4BPMN" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>q4bpmn.ecore</foreignModel>
+  <genPackages prefix="Q4bpmn" disposableProviderFactory="true" ecorePackage="q4bpmn.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="q4bpmn.ecore#//PropertyNature">
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//PropertyNature/ABSTRACT"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//PropertyNature/DESCRIPTIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//PropertyNature/PRESCRIPTIVE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="q4bpmn.ecore#//OperatorType">
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//OperatorType/LOWER"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//OperatorType/LESS_EQUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//OperatorType/GREATER"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//OperatorType/MORE_EQUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//OperatorType/EQUAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="q4bpmn.ecore#//ClassType">
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//ClassType/PERFORMANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//ClassType/SECURITY"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//ClassType/TRUST"/>
+      <genEnumLiterals ecoreEnumLiteral="q4bpmn.ecore#//ClassType/DEPENDABILITY"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="q4bpmn.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/nature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/PropertyClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/isHard"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//Property/metrics"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference q4bpmn.ecore#//Property/relatedTo"/>
+    </genClasses>
+    <genClasses ecoreClass="q4bpmn.ecore#//NamedEntity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute q4bpmn.ecore#//NamedEntity/name"/>
+    </genClasses>
+    <genClasses ecoreClass="q4bpmn.ecore#//PropertyModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference q4bpmn.ecore#//PropertyModel/properties"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
